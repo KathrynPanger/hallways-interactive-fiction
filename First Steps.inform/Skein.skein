@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-174"/>
+  <activeNode nodeId="node-262"/>
   <item nodeId="node-1">
     <command xml:space="preserve">First Steps</command>
-    <result xml:space="preserve">Hallways&#x000A;An Interactive Fiction&#x000A;Release 1 / Serial number 200819 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Room 125&#x000A;You see nothing but the darkness.&#x000A;&#x000A; &#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Hallways&#x000A;An Interactive Fiction&#x000A;Release 1 / Serial number 200820 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Room 129&#x000A;This looks like a bedroom. There is a bed, a closet, and a mirror.&#x000A;&#x000A; The night light is off.&#x000A;&#x000A;You can also see a closet (closed) here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve">Hallway&#x000A;An Interactive Fiction&#x000A;Release 1 / Serial number 200818 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Hallway&#x000A;You are in a long hallway.  Identifcal doors are spaced regularly along the walls on either side. The air feels unnaturally still here.&#x000A;&#x000A;There is a door to the east.&#x000A;&#x000A;There is a door to the west.&#x000A;&#x000A;&gt;</commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-2"/>
       <child nodeId="node-3"/>
@@ -44,6 +44,25 @@
       <child nodeId="node-160"/>
       <child nodeId="node-162"/>
       <child nodeId="node-166"/>
+      <child nodeId="node-193"/>
+      <child nodeId="node-195"/>
+      <child nodeId="node-197"/>
+      <child nodeId="node-199"/>
+      <child nodeId="node-200"/>
+      <child nodeId="node-204"/>
+      <child nodeId="node-228"/>
+      <child nodeId="node-229"/>
+      <child nodeId="node-230"/>
+      <child nodeId="node-231"/>
+      <child nodeId="node-234"/>
+      <child nodeId="node-237"/>
+      <child nodeId="node-241"/>
+      <child nodeId="node-242"/>
+      <child nodeId="node-243"/>
+      <child nodeId="node-247"/>
+      <child nodeId="node-259"/>
+      <child nodeId="node-260"/>
+      <child nodeId="node-262"/>
     </children>
   </item>
   <item nodeId="node-2">
@@ -141,13 +160,14 @@
   </item>
   <item nodeId="node-14">
     <command xml:space="preserve">e</command>
-    <result xml:space="preserve">Play House&#x000A;This house would be very cozy if it weren't sized for children. There is a kitchenette complete with a table, plastic stove and refrigerator, and a living room which contains a chair, a small throw rug, and a well-drawn picture of a television. There are many clocks drawn on the walls in crayon, each telling different times.&#x000A;&#x000A;A little plastic stove that opens and closes.&#x000A;&#x000A;A plastic refrigerator that opens and closes.&#x000A;&#x000A;You can also see a table (on which is a plastic toaster) here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Each door has a sign beside it bearing a room number. There are two doors to your immediate left and right (east and west). The walls are papered. The air feels unnaturally still here.&#x000A;&#x000A; &#x000A;&#x000A;You can also see a disquieting door here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>YES</changed>
     <children>
       <child nodeId="node-15"/>
       <child nodeId="node-26"/>
       <child nodeId="node-31"/>
+      <child nodeId="node-177"/>
     </children>
   </item>
   <item nodeId="node-15">
@@ -220,11 +240,35 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-177">
+    <command xml:space="preserve">examine door</command>
+    <result xml:space="preserve">You see nothing special about the disquieting door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-178"/>
+    </children>
+  </item>
+  <item nodeId="node-178">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">(first opening the disquieting door)&#x000A;&#x000A;Hallway End&#x000A;The hallway seems to end here. There are doors to the north, east, and west. There is something deeply disquieting about the doorway to the north, ordinary as it appears.&#x000A;&#x000A;You can see a disquieting door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-179"/>
+    </children>
+  </item>
+  <item nodeId="node-179">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Each door has a sign beside it bearing a room number. There are two doors to your immediate left and right (east and west). The walls are papered. The air feels unnaturally still here.&#x000A;&#x000A; &#x000A;&#x000A;You can also see a disquieting door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-17">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve">Nothing Room&#x000A;The door opens to a room in darkness. You step into the darkness and sense that there is nothing nearby.&#x000A;&#x000A;&gt;</commentary>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <children>
       <child nodeId="node-18"/>
       <child nodeId="node-20"/>
@@ -235,21 +279,24 @@
   </item>
   <item nodeId="node-18">
     <command xml:space="preserve">e</command>
-    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">More Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Each door has a sign beside it bearing a room number. There are two doors to your immediate left and right (east and west). The walls are papered. &#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <children>
       <child nodeId="node-19"/>
       <child nodeId="node-88"/>
+      <child nodeId="node-210"/>
+      <child nodeId="node-217"/>
     </children>
   </item>
   <item nodeId="node-19">
     <command xml:space="preserve">e</command>
-    <result xml:space="preserve">Room 126&#x000A;The door opens to a room in darkness. You see nothing. The air is thick with uncertainty.&#x000A;&#x000A; &#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Room 128&#x000A;This is a square room with little ornamentation. You feel as if you shouldn't be here.&#x000A;&#x000A;You can see a black door here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-28"/>
+      <child nodeId="node-248"/>
     </children>
   </item>
   <item nodeId="node-28">
@@ -276,9 +323,234 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-88">
+  <item nodeId="node-248">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">More Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Each door has a sign beside it bearing a room number. There are two doors to your immediate left and right (east and west). The walls are papered. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-249"/>
+    </children>
+  </item>
+  <item nodeId="node-249">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Even More Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Each door has a sign beside it bearing a room number. There are two doors to your immediate left and right (east and west). Near the east door, there is a spot on the wall where the wallpaper is peeling. You see a torn piece.&#x000A;&#x000A;A neat section of the blue damask wall paper has torn, revealing a patch of yellow beneath it. You admire the torn piece briefly.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-250"/>
+    </children>
+  </item>
+  <item nodeId="node-250">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Room 129&#x000A;This looks like a bedroom. There is a bed, a closet, and a mirror.&#x000A;&#x000A;You can see a closet (closed) here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-251"/>
+    </children>
+  </item>
+  <item nodeId="node-251">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Even More Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Each door has a sign beside it bearing a room number. There are two doors to your immediate left and right (east and west). Near the east door, there is a spot on the wall where the wallpaper is peeling. You see a torn piece.&#x000A;&#x000A;A neat section of the blue damask wall paper has torn, revealing a patch of yellow beneath it. You admire the torn piece briefly.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-252"/>
+    </children>
+  </item>
+  <item nodeId="node-252">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Room 130&#x000A;This room is fully furnished, with a blue fainting couch, a grandfather clock, and a coffee table. All of the furniture is made of the same dark, rich wood that can be found throughout. On the wall there is a full-sized mirror, and a large painting of a woman.&#x000A;&#x000A;There is a grandfather clock here.&#x000A;&#x000A;There is a fully stocked bar in the corner.&#x000A;&#x000A;On the bar are a bottle of whiskey, a bottle of vodka, a bottle of gin and a lemon.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-253"/>
+    </children>
+  </item>
+  <item nodeId="node-253">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Even More Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Each door has a sign beside it bearing a room number. There are two doors to your immediate left and right (east and west). Near the east door, there is a spot on the wall where the wallpaper is peeling. You see a torn piece.&#x000A;&#x000A;A neat section of the blue damask wall paper has torn, revealing a patch of yellow beneath it. You admire the torn piece briefly.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-254"/>
+    </children>
+  </item>
+  <item nodeId="node-254">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Yet More Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Each door has a sign beside it bearing a room number. There are two doors to your immediate left and right (east and west). The walls are papered. You can see the end of the hallway to the north. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-255"/>
+    </children>
+  </item>
+  <item nodeId="node-255">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-256"/>
+    </children>
+  </item>
+  <item nodeId="node-256">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-257"/>
+    </children>
+  </item>
+  <item nodeId="node-257">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hallway End&#x000A;The hallway seems to end here. There are doors to the north, east, and west. There is something deeply disquieting about the doorway to the north, ordinary as it appears.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-258"/>
+    </children>
+  </item>
+  <item nodeId="node-258">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Trap Room&#x000A;As you enter this room, the door behind you closes and locks.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-88">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Room 125&#x000A;You see nothing but the darkness.&#x000A;&#x000A; &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-175"/>
+    </children>
+  </item>
+  <item nodeId="node-175">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Each door has a sign beside it bearing a room number. There are two doors to your immediate left and right (east and west). The walls are papered. The air feels unnaturally still here.&#x000A;&#x000A; &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-176"/>
+    </children>
+  </item>
+  <item nodeId="node-176">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Hallway End&#x000A;The hallway seems to end here. There are doors to the north, east, and west. There is something deeply disquieting about the doorway to the north, ordinary as it appears.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-210">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Even More Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Each door has a sign beside it bearing a room number. There are two doors to your immediate left and right (east and west). Near the east door, there is a spot on the wall where the wallpaper is peeling. You see a torn piece.&#x000A;&#x000A;A neat section of the blue damask wall paper has torn, revealing a patch of yellow beneath it. You admire the torn piece briefly.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-211"/>
+    </children>
+  </item>
+  <item nodeId="node-211">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">More Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Each door has a sign beside it bearing a room number. There are two doors to your immediate left and right (east and west). The walls are papered. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-212"/>
+    </children>
+  </item>
+  <item nodeId="node-212">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Each door has a sign beside it bearing a room number. There are two doors to your immediate left and right (east and west). There a door to the south, and something about it is deeply disquieting, ordinary as it looks. The walls are papered. The air feels unnaturally still here.&#x000A;&#x000A; &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-213"/>
+    </children>
+  </item>
+  <item nodeId="node-213">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Room 125&#x000A;You see nothing but the darkness.&#x000A;&#x000A; &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-214"/>
+    </children>
+  </item>
+  <item nodeId="node-214">
+    <command xml:space="preserve">examine darkness</command>
+    <result xml:space="preserve">You look into the darkness. It feels as if it could open up.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-215"/>
+    </children>
+  </item>
+  <item nodeId="node-215">
+    <command xml:space="preserve">open darkness</command>
+    <result xml:space="preserve">You open the darkness, revealing a black key.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-216"/>
+    </children>
+  </item>
+  <item nodeId="node-216">
+    <command xml:space="preserve">examine darkness</command>
+    <result xml:space="preserve">The yawning darkness is open before you.&#x000A;&#x000A;In the darkness is a black key.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-217">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Each door has a sign beside it bearing a room number. There are two doors to your immediate left and right (east and west). There a door to the south, and something about it is deeply disquieting, ordinary as it looks. The walls are papered. The air feels unnaturally still here.&#x000A;&#x000A; &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-218"/>
+    </children>
+  </item>
+  <item nodeId="node-218">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Room 125&#x000A;You see nothing but the darkness.&#x000A;&#x000A; &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-219"/>
+    </children>
+  </item>
+  <item nodeId="node-219">
+    <command xml:space="preserve">examine darkness</command>
+    <result xml:space="preserve">You look into the darkness. It feels as if it could open up.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-220"/>
+    </children>
+  </item>
+  <item nodeId="node-220">
+    <command xml:space="preserve">open darkness</command>
+    <result xml:space="preserve">You open the darkness, revealing a black key.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-221"/>
+    </children>
+  </item>
+  <item nodeId="node-221">
+    <command xml:space="preserve">examine darknes</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-222"/>
+    </children>
+  </item>
+  <item nodeId="node-222">
+    <command xml:space="preserve">examine darkness</command>
+    <result xml:space="preserve">You feel the yawning darkness all around you.&#x000A;&#x000A;In the darkness is a black key.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -795,7 +1067,7 @@
   </item>
   <item nodeId="node-75">
     <command xml:space="preserve">examine darkness</command>
-    <result xml:space="preserve">You look into the darkness. It feels as if it could open up and take you, or anything else.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You look into the darkness. It feels as if it could open up.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>YES</changed>
     <children>
@@ -820,16 +1092,181 @@
   </item>
   <item nodeId="node-164">
     <command xml:space="preserve">open darkness</command>
-    <result xml:space="preserve">You open the darkness.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You open the darkness, revealing a black key.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-165"/>
+      <child nodeId="node-180"/>
+      <child nodeId="node-207"/>
+      <child nodeId="node-223"/>
     </children>
   </item>
   <item nodeId="node-165">
     <command xml:space="preserve">look in darkness</command>
     <result xml:space="preserve">The darkness is empty.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-180">
+    <command xml:space="preserve">examine key</command>
+    <result xml:space="preserve">It is a black key. It frightens you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-181"/>
+    </children>
+  </item>
+  <item nodeId="node-181">
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-182"/>
+    </children>
+  </item>
+  <item nodeId="node-182">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-183"/>
+    </children>
+  </item>
+  <item nodeId="node-183">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Each door has a sign beside it bearing a room number. There are two doors to your immediate left and right (east and west). There a door to the south, and something about it is deeply disquieting, ordinary as it looks. The walls are papered. The air feels unnaturally still here.&#x000A;&#x000A; &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-184"/>
+    </children>
+  </item>
+  <item nodeId="node-184">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Hallway End&#x000A;The hallway seems to end here. There are doors to the north, east, and west. There is something deeply disquieting about the doorway to the north, ordinary as it appears.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-185"/>
+    </children>
+  </item>
+  <item nodeId="node-185">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Each door has a sign beside it bearing a room number. There are two doors to your immediate left and right (east and west). There a door to the south, and something about it is deeply disquieting, ordinary as it looks. The walls are papered. The air feels unnaturally still here.&#x000A;&#x000A; &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-186"/>
+    </children>
+  </item>
+  <item nodeId="node-186">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">More Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Each door has a sign beside it bearing a room number. There are two doors to your immediate left and right (east and west). The walls are papered. &#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-187"/>
+    </children>
+  </item>
+  <item nodeId="node-187">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Room 128&#x000A;This is a square room with little ornamentation. You feel as if you shouldn't be here.&#x000A;&#x000A;You can see a black door here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-188"/>
+    </children>
+  </item>
+  <item nodeId="node-188">
+    <command xml:space="preserve">open door</command>
+    <result xml:space="preserve">It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-189"/>
+    </children>
+  </item>
+  <item nodeId="node-189">
+    <command xml:space="preserve">open door with key</command>
+    <result xml:space="preserve">You unlock the black door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-190"/>
+    </children>
+  </item>
+  <item nodeId="node-190">
+    <command xml:space="preserve">open door</command>
+    <result xml:space="preserve">You open the black door.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-191"/>
+    </children>
+  </item>
+  <item nodeId="node-191">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-192"/>
+    </children>
+  </item>
+  <item nodeId="node-192">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Walls&#x000A;You step into the darkness, and become darkness. You must have lost consiousness, because you awaken standing on a slab of concrete that is four foot square. Around you on every side are grey brick walls that stretch up indefinitely. Your fear resolves into a grim sense of familiarity, as a burden lifts from your shoulders.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-207">
+    <command xml:space="preserve">examine darkness</command>
+    <result xml:space="preserve">You look into the darkness. It feels as if it could open up.&#x000A;&#x000A;In the darkness is a black key.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-208"/>
+    </children>
+  </item>
+  <item nodeId="node-208">
+    <command xml:space="preserve">close darkness</command>
+    <result xml:space="preserve">You close the darkness.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-209"/>
+    </children>
+  </item>
+  <item nodeId="node-209">
+    <command xml:space="preserve">examine darkness</command>
+    <result xml:space="preserve">The yawning darkness is open all around you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-223">
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-224"/>
+    </children>
+  </item>
+  <item nodeId="node-224">
+    <command xml:space="preserve">examine darkness</command>
+    <result xml:space="preserve">The yawning darkness is all around you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-225"/>
+    </children>
+  </item>
+  <item nodeId="node-225">
+    <command xml:space="preserve">close darkness</command>
+    <result xml:space="preserve">You close the darkness.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -1450,6 +1887,307 @@
   <item nodeId="node-174">
     <command xml:space="preserve">examine key</command>
     <result xml:space="preserve">It is a black key. It frightens you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-193">
+    <command xml:space="preserve">examine clock</command>
+    <result xml:space="preserve">A closer look reveals that it is not actually a clock, but a picture of a clock, firmly attached to the wall. You cannot read the time, because the clock has no hands.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-194"/>
+      <child nodeId="node-226"/>
+    </children>
+  </item>
+  <item nodeId="node-194">
+    <command xml:space="preserve">take clock</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-226">
+    <command xml:space="preserve">open clock</command>
+    <result xml:space="preserve">You open the grandfather clock, revealing a pendulum.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-227"/>
+    </children>
+  </item>
+  <item nodeId="node-227">
+    <command xml:space="preserve">take pendulum</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-195">
+    <command xml:space="preserve">take clock</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-196"/>
+    </children>
+  </item>
+  <item nodeId="node-196">
+    <command xml:space="preserve">examine clock</command>
+    <result xml:space="preserve">A closer look reveals that it is not actually a clock, but a picture of a clock, firmly attached to the wall. You cannot read the time, because the clock has no hands.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-197">
+    <command xml:space="preserve">examine sofa</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-198"/>
+    </children>
+  </item>
+  <item nodeId="node-198">
+    <command xml:space="preserve">take sofa</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-199">
+    <command xml:space="preserve">take shoe</command>
+    <result xml:space="preserve">(the shoe rack)&#x000A;That's fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-200">
+    <command xml:space="preserve">take heels</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-201"/>
+    </children>
+  </item>
+  <item nodeId="node-201">
+    <command xml:space="preserve">take rack</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-202"/>
+    </children>
+  </item>
+  <item nodeId="node-202">
+    <command xml:space="preserve">take all</command>
+    <result xml:space="preserve">There are none at all available!&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-203"/>
+    </children>
+  </item>
+  <item nodeId="node-203">
+    <command xml:space="preserve">examine heels</command>
+    <result xml:space="preserve">You see nothing special about the pair of women's heels.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-204">
+    <command xml:space="preserve">examine rack</command>
+    <result xml:space="preserve">On the shoe rack is a pair of women's heels.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-205"/>
+    </children>
+  </item>
+  <item nodeId="node-205">
+    <command xml:space="preserve">take heels</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-206"/>
+    </children>
+  </item>
+  <item nodeId="node-206">
+    <command xml:space="preserve">examine heels</command>
+    <result xml:space="preserve">The heels are made with black, shiny pleather. The heel is a high stilletto. Looking at them makes you feel pretty, and a little embarrassed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+  </item>
+  <item nodeId="node-228">
+    <command xml:space="preserve">examine mirror</command>
+    <result xml:space="preserve">Closer inspection reveals that it is not a mirror, but a picture of a mirror. You cannot see your reflection.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+  </item>
+  <item nodeId="node-229">
+    <command xml:space="preserve">examine painting</command>
+    <result xml:space="preserve">The woman is turned away. You cannot see her face.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+  </item>
+  <item nodeId="node-230">
+    <command xml:space="preserve">examine bar</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-231">
+    <command xml:space="preserve">take bar</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-232"/>
+    </children>
+  </item>
+  <item nodeId="node-232">
+    <command xml:space="preserve">take whiskey</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-233"/>
+    </children>
+  </item>
+  <item nodeId="node-233">
+    <command xml:space="preserve">examine whiskey</command>
+    <result xml:space="preserve">You see nothing special about the bottle of whiskey.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-234">
+    <command xml:space="preserve">examine gin</command>
+    <result xml:space="preserve">You see nothing special about the bottle of gin.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-235"/>
+    </children>
+  </item>
+  <item nodeId="node-235">
+    <command xml:space="preserve">take gin</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-236"/>
+    </children>
+  </item>
+  <item nodeId="node-236">
+    <command xml:space="preserve">examine gin</command>
+    <result xml:space="preserve">You see nothing special about the bottle of gin.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-237">
+    <command xml:space="preserve">examine whiskey</command>
+    <result xml:space="preserve">You hate whiskey.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-238"/>
+    </children>
+  </item>
+  <item nodeId="node-238">
+    <command xml:space="preserve">examine gin</command>
+    <result xml:space="preserve">You like gin.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-239"/>
+    </children>
+  </item>
+  <item nodeId="node-239">
+    <command xml:space="preserve">examine vodka</command>
+    <result xml:space="preserve">You hate vodka.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-240"/>
+    </children>
+  </item>
+  <item nodeId="node-240">
+    <command xml:space="preserve">examine lemon</command>
+    <result xml:space="preserve">You see nothing special about the lemon.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-241">
+    <command xml:space="preserve">examine lemon</command>
+    <result xml:space="preserve">If you think about it for too long, you can taste it.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-242">
+    <command xml:space="preserve">open closet</command>
+    <result xml:space="preserve">You open the closet.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-245"/>
+    </children>
+  </item>
+  <item nodeId="node-245">
+    <command xml:space="preserve">examine closet</command>
+    <result xml:space="preserve">The closet is empty.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-246"/>
+    </children>
+  </item>
+  <item nodeId="node-246">
+    <command xml:space="preserve">examine bed</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-243">
+    <command xml:space="preserve">examine closet</command>
+    <result xml:space="preserve">You see nothing special about the closet.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-244"/>
+    </children>
+  </item>
+  <item nodeId="node-244">
+    <command xml:space="preserve">open closet</command>
+    <result xml:space="preserve">It isn't something you can open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-247">
+    <command xml:space="preserve">examine bed</command>
+    <result xml:space="preserve">You see nothing special about the bed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-259">
+    <command xml:space="preserve">examine shoe rack</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-260">
+    <command xml:space="preserve">examine heels</command>
+    <result xml:space="preserve">The heels are made with black, shiny pleather. The heel is a high stilletto. Looking at them makes you feel pretty and a little embarrassed.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-261"/>
+    </children>
+  </item>
+  <item nodeId="node-261">
+    <command xml:space="preserve">take heels</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-262">
+    <command xml:space="preserve">examine night light</command>
+    <result xml:space="preserve">The night light is currently switched off.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
