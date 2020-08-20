@@ -20,8 +20,11 @@ The room [ROOM]
 	
 [REGION: Hallways]
 
-The Walls is a room.
-	"You step into the darkness, and become darkness. You must have lost consiousness because you awaken standing on a slab of concrete that is four foot square. Around you on every side are grey brick walls that stretch up indefinitely. Your fear resolves into a grim sense of familiarity, and a heavy burden lifts from your shoulders."
+The w-room is a room with the printed name "Walls".
+	"You step into the darkness, and you become darkness. You must have lost consiousness because you awaken standing on a slab of concrete that is four foot square. Around you on every side are grey brick walls that stretch upward indefinitely. Your fear resolves into a grim sense of familiarity, and a heavy burden lifts from your shoulders. You feel oddly at peace.".
+	The walls are here. The indefinite article is "the".
+	The walls is fixed in place.
+	The description of the walls is "The walls are unyielding."
 
 The Hallway is a room. 
 	"You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Each door has a sign beside it bearing a room number. There are two doors to your immediate left and right (east and west). There a door to the south, and something about it is deeply disquieting, ordinary as it looks. The walls are papered. The air feels unnaturally still here."
@@ -30,15 +33,16 @@ The Hallway is a room.
 
 The Room 126 
 	is east of the Hallway. 
-	The description of Room 126 is "The door opens to a room in darkness. You see nothing. The air is thick with uncertainty."
-	The room 126 is a dark room.
-	The uncertainty is here.
-		"You sense a great deal of uncertainty here."
-	The Room 126 is a dark room.
+	The description of Room 126 is "This is a small room."
+	In the Room 126 is a neuter animal called you.
+	the initial appearance of you is "You are the only thing here. ".
+	the description of you is "You are the only thing here.".
+	[The Room 126 is a dark room.]
+	[In the Room 126 is a neuter animal called nothing.]
 
 The Room 125 
 	is west of the Hallway. 
-		"You see nothing but the darkness."
+		"It is dark here. You see nothing but the darkness."
 	The darkness is here. " ".
 		The darkness is an opaque closed fixed in place openable container. 
 			The description of the darkness is "[if open]The yawning darkness is all around you.[otherwise]You look into the darkness. It feels as if it could open up." .
@@ -63,7 +67,7 @@ The Room 127 is west of the More Hallway.
 
 The Room 128 is east of the More Hallway.
 	"This is a square room with little ornamentation. You feel as if you shouldn't be here."
-	The black door is a door. it is north of the Room 128. Through it is the Walls.
+	The black door is a door. it is north of the Room 128. Through it is the w-room.
 	The black door is lockable and locked. The matching key of the black door is the black key.
 	The description of the black door is "It frightens you."
 	
@@ -78,6 +82,7 @@ The Room 130 is east of the Even More Hallway.
 		"This room is fully furnished, with a blue fainting couch, a grandfather clock, and a coffee table. All of the furniture is made of the same dark, rich wood that can be found throughout. On the wall there is a full-sized mirror, and a large painting of a woman."
 		The grandfather-clock is a fixed in place closed openable container.
 		Inside the grandfather-clock is a pendulum.
+		The description of the pendulum is "It is strangely familiar to you."
 		The grandfather-clock is here.
 			The initial appearance of the grandfather-clock is "There is a grandfather clock here."
 			The description of the grandfather-clock is "You try to read the clock, but you cannot make out the time. It doesn't matter though, because the clock is stopped, and the pendulum is not swinging."
@@ -106,19 +111,27 @@ The Room 129 is west of the Even More Hallway.
 	The night light is a device.
 		"[if switched on] The night light glows brightly.[otherwise] The night light is off."
 		The night light is here.
-			The player is here.
+	
 
 	
 
 The Yet More Hallway is north of the Even More Hallway. 
 	"You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Each door has a sign beside it bearing a room number. There are two doors to your immediate left and right (east and west). The walls are papered. You can see the end of the hallway to the north. "
+	
+The Room 131 is west of the Yet More Hallway.
+	"This room is completely dark."
+	In the Room 131 is a neuter animal called nothing.
+
+The Room 132 is east of the Yet More Hallway.
+	"This room is completely dark."
+	In the Room 132 is a neuter animal called something.
 
 The Hallway End is north of the Yet More Hallway. 
 	"The hallway seems to end here. There are doors to the north, east, and west. There is something deeply disquieting about the doorway to the north, ordinary as it appears.". 
 	
-The Trap Room is west of the Hallway End. 
+[The Trap Room is west of the Hallway End. 
 	"As you enter this room, the door behind you closes and locks."
-	East of the Trap room is nowhere.
+	East of the Trap room is nowhere.]
 
 [NAV SUBVERSION] The Hallway is north of the Hallway End.
 
