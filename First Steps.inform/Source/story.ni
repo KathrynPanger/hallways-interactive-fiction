@@ -25,35 +25,39 @@ The w-room is a room with the printed name "Walls".
 	The walls are here. The indefinite article is "the".
 	The walls is fixed in place.
 	The description of the walls is "The walls are unyielding."
+	
+
 
 The Hallway is a room. 
 	"You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Each door has a sign beside it bearing a room number. There are two doors to your immediate left and right (east and west). There a door to the south, and something about it is deeply disquieting, ordinary as it looks. The walls are papered. The air feels unnaturally still here."
-	The still air is here. 
-		" "
+		
 
-The Room 126 
+The Lonely Room 
 	is east of the Hallway. 
-	The description of Room 126 is "This is a small room."
-	In the Room 126 is a neuter animal called you.
+	The description of the Lonely Room is "This is a small room."
+	In The Lonely Room is a neuter animal called you.
 	the initial appearance of you is "You are the only thing here. ".
 	the description of you is "You are the only thing here.".
-	[The Room 126 is a dark room.]
-	[In the Room 126 is a neuter animal called nothing.]
+	The you carries a thing called your secret.
+	the description of your secret is "It's okay. No one knows your secret."
+	[The Lonely Room is a dark room.]
+	[In The Lonely Room is a neuter animal called nothing.]
 
-The Room 125 
-	is west of the Hallway. 
-		"It is dark here. You see nothing but the darkness."
+The d-room is a room with the printed name "Darkness."
+	The d-room is west of the Hallway.
+	The description of the d-room is "It is dark here. You see nothing but the darkness."
 	The darkness is here. " ".
 		The darkness is an opaque closed fixed in place openable container. 
 			The description of the darkness is "[if open]The yawning darkness is all around you.[otherwise]You look into the darkness. It feels as if it could open up." .
 			The black key is in the darkness.
 			The description of the black key is "It is a black key. It frightens you."
+
 		 
 
 The More Hallway is north of the Hallway. 
 	"You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Each door has a sign beside it bearing a room number. There are two doors to your immediate left and right (east and west). The walls are papered. "
 	
-The Room 127 is west of the More Hallway.
+The Foyer is west of the More Hallway.
 	"Despite being an isolated room in the middle of a hallway, this room appears to be a foyer. There is a small sofa and a shoe rack along the west wall. On the north wall, there is a clock. There is a staircase in the northeast corner leading down. The bottom of the stairs is in darkness, but you think you percieve the vague outline of a person there."
 	The sofa is here.
 	The sofa is scenery.
@@ -61,16 +65,22 @@ The Room 127 is west of the More Hallway.
 	The shoe rack is a fixed in place supporter.
 	The shoe rack is here.
 	The pair of women's heels is on the shoe rack.
+	The pair of women's heels is wearable.
 		The description of the heels is "The heels are made with black, shiny pleather. The heel is a high stilletto. Looking at them makes you feel pretty and a little embarrassed."
 
+The Stair Landing is northeast from the More Hallway.
+	"You are standing on the landing of a dark staircase."
+	The shadowy figure is here.
+	The shadowy figure is a person.
 
+	
 
-The Room 128 is east of the More Hallway.
+The You Shouldn’t Be Here  is east of the More Hallway.
 	"This is a square room with little ornamentation. You feel as if you shouldn't be here."
-	The black door is a door. it is north of the Room 128. Through it is the w-room.
+	The black door is a door. it is north of The You Shouldn’t Be Here . Through it is the w-room.
 	The black door is lockable and locked. The matching key of the black door is the black key.
 	The description of the black door is "It frightens you."
-	
+
 
 The Even More Hallway is north of the More Hallway. 
 	"You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Each door has a sign beside it bearing a room number. There are two doors to your immediate left and right (east and west). Near the east door, there is a spot on the wall where the wallpaper is peeling. You see a torn piece."
@@ -78,7 +88,7 @@ The Even More Hallway is north of the More Hallway.
 	The initial appearance of the torn piece is "A neat section of the blue damask wall paper has torn, revealing a patch of yellow beneath it. You admire the torn piece briefly."
 	The description of the torn piece is "A torn piece of wall paper hangs limply from the wall."
 	
-The Room 130 is east of the Even More Hallway.
+The Drinking Room is east of the Even More Hallway.
 		"This room is fully furnished, with a blue fainting couch, a grandfather clock, and a coffee table. All of the furniture is made of the same dark, rich wood that can be found throughout. On the wall there is a full-sized mirror, and a large painting of a woman."
 		The grandfather-clock is a fixed in place closed openable container.
 		Inside the grandfather-clock is a pendulum.
@@ -102,7 +112,7 @@ The Room 130 is east of the Even More Hallway.
 			"The woman is turned away. You cannot see her face."
 
 	
-The Room 129 is west of the Even More Hallway.
+The Bedroom is west of the Even More Hallway.
 	"This looks like a bedroom. There is a bed, a closet, and a mirror. There is also a small night light plugged into an outlet in the wall."
 	The bed is scenery. 
 		The bed is here.
@@ -118,13 +128,19 @@ The Room 129 is west of the Even More Hallway.
 The Yet More Hallway is north of the Even More Hallway. 
 	"You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Each door has a sign beside it bearing a room number. There are two doors to your immediate left and right (east and west). The walls are papered. You can see the end of the hallway to the north. "
 	
-The Room 131 is west of the Yet More Hallway.
+The Ordinary Room is west of the Yet More Hallway.
 	"This room is completely dark."
-	In the Room 131 is a neuter animal called nothing.
+	In the Ordinary Room is a neuter animal called nothing.
+							
 
-The Room 132 is east of the Yet More Hallway.
+
+The Extraordinary Room is east of the Yet More Hallway.
 	"This room is completely dark."
-	In the Room 132 is a neuter animal called something.
+	In the Extraordinary Room is a neuter animal called something.
+
+
+
+	
 
 The Hallway End is north of the Yet More Hallway. 
 	"The hallway seems to end here. There are doors to the north, east, and west. There is something deeply disquieting about the doorway to the north, ordinary as it appears.". 
@@ -136,7 +152,7 @@ The Hallway End is north of the Yet More Hallway.
 [NAV SUBVERSION] The Hallway is north of the Hallway End.
 
 The Outside Room is east of the Hallway End. 
-	"Opening the door reveals what at first looks to be a wide outdoor space filled with shrubs and grasses. A fog hangs in the air above you, obscuring the view upward. The illusion is broken by many white pillars holding up what must be a distant cieling. In the center of this large room is a small plastic house."
+	"Opening the door reveals what at first looks to be a wide outdoor space filled with shrubs and grasses. A fog hangs in the air above you, obscuring the view upward. The illusion is broken by many white pillars holding up what must be a distant cieling. In the east corner of this large room is a small plastic house."
 
 
 East of the Outside Room is the Play House. 
@@ -161,12 +177,7 @@ East of the Outside Room is the Play House.
 	The throw rug is scenery in the Play House.
 		"The throw rug is too big to lug around, but too small to sit on comfortably."
 
-
- 
-
-
-
-
+The player is here.
 
 
 The Dark Place is a region. Room 125 and Room 126 are in the Dark Place.
@@ -182,7 +193,7 @@ The wall paper is in the Corridors.
 The Dark Place is in the Corridors.
 
 [backdrops]
-The mirror is a backdrop. The mirror is in the Room 130 and the Room 129. 
+The mirror is a backdrop. The mirror is in The Drinking Room and the Bedroom. 
 	"Closer inspection reveals that it is not a mirror, but a picture of a mirror. You cannot see your reflection."
-The clock is a backdrop. The clock is in the Room 127.
-	The description of the clock is "A closer look reveals that it is not actually a clock, but a picture of a clock, firmly attached to the wall. You cannot read the time, because the clock has no hands."
+The clock is a backdrop. The clock is in The Foyer.
+	The description of the clock is "A closer look reveals that it is not actually a clock, but a picture of a clock firmly attached to the wall. You cannot make out the time in the picture."
