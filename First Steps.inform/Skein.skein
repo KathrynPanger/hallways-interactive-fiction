@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-88"/>
+  <activeNode nodeId="node-92"/>
   <item nodeId="node-1">
     <command xml:space="preserve">First Steps</command>
-    <result xml:space="preserve">Hallways&#x000A;An Interactive Fiction&#x000A;Release 1 / Serial number 200819 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Hallway End&#x000A;The hallway seems to end here. There are doors to the north, east, and west. There is something deeply unnerving about the doorway to the north, ordinary as it appears.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Hallways&#x000A;An Interactive Fiction&#x000A;Release 1 / Serial number 200819 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Even More Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Each door has a sign beside it bearing a room number. There are two doors to your immediate left and right (east and west).&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve">Hallway&#x000A;An Interactive Fiction&#x000A;Release 1 / Serial number 200818 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Hallway&#x000A;You are in a long hallway.  Identifcal doors are spaced regularly along the walls on either side. The air feels unnaturally still here.&#x000A;&#x000A;There is a door to the east.&#x000A;&#x000A;There is a door to the west.&#x000A;&#x000A;&gt;</commentary>
     <changed>YES</changed>
     <children>
@@ -24,6 +24,10 @@
       <child nodeId="node-65"/>
       <child nodeId="node-75"/>
       <child nodeId="node-80"/>
+      <child nodeId="node-89"/>
+      <child nodeId="node-90"/>
+      <child nodeId="node-91"/>
+      <child nodeId="node-92"/>
     </children>
   </item>
   <item nodeId="node-2">
@@ -170,7 +174,7 @@
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Trap Room&#x000A;As you enter this room, the door behind you closes and locks.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve">Nothing Room&#x000A;The door opens to a room in darkness. You step into the darkness and sense that there is nothing nearby.&#x000A;&#x000A;&gt;</commentary>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <children>
       <child nodeId="node-18"/>
       <child nodeId="node-20"/>
@@ -180,7 +184,7 @@
   </item>
   <item nodeId="node-18">
     <command xml:space="preserve">e</command>
-    <result xml:space="preserve">Hallway End&#x000A;The hallway seems to end here. There are doors to the north, east, and west. There is something deeply unnerving about the doorway to the north, ordinary as it appears.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>YES</changed>
     <children>
@@ -738,6 +742,30 @@
   <item nodeId="node-87">
     <command xml:space="preserve">cast spell</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-89">
+    <command xml:space="preserve">open toy box</command>
+    <result xml:space="preserve">It isn't something you can open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-90">
+    <command xml:space="preserve">take stove</command>
+    <result xml:space="preserve">That's fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-91">
+    <command xml:space="preserve">examine television</command>
+    <result xml:space="preserve">You see nothing special about the drawing of a television.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-92">
+    <command xml:space="preserve">examine wallpaper</command>
+    <result xml:space="preserve">The wallpaper is peeling here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
