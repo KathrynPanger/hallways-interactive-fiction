@@ -918,4 +918,53 @@
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
+    <key>131</key><dict>
+        <key>Filename</key><string>C:\Users\kathr\OneDrive\Documents\Inform\Extensions\gavin lambert\exit lister.i7x</string>
+        <key>Line</key><integer>1</integer>
+        <key>Title</key><string>Version 3/150417 of Exit Lister by Gavin Lambert begins here</string>
+        <key>Level</key><integer>0</integer>
+        <key>Indentation</key><integer>0</integer>
+    </dict>
+    <key>132</key><dict>
+        <key>Filename</key><string>C:\Users\kathr\OneDrive\Documents\Inform\Extensions\gavin lambert\exit lister.i7x</string>
+        <key>Line</key><integer>7</integer>
+        <key>Title</key><string>Section 1 - Text</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>133</key><dict>
+        <key>Filename</key><string>C:\Users\kathr\OneDrive\Documents\Inform\Extensions\gavin lambert\exit lister.i7x</string>
+        <key>Line</key><integer>15</integer>
+        <key>Title</key><string>Section 2 - Preferences</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>134</key><dict>
+        <key>Filename</key><string>C:\Users\kathr\OneDrive\Documents\Inform\Extensions\gavin lambert\exit lister.i7x</string>
+        <key>Line</key><integer>29</integer>
+        <key>Title</key><string>Section 3 - Listing Exits</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>135</key><dict>
+        <key>Filename</key><string>C:\Users\kathr\OneDrive\Documents\Inform\Extensions\gavin lambert\exit lister.i7x</string>
+        <key>Line</key><integer>85</integer>
+        <key>Title</key><string>Section 4 - Player Rules</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>136</key><dict>
+        <key>Filename</key><string>C:\Users\kathr\OneDrive\Documents\Inform\Extensions\gavin lambert\exit lister.i7x</string>
+        <key>Line</key><integer>106</integer>
+        <key>Title</key><string>Section 5a - Secret Doors (for use with Secret Doors by Andrew Owen)</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
+    <key>137</key><dict>
+        <key>Filename</key><string>C:\Users\kathr\OneDrive\Documents\Inform\Extensions\gavin lambert\exit lister.i7x</string>
+        <key>Line</key><integer>111</integer>
+        <key>Title</key><string>Section 5b - Secret Doors (for use with Secret Doors by Gavin Lambert)</string>
+        <key>Level</key><integer>5</integer>
+        <key>Indentation</key><integer>1</integer>
+    </dict>
 </dict></plist>
