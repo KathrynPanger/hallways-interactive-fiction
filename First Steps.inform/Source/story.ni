@@ -26,7 +26,7 @@ Include Secret Doors by Gavin Lambert.
 
 The w-room 
 	is a room with the printed name "Walls".
-	"You are standing on a slab of concrete that is four foot square. Around you on every side are grey brick walls that stretch upward indefinitely. Your fear resolves into a grim sense of familiarity, and a heavy burden lifts from your shoulders. You feel oddly at peace.".
+	"[if the evil_presence is on] [evil-description] [otherwise] You are standing on a slab of concrete that is four foot square. Around you on every side are grey brick walls that stretch upward indefinitely. Your fear resolves into a grim sense of familiarity, and a heavy burden lifts from your shoulders. You feel oddly at peace.".
 	The walls are here. The indefinite article is "the".
 	The walls is fixed in place.
 	The description of the walls is "The walls are unyielding."
@@ -50,7 +50,7 @@ The Foyer
 		"It is a small white fainting sofa, with much ornamentation. The apholstery is plush and pristine, as if never used before. It is fashioned with the same dark, rich wood that all of the furniture seems to be made from."
 	The shoe rack is a fixed in place supporter.
 	The shoe rack is here.
-	The pair of women's heels is on the shoe rack.
+	[The pair of women's heels is on the shoe rack.]
 	The pair of women's heels is wearable.
 		The description of the heels is "The heels are made with black, shiny pleather. The heel is a high stilletto. Looking at them makes you feel pretty and a little embarrassed.".
 
@@ -81,15 +81,10 @@ The Even More Hallway is north of the More Hallway.
 	The description of the torn piece is "A torn piece of wall paper hangs limply from the wall."
 	
 The Drinking Room is east of the Even More Hallway.
-		"This room is fully furnished, with a white fainting couch, a grandfather-clock, and a coffee table. All of the furniture is made of the same dark, rich wood that can be found throughout. On the wall there is a full-sized mirror and a large painting of a woman. In the northeast corner you can see a small metal gate stretched across a doorway. You think you can hear a faint ticking sound."
-		The grandfather-clock is a fixed in place closed openable container.
-		Inside the grandfather-clock is a pendulum.
-		The description of the pendulum is "It is strangely familiar to you."
-		The grandfather-clock is here.
-			The initial appearance of the grandfather-clock is "There is a grandfather-clock here."
-			The description of the grandfather-clock is "You try to read it, but you cannot make out the time. It doesn't matter though, because the clock is stopped, and the pendulum is not swinging."
+		"This room is fully furnished including a white fainting couch, a grandfather clock, and a coffee table. All of the furniture is made of the same dark, rich wood that can be found throughout. On the wall there is a full-sized mirror and a large painting of a woman. In the northeast corner you can see a small metal gate stretched across a doorway. You think you can hear a faint ticking sound."
+
 		The bar is here.
-			"There is a fully stocked bar in the corner. It is has a beautiful curved countertop, and many shelves of liqours reach to the cieling behind it. Almost all of the bottles are brand new and sealed."
+			"There is a fully stocked bar in the corner. It is has a beautiful curved countertop and many shelves of liqours which reach to the cieling behind it. Almost all of the bottles are brand new and sealed."
 		The bar is a supporter.
 			The bottle of whiskey is on the bar.
 				The description of the bottle of whiskey is "You hate whiskey."
@@ -99,6 +94,12 @@ The Drinking Room is east of the Even More Hallway.
 				The description of the bottle of gin is "You like gin."
 			The lemon is on the bar.
 				The description of the lemon is "If you think about it for too long, you can taste it."
+		The grandfather clock is a fixed in place closed openable container. the grandfather clock is here.
+			The initial appearance of the grandfather clock is "You can see a grandfather clock here."
+			The description of the grandfather clock is "You try to read it, but you cannot make out the time. It doesn't matter though, because the clock is stopped, and the pendulum is not swinging."
+			Inside the grandfather clock is a pendulum.
+			The description of the pendulum is "It is strangely familiar to you."
+			
 		The painting of a woman is scenery.
 		The painting of a woman is here.
 			"The woman is turned away. You cannot see her face."
@@ -110,29 +111,30 @@ The Drinking Room is east of the Even More Hallway.
 				"It is a small moveable metal gate, similar to those you have seen guarding elevators in old buildings. It could be easily pushed aside except that it is currently padlocked shut. Behind it is a narrow blue door left slightly ajar. You can see a small room behind it; possibly a closet. There is a sign on the gate that says: WARNING: MAINTENENCE ONLY."
 			
 The description of the Utility Closet is
-	"This is a cramped, narrow room full of dirty shelves and hardware. The main light source is a pair of florescent tubes which hum unpleasantly overhead. This is augmented by the sqeaking of your feet on the linoleum tiles below. There are many odds and ends on the shelves: scraps of unused wall paper, cans of paste, rollers, an empty bottle of bleach, picture-frames, and two broken clocks. None of these seem to  be useful to you. There is also a yellowed, paint-stained sink."
+	"This is a cramped, narrow room full of dirty shelves and hardware. The main light source is a pair of florescent tubes which hum unpleasantly overhead. This is augmented by the sqeaking of your feet on the linoleum tiles below. There are many odds and ends on the shelves: scraps of unused wall paper, cans of paste, rollers, an empty bottle of bleach, picture-frames, and two broken clocks. None of these seem to  be useful to you. There is also a yellowed, paint-stained sink.".
+
 	
 The Corner is east of the Utility Closet.
 	"You wade through the debris and shimmy yourself into the narrow east corner of the utility closet, where it is even dirtier. You notice that the floor is damp here and the linoleum warped. There must have been a disturbance recently, because a cracked can of paste has permanently glued a pile of shattered glass to the floor on the north side of the passage. Behind it is a dingy crawlspace door.".
-	the player is carrying the padlock key.
-	the player is here.
+
 	
 The broken glass is an unopenable door. The indefinite article is "some".
 The broken glass is north of the Corner and south of the Tanks.
 the description of the broken glass is "A pile of broken glass is glued to the floor, blocking the way north.".
 instead of going through a broken glass:
 	if the player is wearing the heels:
-		say "The high-heels protect your feet as you gingerly step over the broken glass."; 
-		try going west;
+		say "The high-heels protect your feet as you gingerly step over the broken glass.";
+		if the player is in the Corner:
+			now the player is in the Tanks;
+		otherwise:
+			now the player is in the Corner;
 	else:
-		say "the broken glass is too sharp for you to cross barefoot.".
-
-Rule for listing exits when the location is The Corner: say "You can go west to the Utility Closet. The path to the north is blocked by the broken glass."
+		say "the broken glass is too sharp for you to cross barefoot.";
 
 	
 The Tanks is a room.
 The description of the Tanks is
-	"You step through the crawlspace door, and are surprised to find that the passage opens up to a room that is much plainer and easier to navigate. Here, there are five metal tanks that come up to about shoalder height. They are evenly distributed against a red brick wall. Above each tank is a pipe leading to a valve, as if to fill it. Below each tank is a second valve, and pipes that lead into the floor below.".
+	"You step through the crawlspace door, and are surprised to find that the passage opens up to a room that is much plainer and easier to navigate. Here, there are five metal tanks that come up to about shoulder height. They are evenly distributed against a red brick wall. Above each tank is a pipe leading to a valve, as if to fill it. Below each tank is a second valve and pipes that lead into the floor below.".
 	The sign is a thing. The sign is here.
 		The initial appearance of the sign is "There is a sign above the fifth tank."
 		The description of the sign is "WARNING: THIS TANK WILL NOT EXIST.".
@@ -335,8 +337,9 @@ The wall paper is in the Corridors.
 [backdrops]
 The mirror is a backdrop. The mirror is in The Drinking Room and the Bedroom. 
 	"Closer inspection reveals that it is not a mirror, but a picture of a mirror. You cannot see your reflection."
-The clock is a backdrop. The clock is in The Foyer.
-	The description of the clock is "A closer look reveals that it is not actually a clock, but a picture of a clock firmly attached to the wall. You cannot make out the time in the picture."
+The wall clock is a backdrop. The wall clock is in The Foyer.
+	The description of the wall clock is "A closer look reveals that it is not actually a clock, but a picture of a clock firmly attached to the wall. You cannot make out the time in the picture.".
+
 
 
 [------------------------------------------------------------------------------------]	
@@ -345,3 +348,33 @@ The clock is a backdrop. The clock is in The Foyer.
 [BOOK CODE---------------------------------------------------------------------]
 
 [The mysterious book has a number called the last page read. The sinister book has a number called the length. The length of the sinister book is 3.]
+
+[exit rules]
+Rule for listing exits when the location is The Corner: say "You can go west to the Utility Closet. The path to the north is blocked by the broken glass."
+Rule for listing exits when the location is The Tanks: say "The path to the south is blocked by the broken glass."
+Rule for listing exits when evil_presence is on:
+	say "".
+
+[evil rules]
+evil is a kind of value. 
+The evil_presence is a evil that varies. 
+on is a evil. 
+off is a evil.
+the evil_presence is initially off.
+
+
+[evil room rules; use these to teleport items out of the game]
+the evil room is a room.
+the green button [replace this with whatever mechanism the player uses] is in the evil room.
+instead of pushing a green button:
+	now the evil_presence is on;
+	move the walls [replace this with whatever you want to get rid of] to the evil room.
+	[note that you could also change item names to something horrifying here. Like making the key a venomous snake or a disgusting blob of puss]
+
+[change these two values below to be something that varies when the evil part comes]
+Rule for printing the name of a room:
+	if the evil_presence is on, say "test";
+	omit contents in listing. 
+[remember to put an if-else conditional in every room description to use this]		
+To say evil-description:
+	say "test";
