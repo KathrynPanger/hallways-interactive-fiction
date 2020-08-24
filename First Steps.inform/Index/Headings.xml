@@ -967,4 +967,11 @@
         <key>Level</key><integer>5</integer>
         <key>Indentation</key><integer>1</integer>
     </dict>
+    <key>138</key><dict>
+        <key>Filename</key><string>C:\Users\kathr\OneDrive\Documents\Inform\Extensions\gavin lambert\secret doors.i7x</string>
+        <key>Line</key><integer>1</integer>
+        <key>Title</key><string>Version 1/150417 of Secret Doors by Gavin Lambert begins here</string>
+        <key>Level</key><integer>0</integer>
+        <key>Indentation</key><integer>0</integer>
+    </dict>
 </dict></plist>

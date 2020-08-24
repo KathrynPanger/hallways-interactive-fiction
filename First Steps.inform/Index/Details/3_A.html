@@ -276,7 +276,7 @@
             }
         }
         function showAllResp() {
-            for (var i=0;i<364;i++) {
+            for (var i=0;i<372;i++) {
                 showResp('extra'+(1000000+i), 'plus'+(1000000+i));
             }
         }
@@ -647,215 +647,101 @@
     on any clothing being dropped: unlisting this rule removes both this behaviour
     and also the requirement that clothes cannot simply be dropped.<p><hr><p><b>Typed commands leading to this action</b><p>
     <p class="hangingin2">&quot;put down [things preferably held]&quot;</p><p class="hangingin2">&quot;put [things preferably held] down&quot;</p><p class="hangingin2">&quot;drop/throw/discard [things preferably held]&quot;</p><p><b>Rules controlling this action</b></p><p>
-    <p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor dropping something which is part of the actor</i>&nbsp;&nbsp;<font color="#800000">can't drop body parts rule</font>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2447(code) {
+    <p class="hangingin2">before&nbsp;&nbsp;&nbsp;&nbsp;<i>doing something to a secret door which is unrevealed</i>&nbsp;&nbsp;&nbsp;<a href='inform://Extensions/Extensions/Gavin%20Lambert/Secret%20Doors.html' title="Secret Doors by Gavin Lambert" STYLE="text-decoration: none"><img border=0 src=inform:/doc_images/Revealext.png></a></p>
+    <p class="hangingin2">before&nbsp;&nbsp;&nbsp;&nbsp;<i>doing something to a secret switch which is unrevealed</i>&nbsp;&nbsp;&nbsp;<a href='inform://Extensions/Extensions/Gavin%20Lambert/Secret%20Doors.html' title="Secret Doors by Gavin Lambert" STYLE="text-decoration: none"><img border=0 src=inform:/doc_images/Revealext.png></a></p>
+    <p class="hangingin2">before&nbsp;&nbsp;&nbsp;&nbsp;<i>doing something when a secret door is the second noun and the second noun is unrevealed</i>&nbsp;&nbsp;&nbsp;<a href='inform://Extensions/Extensions/Gavin%20Lambert/Secret%20Doors.html' title="Secret Doors by Gavin Lambert" STYLE="text-decoration: none"><img border=0 src=inform:/doc_images/Revealext.png></a></p>
+    <p class="hangingin2">before&nbsp;&nbsp;&nbsp;&nbsp;<i>doing something when a secret switch is the second noun and the second noun is unrevealed</i>&nbsp;&nbsp;&nbsp;<a href='inform://Extensions/Extensions/Gavin%20Lambert/Secret%20Doors.html' title="Secret Doors by Gavin Lambert" STYLE="text-decoration: none"><img border=0 src=inform:/doc_images/Revealext.png></a></p>
+    <br><p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor dropping something which is part of the actor</i>&nbsp;&nbsp;<font color="#800000">can't drop body parts rule</font>&nbsp;&nbsp;<script language="JavaScript">
+    function pasteCode2461(code) {
         var myProject = project();
 
         myProject.selectView('source');
         myProject.pasteCode('can[=0x0027=]t drop body parts rule');
     }
     </script>
-    <a href="javascript:pasteCode2447()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
-    function pasteCode2448(code) {
+    <a href="javascript:pasteCode2461()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
+    function pasteCode2462(code) {
         var myProject = project();
 
         myProject.selectView('source');
         myProject.pasteCode('The can[=0x0027=]t drop body parts rule is not listed in the check dropping rulebook.[=0x000A=]');
     }
     </script>
-    <a href="javascript:pasteCode2448()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000078', 'plus1000078'); return false;"><img border=0 id="plus1000078" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
+    <a href="javascript:pasteCode2462()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000078', 'plus1000078'); return false;"><img border=0 id="plus1000078" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
     <div id="extra1000078" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[We] [can't drop] part of [ourselves]."</span>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2449(code) {
+    function pasteCode2463(code) {
         var myProject = project();
 
         myProject.selectView('source');
         myProject.pasteCode('can[=0x0027=]t drop body parts rule response (A)');
     }
     </script>
-    <a href="javascript:pasteCode2449()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
-    function pasteCode2450(code) {
+    <a href="javascript:pasteCode2463()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
+    function pasteCode2464(code) {
         var myProject = project();
 
         myProject.selectView('source');
         myProject.pasteCode('can[=0x0027=]t drop body parts rule response (A) is [=0x0022=]New text.[=0x0022=].');
     }
     </script>
-    <a href="javascript:pasteCode2450()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
+    <a href="javascript:pasteCode2464()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
     <p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor dropping</i>&nbsp;&nbsp;<font color="#800000">can't drop yourself rule</font>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2451(code) {
+    function pasteCode2465(code) {
         var myProject = project();
 
         myProject.selectView('source');
         myProject.pasteCode('can[=0x0027=]t drop yourself rule');
     }
     </script>
-    <a href="javascript:pasteCode2451()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
-    function pasteCode2452(code) {
+    <a href="javascript:pasteCode2465()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
+    function pasteCode2466(code) {
         var myProject = project();
 
         myProject.selectView('source');
         myProject.pasteCode('The can[=0x0027=]t drop yourself rule is not listed in the check dropping rulebook.[=0x000A=]');
     }
     </script>
-    <a href="javascript:pasteCode2452()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000077', 'plus1000077'); return false;"><img border=0 id="plus1000077" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
+    <a href="javascript:pasteCode2466()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000077', 'plus1000077'); return false;"><img border=0 id="plus1000077" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
     <div id="extra1000077" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[We] [lack] the dexterity."</span>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2453(code) {
+    function pasteCode2467(code) {
         var myProject = project();
 
         myProject.selectView('source');
         myProject.pasteCode('can[=0x0027=]t drop yourself rule response (A)');
     }
     </script>
-    <a href="javascript:pasteCode2453()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
-    function pasteCode2454(code) {
+    <a href="javascript:pasteCode2467()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
+    function pasteCode2468(code) {
         var myProject = project();
 
         myProject.selectView('source');
         myProject.pasteCode('can[=0x0027=]t drop yourself rule response (A) is [=0x0022=]New text.[=0x0022=].');
     }
     </script>
-    <a href="javascript:pasteCode2454()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
+    <a href="javascript:pasteCode2468()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
     <p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor dropping</i>&nbsp;&nbsp;<font color="#800000">can't drop what's already dropped rule</font>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2455(code) {
+    function pasteCode2469(code) {
         var myProject = project();
 
         myProject.selectView('source');
         myProject.pasteCode('can[=0x0027=]t drop what[=0x0027=]s already dropped rule');
     }
     </script>
-    <a href="javascript:pasteCode2455()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
-    function pasteCode2456(code) {
+    <a href="javascript:pasteCode2469()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
+    function pasteCode2470(code) {
         var myProject = project();
 
         myProject.selectView('source');
         myProject.pasteCode('The can[=0x0027=]t drop what[=0x0027=]s already dropped rule is not listed in the check dropping rulebook.[=0x000A=]');
     }
     </script>
-    <a href="javascript:pasteCode2456()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000079', 'plus1000079'); return false;"><img border=0 id="plus1000079" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
+    <a href="javascript:pasteCode2470()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000079', 'plus1000079'); return false;"><img border=0 id="plus1000079" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
     <div id="extra1000079" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[The noun] [are] already here."</span>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2457(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t drop what[=0x0027=]s already dropped rule response (A)');
-    }
-    </script>
-    <a href="javascript:pasteCode2457()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
-    function pasteCode2458(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t drop what[=0x0027=]s already dropped rule response (A) is [=0x0022=]New text.[=0x0022=].');
-    }
-    </script>
-    <a href="javascript:pasteCode2458()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
-    <p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor dropping</i>&nbsp;&nbsp;<font color="#800000">can't drop what's not held rule</font>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2459(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t drop what[=0x0027=]s not held rule');
-    }
-    </script>
-    <a href="javascript:pasteCode2459()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
-    function pasteCode2460(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('The can[=0x0027=]t drop what[=0x0027=]s not held rule is not listed in the check dropping rulebook.[=0x000A=]');
-    }
-    </script>
-    <a href="javascript:pasteCode2460()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000080', 'plus1000080'); return false;"><img border=0 id="plus1000080" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
-    <div id="extra1000080" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[We] [haven't] got [regarding the noun][those]."</span>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2461(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t drop what[=0x0027=]s not held rule response (A)');
-    }
-    </script>
-    <a href="javascript:pasteCode2461()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
-    function pasteCode2462(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t drop what[=0x0027=]s not held rule response (A) is [=0x0022=]New text.[=0x0022=].');
-    }
-    </script>
-    <a href="javascript:pasteCode2462()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
-    <p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor dropping</i>&nbsp;&nbsp;<font color="#800000">can't drop clothes being worn rule</font>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2463(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t drop clothes being worn rule');
-    }
-    </script>
-    <a href="javascript:pasteCode2463()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
-    function pasteCode2464(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('The can[=0x0027=]t drop clothes being worn rule is not listed in the check dropping rulebook.[=0x000A=]');
-    }
-    </script>
-    <a href="javascript:pasteCode2464()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000081', 'plus1000081'); return false;"><img border=0 id="plus1000081" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
-    <div id="extra1000081" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"(first taking [the noun] off)[command clarification break]"</span>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2465(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t drop clothes being worn rule response (A)');
-    }
-    </script>
-    <a href="javascript:pasteCode2465()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
-    function pasteCode2466(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t drop clothes being worn rule response (A) is [=0x0022=]New text.[=0x0022=].');
-    }
-    </script>
-    <a href="javascript:pasteCode2466()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
-    <p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor dropping</i>&nbsp;&nbsp;<font color="#800000">can't drop if this exceeds carrying capacity rule</font>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2467(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t drop if this exceeds carrying capacity rule');
-    }
-    </script>
-    <a href="javascript:pasteCode2467()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
-    function pasteCode2468(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('The can[=0x0027=]t drop if this exceeds carrying capacity rule is not listed in the check dropping rulebook.[=0x000A=]');
-    }
-    </script>
-    <a href="javascript:pasteCode2468()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000082', 'plus1000082'); return false;"><img border=0 id="plus1000082" src=inform:/doc_images/responses.png></a>&nbsp;2</p>
-    <div id="extra1000082" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[There] [are] no more room on [the receptacle]."</span>&nbsp;&nbsp;<script language="JavaScript">
-    function pasteCode2469(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t drop if this exceeds carrying capacity rule response (A)');
-    }
-    </script>
-    <a href="javascript:pasteCode2469()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
-    function pasteCode2470(code) {
-        var myProject = project();
-
-        myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t drop if this exceeds carrying capacity rule response (A) is [=0x0022=]New text.[=0x0022=].');
-    }
-    </script>
-    <a href="javascript:pasteCode2470()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i><br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;B&nbsp;&nbsp;</span> <span style="color: #000066;">"[There] [are] no more room in [the receptacle]."</span>&nbsp;&nbsp;<script language="JavaScript">
     function pasteCode2471(code) {
         var myProject = project();
 
         myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t drop if this exceeds carrying capacity rule response (B)');
+        myProject.pasteCode('can[=0x0027=]t drop what[=0x0027=]s already dropped rule response (A)');
     }
     </script>
     <a href="javascript:pasteCode2471()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
@@ -863,16 +749,16 @@
         var myProject = project();
 
         myProject.selectView('source');
-        myProject.pasteCode('can[=0x0027=]t drop if this exceeds carrying capacity rule response (B) is [=0x0022=]New text.[=0x0022=].');
+        myProject.pasteCode('can[=0x0027=]t drop what[=0x0027=]s already dropped rule response (A) is [=0x0022=]New text.[=0x0022=].');
     }
     </script>
     <a href="javascript:pasteCode2472()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
-    <br><p class="hangingin2">carry out&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor dropping</i>&nbsp;&nbsp;<font color="#800000">standard dropping rule</font>&nbsp;&nbsp;<script language="JavaScript">
+    <p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor dropping</i>&nbsp;&nbsp;<font color="#800000">can't drop what's not held rule</font>&nbsp;&nbsp;<script language="JavaScript">
     function pasteCode2473(code) {
         var myProject = project();
 
         myProject.selectView('source');
-        myProject.pasteCode('standard dropping rule');
+        myProject.pasteCode('can[=0x0027=]t drop what[=0x0027=]s not held rule');
     }
     </script>
     <a href="javascript:pasteCode2473()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
@@ -880,49 +766,50 @@
         var myProject = project();
 
         myProject.selectView('source');
-        myProject.pasteCode('The standard dropping rule is not listed in the carry out dropping rulebook.[=0x000A=]');
+        myProject.pasteCode('The can[=0x0027=]t drop what[=0x0027=]s not held rule is not listed in the check dropping rulebook.[=0x000A=]');
     }
     </script>
-    <a href="javascript:pasteCode2474()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
-    <br><p class="hangingin2">report&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor dropping</i>&nbsp;&nbsp;<font color="#800000">standard report dropping rule</font>&nbsp;&nbsp;<script language="JavaScript">
+    <a href="javascript:pasteCode2474()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000080', 'plus1000080'); return false;"><img border=0 id="plus1000080" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
+    <div id="extra1000080" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[We] [haven't] got [regarding the noun][those]."</span>&nbsp;&nbsp;<script language="JavaScript">
     function pasteCode2475(code) {
         var myProject = project();
 
         myProject.selectView('source');
-        myProject.pasteCode('standard report dropping rule');
+        myProject.pasteCode('can[=0x0027=]t drop what[=0x0027=]s not held rule response (A)');
     }
     </script>
-    <a href="javascript:pasteCode2475()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
+    <a href="javascript:pasteCode2475()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
     function pasteCode2476(code) {
         var myProject = project();
 
         myProject.selectView('source');
-        myProject.pasteCode('The standard report dropping rule is not listed in the report dropping rulebook.[=0x000A=]');
+        myProject.pasteCode('can[=0x0027=]t drop what[=0x0027=]s not held rule response (A) is [=0x0022=]New text.[=0x0022=].');
     }
     </script>
-    <a href="javascript:pasteCode2476()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000084', 'plus1000084'); return false;"><img border=0 id="plus1000084" src=inform:/doc_images/responses.png></a>&nbsp;2</p>
-    <div id="extra1000084" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"Dropped."</span>&nbsp;&nbsp;<script language="JavaScript">
+    <a href="javascript:pasteCode2476()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
+    <p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor dropping</i>&nbsp;&nbsp;<font color="#800000">can't drop clothes being worn rule</font>&nbsp;&nbsp;<script language="JavaScript">
     function pasteCode2477(code) {
         var myProject = project();
 
         myProject.selectView('source');
-        myProject.pasteCode('standard report dropping rule response (A)');
+        myProject.pasteCode('can[=0x0027=]t drop clothes being worn rule');
     }
     </script>
-    <a href="javascript:pasteCode2477()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
+    <a href="javascript:pasteCode2477()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
     function pasteCode2478(code) {
         var myProject = project();
 
         myProject.selectView('source');
-        myProject.pasteCode('standard report dropping rule response (A) is [=0x0022=]New text.[=0x0022=].');
+        myProject.pasteCode('The can[=0x0027=]t drop clothes being worn rule is not listed in the check dropping rulebook.[=0x000A=]');
     }
     </script>
-    <a href="javascript:pasteCode2478()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i><br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;B&nbsp;&nbsp;</span> <span style="color: #000066;">"[The actor] [put] down [the noun]."</span>&nbsp;&nbsp;<script language="JavaScript">
+    <a href="javascript:pasteCode2478()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000081', 'plus1000081'); return false;"><img border=0 id="plus1000081" src=inform:/doc_images/responses.png></a>&nbsp;1</p>
+    <div id="extra1000081" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"(first taking [the noun] off)[command clarification break]"</span>&nbsp;&nbsp;<script language="JavaScript">
     function pasteCode2479(code) {
         var myProject = project();
 
         myProject.selectView('source');
-        myProject.pasteCode('standard report dropping rule response (B)');
+        myProject.pasteCode('can[=0x0027=]t drop clothes being worn rule response (A)');
     }
     </script>
     <a href="javascript:pasteCode2479()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
@@ -930,10 +817,127 @@
         var myProject = project();
 
         myProject.selectView('source');
-        myProject.pasteCode('standard report dropping rule response (B) is [=0x0022=]New text.[=0x0022=].');
+        myProject.pasteCode('can[=0x0027=]t drop clothes being worn rule response (A) is [=0x0022=]New text.[=0x0022=].');
     }
     </script>
     <a href="javascript:pasteCode2480()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
+    <p class="hangingin2">check&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor dropping</i>&nbsp;&nbsp;<font color="#800000">can't drop if this exceeds carrying capacity rule</font>&nbsp;&nbsp;<script language="JavaScript">
+    function pasteCode2481(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('can[=0x0027=]t drop if this exceeds carrying capacity rule');
+    }
+    </script>
+    <a href="javascript:pasteCode2481()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
+    function pasteCode2482(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('The can[=0x0027=]t drop if this exceeds carrying capacity rule is not listed in the check dropping rulebook.[=0x000A=]');
+    }
+    </script>
+    <a href="javascript:pasteCode2482()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000082', 'plus1000082'); return false;"><img border=0 id="plus1000082" src=inform:/doc_images/responses.png></a>&nbsp;2</p>
+    <div id="extra1000082" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"[There] [are] no more room on [the receptacle]."</span>&nbsp;&nbsp;<script language="JavaScript">
+    function pasteCode2483(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('can[=0x0027=]t drop if this exceeds carrying capacity rule response (A)');
+    }
+    </script>
+    <a href="javascript:pasteCode2483()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
+    function pasteCode2484(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('can[=0x0027=]t drop if this exceeds carrying capacity rule response (A) is [=0x0022=]New text.[=0x0022=].');
+    }
+    </script>
+    <a href="javascript:pasteCode2484()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i><br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;B&nbsp;&nbsp;</span> <span style="color: #000066;">"[There] [are] no more room in [the receptacle]."</span>&nbsp;&nbsp;<script language="JavaScript">
+    function pasteCode2485(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('can[=0x0027=]t drop if this exceeds carrying capacity rule response (B)');
+    }
+    </script>
+    <a href="javascript:pasteCode2485()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
+    function pasteCode2486(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('can[=0x0027=]t drop if this exceeds carrying capacity rule response (B) is [=0x0022=]New text.[=0x0022=].');
+    }
+    </script>
+    <a href="javascript:pasteCode2486()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
+    <br><p class="hangingin2">carry out&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor dropping</i>&nbsp;&nbsp;<font color="#800000">standard dropping rule</font>&nbsp;&nbsp;<script language="JavaScript">
+    function pasteCode2487(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('standard dropping rule');
+    }
+    </script>
+    <a href="javascript:pasteCode2487()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
+    function pasteCode2488(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('The standard dropping rule is not listed in the carry out dropping rulebook.[=0x000A=]');
+    }
+    </script>
+    <a href="javascript:pasteCode2488()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i></p>
+    <br><p class="hangingin2">report&nbsp;&nbsp;&nbsp;&nbsp;<i>an actor dropping</i>&nbsp;&nbsp;<font color="#800000">standard report dropping rule</font>&nbsp;&nbsp;<script language="JavaScript">
+    function pasteCode2489(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('standard report dropping rule');
+    }
+    </script>
+    <a href="javascript:pasteCode2489()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i> <script language="JavaScript">
+    function pasteCode2490(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('The standard report dropping rule is not listed in the report dropping rulebook.[=0x000A=]');
+    }
+    </script>
+    <a href="javascript:pasteCode2490()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>unlist</i>&nbsp;&nbsp;<a href="#" onclick="showResp('extra1000084', 'plus1000084'); return false;"><img border=0 id="plus1000084" src=inform:/doc_images/responses.png></a>&nbsp;2</p>
+    <div id="extra1000084" style="display: none;"><p class="in2">&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;A&nbsp;&nbsp;</span> <span style="color: #000066;">"Dropped."</span>&nbsp;&nbsp;<script language="JavaScript">
+    function pasteCode2491(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('standard report dropping rule response (A)');
+    }
+    </script>
+    <a href="javascript:pasteCode2491()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
+    function pasteCode2492(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('standard report dropping rule response (A) is [=0x0022=]New text.[=0x0022=].');
+    }
+    </script>
+    <a href="javascript:pasteCode2492()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i><br>&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffffff; font-family: 'Courier New', Courier, monospace; background-color: #8080ff;">&nbsp;&nbsp;B&nbsp;&nbsp;</span> <span style="color: #000066;">"[The actor] [put] down [the noun]."</span>&nbsp;&nbsp;<script language="JavaScript">
+    function pasteCode2493(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('standard report dropping rule response (B)');
+    }
+    </script>
+    <a href="javascript:pasteCode2493()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>name</i>&nbsp;<script language="JavaScript">
+    function pasteCode2494(code) {
+        var myProject = project();
+
+        myProject.selectView('source');
+        myProject.pasteCode('standard report dropping rule response (B) is [=0x0022=]New text.[=0x0022=].');
+    }
+    </script>
+    <a href="javascript:pasteCode2494()"><img border=0 src=inform:/doc_images/paste.png></a>&nbsp;<i>set</i></div>
     <br>Click on the speech-bubble icons to see the responses, or here to see all of them:&nbsp;<a href="#" onclick="showAllResp(); return false;"><img border=0 src=inform:/doc_images/responses.png></a>&nbsp;9</p>
     <!--CONTENT ENDS-->
     </font>

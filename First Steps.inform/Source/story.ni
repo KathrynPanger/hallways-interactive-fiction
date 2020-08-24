@@ -21,11 +21,12 @@ The room [ROOM]
 [REGION: Hallways]
 
 Include Exit Lister by Gavin Lambert.
+Include Secret Doors by Gavin Lambert.
 
 
 The w-room 
 	is a room with the printed name "Walls".
-	"You step into the darkness, and you become darkness. You must have lost consiousness because you awaken standing on a slab of concrete that is four foot square. Around you on every side are grey brick walls that stretch upward indefinitely. Your fear resolves into a grim sense of familiarity, and a heavy burden lifts from your shoulders. You feel oddly at peace.".
+	"You are standing on a slab of concrete that is four foot square. Around you on every side are grey brick walls that stretch upward indefinitely. Your fear resolves into a grim sense of familiarity, and a heavy burden lifts from your shoulders. You feel oddly at peace.".
 	The walls are here. The indefinite article is "the".
 	The walls is fixed in place.
 	The description of the walls is "The walls are unyielding."
@@ -51,7 +52,9 @@ The Foyer
 	The shoe rack is here.
 	The pair of women's heels is on the shoe rack.
 	The pair of women's heels is wearable.
-		The description of the heels is "The heels are made with black, shiny pleather. The heel is a high stilletto. Looking at them makes you feel pretty and a little embarrassed."
+		The description of the heels is "The heels are made with black, shiny pleather. The heel is a high stilletto. Looking at them makes you feel pretty and a little embarrassed.".
+
+
 
 The Stair Landing 
 	is northwest from the Foyer.
@@ -60,12 +63,14 @@ The Stair Landing
 	The shadowy figure is a person.
 
 
+
 The Place Where you Shouldn't Be  
 	is east of the More Hallway.
 	"This is a square room with little ornamentation. You feel as if you shouldn't be here."
 	The black door is a door. it is north of The Place Where you Shouldn't Be. Through it is the w-room.
 	The black door is lockable and locked. The matching key of the black door is the black key.
 	The description of the black door is "It frightens you.".
+	
 
 
 
@@ -108,9 +113,24 @@ The description of the Utility Closet is
 	"This is a cramped, narrow room full of dirty shelves and hardware. The main light source is a pair of florescent tubes which hum unpleasantly overhead. This is augmented by the sqeaking of your feet on the linoleum tiles below. There are many odds and ends on the shelves: scraps of unused wall paper, cans of paste, rollers, an empty bottle of bleach, picture-frames, and two broken clocks. None of these seem to  be useful to you. There is also a yellowed, paint-stained sink."
 	
 The Corner is east of the Utility Closet.
-	"You gingerly step over the debris and shimmy yourself into the narrow east corner of the utility closet. Here the room is even dirtier. The air is thick with dust, and a musty smell pervades the air. The floor is damp, and the linoleum is warped. You are overcome with an oppressive feeling, as if the room were trying to get rid of you. To the north there is a small door, as if for a crawlspace."
+	"You wade through the debris and shimmy yourself into the narrow east corner of the utility closet, where it is even dirtier. You notice that the floor is damp here and the linoleum warped. There must have been a disturbance recently, because a cracked can of paste has permanently glued a pile of shattered glass to the floor on the north side of the passage. Behind it is a dingy crawlspace door.".
+	the player is carrying the padlock key.
+	the player is here.
 	
-The Tanks are north of the Corner.
+The broken glass is an unopenable door. The indefinite article is "some".
+The broken glass is north of the Corner and south of the Tanks.
+the description of the broken glass is "A pile of broken glass is glued to the floor, blocking the way north.".
+instead of going through a broken glass:
+	if the player is wearing the heels:
+		say "The high-heels protect your feet as you gingerly step over the broken glass."; 
+		try going west;
+	else:
+		say "the broken glass is too sharp for you to cross barefoot.".
+
+Rule for listing exits when the location is The Corner: say "You can go west to the Utility Closet. The path to the north is blocked by the broken glass."
+
+	
+The Tanks is a room.
 The description of the Tanks is
 	"You step through the crawlspace door, and are surprised to find that the passage opens up to a room that is much plainer and easier to navigate. Here, there are five metal tanks that come up to about shoalder height. They are evenly distributed against a red brick wall. Above each tank is a pipe leading to a valve, as if to fill it. Below each tank is a second valve, and pipes that lead into the floor below.".
 	The sign is a thing. The sign is here.
@@ -132,10 +152,10 @@ The Bedroom is west of the Even More Hallway.
 The Yet More Hallway is north of the Even More Hallway. 
 	"You are in a long hallway.  Identical doors are spaced regularly along the walls on either side.  Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallway an unnderving air of false comfort, with vauge suggestions of austerity. You can see the end of the hallway to the north. ".
 
-[strange zone start]	
+[Mall zone start]	
 
 The Old Mall is west of the Yet More Hallway.
-	"The hallway opens up into what appears to be an empty shopping mall. There is a high domed cieling with skylights overhead. The floor transitions from the carpeted hallway to over-large tan octagonal tiles. They air is cool here and slightly more humid, as if there were a water source nearby. You think you may even hear the distant trickle of water. A few small trees can be seen in planters, spaced decoratively. In contrast to the tense and silent hallway, This space is pleasant and serene. You can see the entrance to several shops. The Ordinary Shop is to the northeast, the Extraordinary Shop is to the northwest, and The Lonely and Dark stores are to the east and west respectively."
+	"The hallway opens up into what appears to be an empty shopping mall. There is a high domed cieling with skylights overhead. The floor transitions from the carpeted hallway to over-large tan octagonal tiles. They air is cool here and slightly more humid, as if there were a water source nearby. You think you may even hear the distant trickle of water. A few small trees can be seen in planters, spaced decoratively. In contrast to the tense and silent hallway, This space is pleasant and serene. You can see the entrance to several shops. The Ordinary Shop is to the northeast, the Extraordinary Shop is to the northwest, and The Lonely and Dark stores are to the east and west respectively. There is also an escalator leading up to a second floor."
 
 The Ordinary Room is north of the Old Mall.
 	"This room is completely dark."
@@ -167,7 +187,7 @@ The d-room
 			The description of the black key is "It is a black key. It frightens you.".
 
 	
-
+Up from the old mall is Second Floor Landing.
 
 
 
@@ -182,6 +202,8 @@ The Hallway End is north of the Yet More Hallway.
 Color is a kind of value. 
 The wall_color is a color that varies. 
 yellow is a color. 
+burgundy is a color.
+mauve is a color.
 The wall_color is initially yellow.
 
 [mazelands]
@@ -213,8 +235,7 @@ The Empty Corridor is west of the Hallway End.
 		the maze5 is a maze.
 	the maze6 is north of maze5.
 		the maze6 is a maze.
-
-					
+		
 
 [other rooms]
 	the maze7 is south of maze10.
@@ -237,23 +258,39 @@ Instead of pushing an on/off button which is part of a device (called the machin
 	else:
 		try switching off the machine.
 
+	.
 
+
+
+A wall_changing button is a kind of device. 
+Instead of pushing a wall_changing button which is part of a device (called the machine):
+	If the machine is switched on:
+		if the wall_color is not burgundy:
+			say "You hear a terrible whirring sound and feel a passing wave of nausia.";
+			now the wall_color is burgundy;
+		else:
+			say "Nothing seems to have happened.";
+	else:
+		say "nothing seems to have happened"
 		
 The m-room is a  room with the printed name "Machine Room".
 	the m-room is west of the maze6.
 	The machine is a device.
 	The machine is here.
-		"There is a blue button and a red button on the machine."
-	The red button is an on/off button.
+		"There is a grey button, a red button, and a red lever on the machine."
+	The grey button is an on/off button.
+	The grey button is part of the machine.
+		the grey button  is a fixed in place device.
+	The red button is an wall_changing button.
 	The red button is part of the machine.
-		the red button  is a fixed in place device.
-	The blue button is part of the machine.
-		the blue button is a fixed in place device.
-		the player is here.
+		the red button is a fixed in place device.
 	The red lever is part of the machine.
 		The red lever is a fixed in place device. 
 		Instead of pushing a red lever: try switching on the red lever.
 		Instead of pulling a red lever: try switching off the red lever.
+[red lever code]
+
+
 
 
 [NAV SUBVERSION] The Hallway is north of the Hallway End.
@@ -283,8 +320,6 @@ East of the Outside Room is the Play House.
 		"It's a comfy looking chair, but it is too small to sit on."
 	The throw rug is scenery in the Play House.
 		"The throw rug is too big to lug around, but too small to sit on comfortably."
-
-
 
 
 
