@@ -25,8 +25,8 @@ Include Secret Doors by Gavin Lambert.
 
 
 The w-room 
-	is a room with the printed name "Walls".
-	"[if the evil_presence is on] [evil-description] [otherwise] You are standing on a slab of concrete that is four foot square. Around you on every side are grey brick walls that stretch upward indefinitely. Your fear resolves into a grim sense of familiarity, and a heavy burden lifts from your shoulders. You feel oddly at peace.".
+	is a room with the printed name "[if the evil_presence is off]Walls [otherwise] [evil-printname]".
+	"[if the evil_presence is on] [evil-description] [otherwise]You are standing on a slab of concrete that is four foot square. Around you on every side are grey brick walls that stretch upward indefinitely. Your fear resolves into a grim sense of familiarity, and a heavy burden lifts from your shoulders. You feel oddly at peace.".
 	The walls are here. The indefinite article is "the".
 	The walls is fixed in place.
 	The description of the walls is "The walls are unyielding."
@@ -53,15 +53,30 @@ The Foyer
 	[The pair of women's heels is on the shoe rack.]
 	The pair of women's heels is wearable.
 		The description of the heels is "The heels are made with black, shiny pleather. The heel is a high stilletto. Looking at them makes you feel pretty and a little embarrassed.".
-
+		
 
 
 The Stair Landing 
 	is northwest from the Foyer.
-	"You are standing on the landing of a dark staircase."
 	The shadowy figure is here.
 	The shadowy figure is a person.
+	The staircase is a thing.
+	The staircase is fixed in place.
+	the staircase is here.
+	The description of the staircase is "The stairway is inexplicibly horrifying to you; it conjures up thoughts too terrible to acknowledge and twisted memories of unnameable deeds. Looking at them makes you feel ill, but you are drawn to them. You know that you must follow them down.".
 
+
+instead of going down:
+	if  is_drunk is drunk_false:
+		say "There is something terrible about the staircase that chills you to the core. As you take your first step down, you are overcome with waves of fear and weakness. Unnameable images flash through your mind. You gasp for breath, but there is no air. Darkness consumes you as your body falls limp into the void.";
+		now the player is in the w-room;
+	otherwise:
+		say "Normally, descending the stairs would terrify you, but you are pleasantly numb to your feelings, you find that it is easy to descend the stairs.";
+		now the player is in the Bottom of the Stairs;
+	
+
+The Bottom of the Stairs
+	is down from the Stair Landing.
 
 
 The Place Where you Shouldn't Be  
@@ -89,9 +104,10 @@ The Drinking Room is east of the Even More Hallway.
 			The bottle of whiskey is on the bar.
 				The description of the bottle of whiskey is "You hate whiskey."
 			The bottle of vodka is on the bar.
-				The description of the bottle of vodka is "You hate vodka."
-			The bottle of gin is on the bar.
+				The description of the bottle of vodka is "You hate vodka.".
+			the bottle of gin is on the bar.
 				The description of the bottle of gin is "You like gin."
+				[the bottle of gin is drinkable.]
 			The lemon is on the bar.
 				The description of the lemon is "If you think about it for too long, you can taste it."
 		The grandfather clock is a fixed in place closed openable container. the grandfather clock is here.
@@ -111,11 +127,13 @@ The Drinking Room is east of the Even More Hallway.
 				"It is a small moveable metal gate, similar to those you have seen guarding elevators in old buildings. It could be easily pushed aside except that it is currently padlocked shut. Behind it is a narrow blue door left slightly ajar. You can see a small room behind it; possibly a closet. There is a sign on the gate that says: WARNING: MAINTENENCE ONLY."
 			
 The description of the Utility Closet is
-	"This is a cramped, narrow room full of dirty shelves and hardware. The main light source is a pair of florescent tubes which hum unpleasantly overhead. This is augmented by the sqeaking of your feet on the linoleum tiles below. There are many odds and ends on the shelves: scraps of unused wall paper, cans of paste, rollers, an empty bottle of bleach, picture-frames, and two broken clocks. None of these seem to  be useful to you. There is also a yellowed, paint-stained sink.".
+	"This is a cramped, narrow room full of dirty shelves and hardware. The main light source is a pair of florescent tubes which hum unpleasantly overhead; a sound which is augmented by the sqeaking of your feet on the linoleum tiles below. There are many odds and ends on the shelves: scraps of unused wall paper, cans of paste, rollers, an empty bottle of bleach, picture-frames, and two broken clocks. None of these seem useful to you. There is also a yellowed, paint-stained sink.".
 
 	
 The Corner is east of the Utility Closet.
 	"You wade through the debris and shimmy yourself into the narrow east corner of the utility closet, where it is even dirtier. You notice that the floor is damp here and the linoleum warped. There must have been a disturbance recently, because a cracked can of paste has permanently glued a pile of shattered glass to the floor on the north side of the passage. Behind it is a dingy crawlspace door.".
+	the player is here.
+	the player is carrying the heels.
 
 	
 The broken glass is an unopenable door. The indefinite article is "some".
@@ -129,8 +147,9 @@ instead of going through a broken glass:
 		otherwise:
 			now the player is in the Corner;
 	else:
-		say "the broken glass is too sharp for you to cross barefoot.";
+		say "The broken glass is too sharp for you to cross barefoot.";
 
+After wearing the heels, say "You climb into the patent leather heels and strap them to your feet. They shine pleasantly. You feel pretty, and a little embarrased."
 	
 The Tanks is a room.
 The description of the Tanks is
@@ -138,6 +157,7 @@ The description of the Tanks is
 	The sign is a thing. The sign is here.
 		The initial appearance of the sign is "There is a sign above the fifth tank."
 		The description of the sign is "WARNING: THIS TANK WILL NOT EXIST.".
+	
 	
 	
 The Bedroom is west of the Even More Hallway.
@@ -149,7 +169,12 @@ The Bedroom is west of the Even More Hallway.
 	The night light is a device.
 		"[if switched on] The night light glows brightly.[otherwise] The night light is off."
 		The night light is here.
-	
+	The cabinet is an opaque closed openable fixed in place container.
+	The cabinet is here.
+		The description of the cabinet is 
+			"It is a small unassuming cabinet made of white wood. In spite of its plainness, it exhudes a strange, foreboding aura."
+		Instead of opening the cabinet, say "As you reach for the cabinet, you realize that you cannot touch it. Your hand falls to your side.".
+
 
 The Yet More Hallway is north of the Even More Hallway. 
 	"You are in a long hallway.  Identical doors are spaced regularly along the walls on either side.  Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallway an unnderving air of false comfort, with vauge suggestions of austerity. You can see the end of the hallway to the north. ".
@@ -157,7 +182,7 @@ The Yet More Hallway is north of the Even More Hallway.
 [Mall zone start]	
 
 The Old Mall is west of the Yet More Hallway.
-	"The hallway opens up into what appears to be an empty shopping mall. There is a high domed cieling with skylights overhead. The floor transitions from the carpeted hallway to over-large tan octagonal tiles. They air is cool here and slightly more humid, as if there were a water source nearby. You think you may even hear the distant trickle of water. A few small trees can be seen in planters, spaced decoratively. In contrast to the tense and silent hallway, This space is pleasant and serene. You can see the entrance to several shops. The Ordinary Shop is to the northeast, the Extraordinary Shop is to the northwest, and The Lonely and Dark stores are to the east and west respectively. There is also an escalator leading up to a second floor."
+	"The hallway opens up into what appears to be an empty shopping mall. There is a high domed cieling with skylights overhead. The floor transitions from the carpeted hallway to over-large tan octagonal tiles. They air is cool here and slightly more humid, as if there were a water source nearby. You think you may even hear the distant trickle of water. A few small trees can be seen in planters, spaced decoratively. In contrast to the tense and silent hallway, this space is pleasant and serene. You can see the entrance to several shops. The Ordinary Shop is to the northeast, the Extraordinary Shop is to the northwest, and The Lonely and Dark stores are to the east and west respectively. There is also an escalator leading up to a second floor."
 
 The Ordinary Room is north of the Old Mall.
 	"This room is completely dark."
@@ -187,6 +212,10 @@ The d-room
 			The description of the darkness is "[if open]The yawning darkness is all around you.[otherwise]You gaze into the darkness. It feels as if it could open up." .
 			The black key is in the darkness.
 			The description of the black key is "It is a black key. It frightens you.".
+			After taking the black key, say "As you take the key, you are breifly overcome by a wave of vertigo. A knot forms in your stomach, and you have the terrible feeling that you have taken something which does not belong to you.".
+			
+			
+
 
 	
 Up from the old mall is Second Floor Landing.
@@ -259,11 +288,6 @@ Instead of pushing an on/off button which is part of a device (called the machin
 		try switching on the machine; 
 	else:
 		try switching off the machine.
-
-	.
-
-
-
 A wall_changing button is a kind of device. 
 Instead of pushing a wall_changing button which is part of a device (called the machine):
 	If the machine is switched on:
@@ -273,7 +297,7 @@ Instead of pushing a wall_changing button which is part of a device (called the 
 		else:
 			say "Nothing seems to have happened.";
 	else:
-		say "nothing seems to have happened"
+		say "Nothing seems to have happened"
 		
 The m-room is a  room with the printed name "Machine Room".
 	the m-room is west of the maze6.
@@ -298,12 +322,18 @@ The m-room is a  room with the printed name "Machine Room".
 [NAV SUBVERSION] The Hallway is north of the Hallway End.
 
 The Outside Room is east of the Hallway End. 
-	"Opening the door reveals what at first looks to be a wide outdoor space filled with shrubs and grasses. A fog hangs in the air above you, obscuring the view upward. The illusion is broken by many white pillars holding up what must be a distant cieling. In the east corner of this large room is a small plastic house."
+	"Opening the door reveals what at first looks to be a wide outdoor space filled with shrubs and grasses. A fog hangs in the air above you, obscuring the view upward. The illusion is broken by many white pillars holding up what must be a distant cieling. In the east corner of this large room is a small plastic house.".
+
+instead of entering something:
+	if the player is in the Outside Room:
+		now the player is in the Play House;
+	
 
 
 East of the Outside Room is the Play House. 
 	The Play House is a room. [Inform needs this specification here]
-	"This house would be very cozy if it weren't sized for children. There is a kitchenette complete with a table, plastic stove and refrigerator, and a living room which contains a chair, a small throw rug, and a well-drawn picture of a television. There are many clocks drawn on the walls in crayon, each telling different times." 
+	"This house would be very cozy if it weren't sized for children. There is a kitchenette complete with a table, plastic stove and refrigerator, and a living room which contains a chair, a small throw rug, and a well-drawn picture of a television. There are many clocks drawn on the walls in crayon, each telling different times.". 
+
 	The stove is a opaque closed openable container. The stove is fixed in place. The stove  is here.
 		"A little plastic stove that opens and closes."
 	The refrigerator is a opaque closed container. The refrigerator is fixed in place. The refrigerator is here.
@@ -321,8 +351,7 @@ East of the Outside Room is the Play House.
 	The chair is scenery in the Play House.
 		"It's a comfy looking chair, but it is too small to sit on."
 	The throw rug is scenery in the Play House.
-		"The throw rug is too big to lug around, but too small to sit on comfortably."
-
+		"The throw rug is too big to lug around, but too small to sit on comfortably.".
 
 
 The tension is a backdrop. "You can feel a persistant, inesplicable tension in the air." The tension is everywhere.
@@ -362,7 +391,6 @@ on is a evil.
 off is a evil.
 the evil_presence is initially off.
 
-
 [evil room rules; use these to teleport items out of the game]
 the evil room is a room.
 the green button [replace this with whatever mechanism the player uses] is in the evil room.
@@ -371,10 +399,24 @@ instead of pushing a green button:
 	move the walls [replace this with whatever you want to get rid of] to the evil room.
 	[note that you could also change item names to something horrifying here. Like making the key a venomous snake or a disgusting blob of puss]
 
-[change these two values below to be something that varies when the evil part comes]
-Rule for printing the name of a room:
-	if the evil_presence is on, say "test";
-	omit contents in listing. 
-[remember to put an if-else conditional in every room description to use this]		
+
+[remember to put an if-else conditional in every room description and printed name to use this]		
 To say evil-description:
 	say "test";
+to say evil-printname:
+	say "test";
+	
+[drinking]
+The drunk_status is a kind of value.
+the is_drunk is a drunk_status that varies.
+The drunk_true is a drunk_status.
+The drunk_false is a drunk_status.
+The is_drunk is initially drunk_false.
+before drinking the gin:
+	now the is_drunk is drunk_true;
+	
+[new actions]
+
+[Thanking is an action applying to one animal.]
+	the plastic house is a backdrop. the plastic house is in the Outside Room and the Play House.
+

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-766"/>
+  <activeNode nodeId="node-841"/>
   <item nodeId="node-1">
     <command xml:space="preserve">First Steps</command>
-    <result xml:space="preserve">Hallways&#x000A;An Interactive Fiction&#x000A;Release 1 / Serial number 200824 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;&#x000A; You are standing on a slab of concrete that is four foot square. Around you on every side are grey brick walls that stretch upward indefinitely. Your fear resolves into a grim sense of familiarity, and a heavy burden lifts from your shoulders. You feel oddly at peace.&#x000A;&#x000A;You can see the walls and a green button here.&#x000A;&#x000A;You can see no obvious exits.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Hallways&#x000A;An Interactive Fiction&#x000A;Release 1 / Serial number 200828 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Corner&#x000A;You wade through the debris and shimmy yourself into the narrow east corner of the utility closet, where it is even dirtier. You notice that the floor is damp here and the linoleum warped. There must have been a disturbance recently, because a cracked can of paste has permanently glued a pile of shattered glass to the floor on the north side of the passage. Behind it is a dingy crawlspace door.&#x000A;&#x000A;You can see some broken glass here.&#x000A;&#x000A;You can go west to the Utility Closet. The path to the north is blocked by the broken glass.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve">Hallway&#x000A;An Interactive Fiction&#x000A;Release 1 / Serial number 200818 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Hallway&#x000A;You are in a long hallway.  Identifcal doors are spaced regularly along the walls on either side. The air feels unnaturally still here.&#x000A;&#x000A;There is a door to the east.&#x000A;&#x000A;There is a door to the west.&#x000A;&#x000A;&gt;</commentary>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <children>
       <child nodeId="node-2"/>
       <child nodeId="node-3"/>
@@ -107,6 +107,18 @@
       <child nodeId="node-731"/>
       <child nodeId="node-750"/>
       <child nodeId="node-765"/>
+      <child nodeId="node-769"/>
+      <child nodeId="node-770"/>
+      <child nodeId="node-771"/>
+      <child nodeId="node-772"/>
+      <child nodeId="node-773"/>
+      <child nodeId="node-775"/>
+      <child nodeId="node-780"/>
+      <child nodeId="node-790"/>
+      <child nodeId="node-791"/>
+      <child nodeId="node-816"/>
+      <child nodeId="node-823"/>
+      <child nodeId="node-840"/>
     </children>
   </item>
   <item nodeId="node-2">
@@ -1185,7 +1197,7 @@
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Utility Closet&#x000A;This is a cramped, narrow room full of dirty shelves and hardware. The main light source is a pair of florescent tubes which hum unpleasantly overhead. This is augmented by the sqeaking of your feet on the linoleum tiles below. There are many odds and ends on the shelves: scraps of unused wall paper, cans of paste, rollers, an empty bottle of bleach, picture-frames, and two broken clocks. None of these seem to  be useful to you. There is also a yellowed, paint-stained sink.&#x000A;&#x000A;You can see a metal gate here.&#x000A;&#x000A;You can go southwest through the metal gate (closed) and east to the Corner from here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve">Nothing Room&#x000A;The door opens to a room in darkness. You step into the darkness and sense that there is nothing nearby.&#x000A;&#x000A;&gt;</commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-127"/>
       <child nodeId="node-210"/>
@@ -1195,6 +1207,7 @@
       <child nodeId="node-243"/>
       <child nodeId="node-247"/>
       <child nodeId="node-257"/>
+      <child nodeId="node-831"/>
     </children>
   </item>
   <item nodeId="node-127">
@@ -1921,7 +1934,7 @@
   </item>
   <item nodeId="node-210">
     <command xml:space="preserve">w</command>
-    <result xml:space="preserve">Darkness&#x000A;It is dark here.&#x000A;&#x000A;You see nothing but the darkness.&#x000A;&#x000A;You can go east to the Great Hall from here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>YES</changed>
     <children>
@@ -1932,12 +1945,13 @@
   </item>
   <item nodeId="node-211">
     <command xml:space="preserve">e</command>
-    <result xml:space="preserve">Great Hall&#x000A;You can go northeast, northwest, east to the Lonely Room and west to the Darkness from here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Corner&#x000A;You wade through the debris and shimmy yourself into the narrow east corner of the utility closet, where it is even dirtier. You notice that the floor is damp here and the linoleum warped. There must have been a disturbance recently, because a cracked can of paste has permanently glued a pile of shattered glass to the floor on the north side of the passage. Behind it is a dingy crawlspace door.&#x000A;&#x000A;You can see some broken glass here.&#x000A;&#x000A;You can go west to the Utility Closet. The path to the north is blocked by the broken glass.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>YES</changed>
     <children>
       <child nodeId="node-212"/>
       <child nodeId="node-216"/>
+      <child nodeId="node-838"/>
     </children>
   </item>
   <item nodeId="node-212">
@@ -2037,6 +2051,21 @@
   <item nodeId="node-223">
     <command xml:space="preserve">sw</command>
     <result xml:space="preserve">Great Hall&#x000A;You can go northeast to the Ordinary Room, northwest to the Extraordinary Room, east to the Lonely Room and west to the Darkness from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-838">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">the broken glass is too sharp for you to cross barefoot.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-839"/>
+    </children>
+  </item>
+  <item nodeId="node-839">
+    <command xml:space="preserve">put on heels</command>
+    <result xml:space="preserve">You put on the pair of women's heels.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -2641,6 +2670,57 @@
   <item nodeId="node-293">
     <command xml:space="preserve">n</command>
     <result xml:space="preserve">The high-heels protect your feet as you gingerly step over the broken glass.&#x000A;&#x000A;Utility Closet&#x000A;This is a cramped, narrow room full of dirty shelves and hardware. The main light source is a pair of florescent tubes which hum unpleasantly overhead. This is augmented by the sqeaking of your feet on the linoleum tiles below. There are many odds and ends on the shelves: scraps of unused wall paper, cans of paste, rollers, an empty bottle of bleach, picture-frames, and two broken clocks. None of these seem to  be useful to you. There is also a yellowed, paint-stained sink.&#x000A;&#x000A;You can see a metal gate here.&#x000A;&#x000A;You can go southwest through the metal gate to the Drinking Room and east to the Corner from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-831">
+    <command xml:space="preserve">enter</command>
+    <result xml:space="preserve">You must supply a noun.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-832"/>
+    </children>
+  </item>
+  <item nodeId="node-832">
+    <command xml:space="preserve">enter house</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-833"/>
+    </children>
+  </item>
+  <item nodeId="node-833">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Empty Corridor&#x000A;This is a long section of empty hallway. Further west, you see that the hallway diverges into similar looking corridors with no doors, no furniture and no ornamentation. You sense that if you keep going to the west, you may become lost. The wallpaper is yellow here.&#x000A;&#x000A;You can go east to the Hallway End and west from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-834"/>
+    </children>
+  </item>
+  <item nodeId="node-834">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Hallway End&#x000A;The hallway seems to end here. There are doors to the north, east, and west. There is something deeply disquieting about the doorway to the north, ordinary as it appears.&#x000A;&#x000A;You can go north, south, east to the Outside Room and west to the Empty Corridor from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-835"/>
+    </children>
+  </item>
+  <item nodeId="node-835">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Outside Room&#x000A;Opening the door reveals what at first looks to be a wide outdoor space filled with shrubs and grasses. A fog hangs in the air above you, obscuring the view upward. The illusion is broken by many white pillars holding up what must be a distant cieling. In the east corner of this large room is a small plastic house.&#x000A;&#x000A;You can go east and west to the Hallway End from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-836"/>
+    </children>
+  </item>
+  <item nodeId="node-836">
+    <command xml:space="preserve">enter house</command>
+    <result xml:space="preserve">Play House&#x000A;This house would be very cozy if it weren't sized for children. There is a kitchenette complete with a table, plastic stove and refrigerator, and a living room which contains a chair, a small throw rug, and a well-drawn picture of a television. There are many clocks drawn on the walls in crayon, each telling different times.&#x000A;&#x000A;A little plastic stove that opens and closes.&#x000A;&#x000A;A plastic refrigerator that opens and closes.&#x000A;&#x000A;You can also see a table (on which is a plastic toaster) here.&#x000A;&#x000A;You can go west to the Outside Room from here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -4190,12 +4270,14 @@
   </item>
   <item nodeId="node-478">
     <command xml:space="preserve">enter house</command>
-    <result xml:space="preserve">That's not something you can enter.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Play House&#x000A;This house would be very cozy if it weren't sized for children. There is a kitchenette complete with a table, plastic stove and refrigerator, and a living room which contains a chair, a small throw rug, and a well-drawn picture of a television. There are many clocks drawn on the walls in crayon, each telling different times.&#x000A;&#x000A;A little plastic stove that opens and closes.&#x000A;&#x000A;A plastic refrigerator that opens and closes.&#x000A;&#x000A;You can also see a table (on which is a plastic toaster) here.&#x000A;&#x000A;You can go west to the Outside Room from here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
       <child nodeId="node-479"/>
       <child nodeId="node-493"/>
+      <child nodeId="node-820"/>
+      <child nodeId="node-830"/>
     </children>
   </item>
   <item nodeId="node-479">
@@ -4334,6 +4416,27 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-820">
+    <command xml:space="preserve">exit house</command>
+    <result xml:space="preserve">I only understood you as far as wanting to exit.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-821"/>
+    </children>
+  </item>
+  <item nodeId="node-821">
+    <command xml:space="preserve">go outside</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-830">
+    <command xml:space="preserve">enter stove</command>
+    <result xml:space="preserve">Play House&#x000A;This house would be very cozy if it weren't sized for children. There is a kitchenette complete with a table, plastic stove and refrigerator, and a living room which contains a chair, a small throw rug, and a well-drawn picture of a television. There are many clocks drawn on the walls in crayon, each telling different times.&#x000A;&#x000A;A little plastic stove that opens and closes.&#x000A;&#x000A;A plastic refrigerator that opens and closes.&#x000A;&#x000A;You can also see a table (on which is a plastic toaster) here.&#x000A;&#x000A;You can go west to the Outside Room from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-495">
     <command xml:space="preserve">go inside</command>
     <result xml:space="preserve">Play House&#x000A;This house would be very cozy if it weren't sized for children. There is a kitchenette complete with a table, plastic stove and refrigerator, and a living room which contains a chair, a small throw rug, and a well-drawn picture of a television. There are many clocks drawn on the walls in crayon, each telling different times.&#x000A;&#x000A;A little plastic stove that opens and closes.&#x000A;&#x000A;A plastic refrigerator that opens and closes.&#x000A;&#x000A;You can also see a table (on which is a plastic toaster) here.&#x000A;&#x000A;&gt;</result>
@@ -4378,7 +4481,32 @@
   </item>
   <item nodeId="node-500">
     <command xml:space="preserve">enter</command>
-    <result xml:space="preserve">You get into the plastic house.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You must supply a noun.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-817"/>
+    </children>
+  </item>
+  <item nodeId="node-817">
+    <command xml:space="preserve">enter house</command>
+    <result xml:space="preserve">That's not something you can enter.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-818"/>
+      <child nodeId="node-822"/>
+    </children>
+  </item>
+  <item nodeId="node-818">
+    <command xml:space="preserve">exit house</command>
+    <result xml:space="preserve">I only understood you as far as wanting to exit.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-822">
+    <command xml:space="preserve">examine house</command>
+    <result xml:space="preserve">You see nothing special about the plastic house.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -4468,9 +4596,9 @@
   </item>
   <item nodeId="node-512">
     <command xml:space="preserve">take key</command>
-    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">As you take the key, you are breifly overcome by a wave of vertigo. A knot forms in your stomach, and you have the terrible feeling that you have taken something which does not belong to you.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-513"/>
       <child nodeId="node-515"/>
@@ -4526,7 +4654,7 @@
   </item>
   <item nodeId="node-519">
     <command xml:space="preserve">examine clock</command>
-    <result xml:space="preserve">A closer look reveals that it is not actually a clock, but a picture of a clock firmly attached to the wall. You cannot make out the time in the picture.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You try to read it, but you cannot make out the time. It doesn't matter though, because the clock is stopped, and the pendulum is not swinging.&#x000A;&#x000A;In the grandfather clock is a pendulum.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>YES</changed>
     <children>
@@ -4747,7 +4875,7 @@
     <command xml:space="preserve">examine mirror</command>
     <result xml:space="preserve">Closer inspection reveals that it is not a mirror, but a picture of a mirror. You cannot see your reflection.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-547">
     <command xml:space="preserve">examine painting</command>
@@ -5137,10 +5265,11 @@
     <command xml:space="preserve">examine walls</command>
     <result xml:space="preserve">The walls are unyielding.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <children>
       <child nodeId="node-598"/>
       <child nodeId="node-599"/>
+      <child nodeId="node-837"/>
     </children>
   </item>
   <item nodeId="node-598">
@@ -5215,6 +5344,12 @@
   <item nodeId="node-606">
     <command xml:space="preserve">examine wall paper</command>
     <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-837">
+    <command xml:space="preserve">listen</command>
+    <result xml:space="preserve">You hear nothing unexpected.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -5668,11 +5803,12 @@
   </item>
   <item nodeId="node-661">
     <command xml:space="preserve">ne</command>
-    <result xml:space="preserve">(first opening the metal gate)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Old Mall&#x000A;The hallway opens up into what appears to be an empty shopping mall. There is a high domed cieling with skylights overhead. The floor transitions from the carpeted hallway to over-large tan octagonal tiles. They air is cool here and slightly more humid, as if there were a water source nearby. You think you may even hear the distant trickle of water. A few small trees can be seen in planters, spaced decoratively. In contrast to the tense and silent hallway, This space is pleasant and serene. You can see the entrance to several shops. The Ordinary Shop is to the northeast, the Extraordinary Shop is to the northwest, and The Lonely and Dark stores are to the east and west respectively. There is also an escalator leading up to a second floor.&#x000A;&#x000A;You can go north, south, southwest to the Darkness, east, west and up from here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-662"/>
+      <child nodeId="node-781"/>
     </children>
   </item>
   <item nodeId="node-662">
@@ -5687,6 +5823,84 @@
   <item nodeId="node-663">
     <command xml:space="preserve">ne</command>
     <result xml:space="preserve">(first opening the metal gate)&#x000A;&#x000A;Utility Closet&#x000A;This is a small, cramped room full of dirty shelves and hardware. The main light source is a pair of florescent tubes which hum unpleasantly overhead. There are many odds and ends on the shelves: scraps of unused wall paper, cans of paste, rollers, an empty bottle of bleach, empty picture-frames, and two broken clocks. None of these seem to  be useful to you. There is also a yellowed, paint-stained sink, and in the east corner, an empty cardboard box so large that it blocks your view of the entire wall.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-781">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Yet More Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side.  Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallway an unnderving air of false comfort, with vauge suggestions of austerity. You can see the end of the hallway to the north. &#x000A;&#x000A;You can go north, south and west to the Old Mall from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-782"/>
+    </children>
+  </item>
+  <item nodeId="node-782">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-783"/>
+    </children>
+  </item>
+  <item nodeId="node-783">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hallway End&#x000A;The hallway seems to end here. There are doors to the north, east, and west. There is something deeply disquieting about the doorway to the north, ordinary as it appears.&#x000A;&#x000A;You can go north, south to the Yet More Hallway, east and west from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-784"/>
+    </children>
+  </item>
+  <item nodeId="node-784">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Yet More Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side.  Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallway an unnderving air of false comfort, with vauge suggestions of austerity. You can see the end of the hallway to the north. &#x000A;&#x000A;You can go north to the Hallway End, south and west to the Old Mall from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-785"/>
+    </children>
+  </item>
+  <item nodeId="node-785">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Old Mall&#x000A;The hallway opens up into what appears to be an empty shopping mall. There is a high domed cieling with skylights overhead. The floor transitions from the carpeted hallway to over-large tan octagonal tiles. They air is cool here and slightly more humid, as if there were a water source nearby. You think you may even hear the distant trickle of water. A few small trees can be seen in planters, spaced decoratively. In contrast to the tense and silent hallway, This space is pleasant and serene. You can see the entrance to several shops. The Ordinary Shop is to the northeast, the Extraordinary Shop is to the northwest, and The Lonely and Dark stores are to the east and west respectively. There is also an escalator leading up to a second floor.&#x000A;&#x000A;You can go north, south, southwest to the Darkness, east to the Yet More Hallway, west and up from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-786"/>
+    </children>
+  </item>
+  <item nodeId="node-786">
+    <command xml:space="preserve">se</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-787"/>
+    </children>
+  </item>
+  <item nodeId="node-787">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Extraordinary Room&#x000A;This room is completely dark.&#x000A;&#x000A;You can see something here.&#x000A;&#x000A;You can go east to the Old Mall from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-788"/>
+    </children>
+  </item>
+  <item nodeId="node-788">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Old Mall&#x000A;The hallway opens up into what appears to be an empty shopping mall. There is a high domed cieling with skylights overhead. The floor transitions from the carpeted hallway to over-large tan octagonal tiles. They air is cool here and slightly more humid, as if there were a water source nearby. You think you may even hear the distant trickle of water. A few small trees can be seen in planters, spaced decoratively. In contrast to the tense and silent hallway, This space is pleasant and serene. You can see the entrance to several shops. The Ordinary Shop is to the northeast, the Extraordinary Shop is to the northwest, and The Lonely and Dark stores are to the east and west respectively. There is also an escalator leading up to a second floor.&#x000A;&#x000A;You can go north, south, southwest to the Darkness, east to the Yet More Hallway, west to the Extraordinary Room and up from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-789"/>
+    </children>
+  </item>
+  <item nodeId="node-789">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">Lonely Room&#x000A;This is a small room.&#x000A;&#x000A;You can see a you here.&#x000A;&#x000A;You can go north to the Old Mall from here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -6527,8 +6741,8 @@
     <changed>NO</changed>
   </item>
   <item nodeId="node-765">
-    <command xml:space="preserve">push green button</command>
-    <result xml:space="preserve">&gt;</result>
+    <command xml:space="preserve">talk to figure</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
@@ -6536,8 +6750,431 @@
     </children>
   </item>
   <item nodeId="node-766">
+    <command xml:space="preserve">talk to shadowy figure</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-767"/>
+    </children>
+  </item>
+  <item nodeId="node-767">
+    <command xml:space="preserve">speak to shadowy figure</command>
+    <result xml:space="preserve">I didn't understand that sentence.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-768"/>
+    </children>
+  </item>
+  <item nodeId="node-768">
+    <command xml:space="preserve">say "hi" to shadowy figure</command>
+    <result xml:space="preserve">There is no reply.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-769">
+    <command xml:space="preserve">say hello to shadowy figure</command>
+    <result xml:space="preserve">There is no reply.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-770">
+    <command xml:space="preserve">say hi to shadowy figure</command>
+    <result xml:space="preserve">There is no reply.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-771">
+    <command xml:space="preserve">down</command>
+    <result xml:space="preserve">There is something terrible about the stairs that chills your blood. As you take your first step down, you are overcome with waves of fear and weakness. Unnameable images flash through your mind. You gasp for breath, but there is no air. Darkness consumes you as your body falls limp into the void.&#x000A;&#x000A;&#x000A; You are standing on a slab of concrete that is four foot square. Around you on every side are grey brick walls that stretch upward indefinitely. Your fear resolves into a grim sense of familiarity, and a heavy burden lifts from your shoulders. You feel oddly at peace.&#x000A;&#x000A;You can see the walls here.&#x000A;&#x000A;You can see no obvious exits.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+  </item>
+  <item nodeId="node-772">
+    <command xml:space="preserve">examine stairway</command>
+    <result xml:space="preserve">The stairway is inexplicibly horrifying to you; it conjures up thoughts too terrible to acknowledge and twisted memories of unnameable deeds. Looking at them makes you feel ill, but you are drawn to them. You know that you must follow them down.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-773">
+    <command xml:space="preserve">examine staircase</command>
+    <result xml:space="preserve">The stairway is inexplicibly horrifying to you; it conjures up thoughts too terrible to acknowledge and twisted memories of unnameable deeds. Looking at them makes you feel ill, but you are drawn to them. You know that you must follow them down.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-774"/>
+    </children>
+  </item>
+  <item nodeId="node-774">
+    <command xml:space="preserve">down</command>
+    <result xml:space="preserve">There is something terrible about the stairs that chills you to the core. As you take your first step down, you are overcome with waves of fear and weakness. Unnameable images flash through your mind. You gasp for breath, but there is no air. Darkness consumes you as your body falls limp into the void.&#x000A;&#x000A;Walls &#x000A;You are standing on a slab of concrete that is four foot square. Around you on every side are grey brick walls that stretch upward indefinitely. Your fear resolves into a grim sense of familiarity, and a heavy burden lifts from your shoulders. You feel oddly at peace.&#x000A;&#x000A;You can see the walls here.&#x000A;&#x000A;You can see no obvious exits.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-775">
+    <command xml:space="preserve">dring gin</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-776"/>
+    </children>
+  </item>
+  <item nodeId="node-776">
+    <command xml:space="preserve">drink gin</command>
+    <result xml:space="preserve">There's nothing suitable to drink here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-777"/>
+    </children>
+  </item>
+  <item nodeId="node-777">
+    <command xml:space="preserve">take gin</command>
+    <result xml:space="preserve">You already have that.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-778"/>
+    </children>
+  </item>
+  <item nodeId="node-778">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a bottle of gin&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-779"/>
+    </children>
+  </item>
+  <item nodeId="node-779">
+    <command xml:space="preserve">drink bottle of gin</command>
+    <result xml:space="preserve">There's nothing suitable to drink here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-780">
+    <command xml:space="preserve">thank darkness</command>
+    <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-790">
+    <command xml:space="preserve">examine cabinet</command>
+    <result xml:space="preserve">It is a small unassuming cabinet made of white wood. In spite of its plainness, it exhudes a strange, foreboding aura.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-792"/>
+    </children>
+  </item>
+  <item nodeId="node-792">
+    <command xml:space="preserve">open cabinet</command>
+    <result xml:space="preserve">As you reach for the cabinet, you realize that you cannot touch it. Your hand falls to your side.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-793"/>
+    </children>
+  </item>
+  <item nodeId="node-793">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-794"/>
+    </children>
+  </item>
+  <item nodeId="node-794">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Even More Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallways an unnderving air of false comfort, with vauge suggestions of austerity. Near the east door, there is a spot on the wall where the wallpaper is peeling. You see a torn piece.&#x000A;&#x000A;A neat section of the blue damask wall paper has torn, revealing a patch of yellow beneath it. You admire the torn piece.&#x000A;&#x000A;You can go north, south, east and west to the Bedroom from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-795"/>
+    </children>
+  </item>
+  <item nodeId="node-795">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Drinking Room&#x000A;This room is fully furnished including a white fainting couch, a grandfather clock, and a coffee table. All of the furniture is made of the same dark, rich wood that can be found throughout. On the wall there is a full-sized mirror and a large painting of a woman. In the northeast corner you can see a small metal gate stretched across a doorway. You think you can hear a faint ticking sound.&#x000A;&#x000A;There is a fully stocked bar in the corner. It is has a beautiful curved countertop and many shelves of liqours which reach to the cieling behind it. Almost all of the bottles are brand new and sealed.&#x000A;&#x000A;On the bar are a bottle of whiskey, a bottle of vodka, a bottle of gin and a lemon.&#x000A;&#x000A;You can see a grandfather clock here.&#x000A;&#x000A;You can also see a metal gate here.&#x000A;&#x000A;You can go northeast through the metal gate (closed) and west to the Even More Hallway from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-796"/>
+    </children>
+  </item>
+  <item nodeId="node-796">
+    <command xml:space="preserve">open gate</command>
+    <result xml:space="preserve">It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-797"/>
+    </children>
+  </item>
+  <item nodeId="node-797">
+    <command xml:space="preserve">take all</command>
+    <result xml:space="preserve">bottle of whiskey: Taken.&#x000A;bottle of vodka: Taken.&#x000A;bottle of gin: Taken.&#x000A;lemon: Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-798"/>
+    </children>
+  </item>
+  <item nodeId="node-798">
     <command xml:space="preserve">look</command>
-    <result xml:space="preserve">test&#x000A; test &#x000A;&#x000A;You can see a green button here.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Drinking Room&#x000A;This room is fully furnished including a white fainting couch, a grandfather clock, and a coffee table. All of the furniture is made of the same dark, rich wood that can be found throughout. On the wall there is a full-sized mirror and a large painting of a woman. In the northeast corner you can see a small metal gate stretched across a doorway. You think you can hear a faint ticking sound.&#x000A;&#x000A;There is a fully stocked bar in the corner. It is has a beautiful curved countertop and many shelves of liqours which reach to the cieling behind it. Almost all of the bottles are brand new and sealed.&#x000A;&#x000A;You can see a grandfather clock here.&#x000A;&#x000A;You can also see a metal gate here.&#x000A;&#x000A;You can go northeast through the metal gate (closed) and west to the Even More Hallway from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-799"/>
+    </children>
+  </item>
+  <item nodeId="node-799">
+    <command xml:space="preserve">open clock</command>
+    <result xml:space="preserve">You open the grandfather clock, revealing a pendulum.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-800"/>
+    </children>
+  </item>
+  <item nodeId="node-800">
+    <command xml:space="preserve">take pendulum</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-801"/>
+    </children>
+  </item>
+  <item nodeId="node-801">
+    <command xml:space="preserve">examine pendulum</command>
+    <result xml:space="preserve">It is strangely familiar to you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-802"/>
+    </children>
+  </item>
+  <item nodeId="node-802">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Even More Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallways an unnderving air of false comfort, with vauge suggestions of austerity. Near the east door, there is a spot on the wall where the wallpaper is peeling. You see a torn piece.&#x000A;&#x000A;A neat section of the blue damask wall paper has torn, revealing a patch of yellow beneath it. You admire the torn piece.&#x000A;&#x000A;You can go north, south, east to the Drinking Room and west to the Bedroom from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-803"/>
+    </children>
+  </item>
+  <item nodeId="node-803">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Bedroom&#x000A;This looks like a bedroom. There is a bed, a wardrobe, and a mirror. There is also a small night light plugged into an outlet in the wall.&#x000A;&#x000A; The night light is off.&#x000A;&#x000A;You can also see a wardrobe (closed) and a cabinet (closed) here.&#x000A;&#x000A;You can go east to the Even More Hallway from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-804"/>
+    </children>
+  </item>
+  <item nodeId="node-804">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Even More Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallways an unnderving air of false comfort, with vauge suggestions of austerity. Near the east door, there is a spot on the wall where the wallpaper is peeling. You see a torn piece.&#x000A;&#x000A;A neat section of the blue damask wall paper has torn, revealing a patch of yellow beneath it. You admire the torn piece.&#x000A;&#x000A;You can go north, south, east to the Drinking Room and west to the Bedroom from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-805"/>
+    </children>
+  </item>
+  <item nodeId="node-805">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Yet More Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side.  Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallway an unnderving air of false comfort, with vauge suggestions of austerity. You can see the end of the hallway to the north. &#x000A;&#x000A;You can go north, south to the Even More Hallway and west from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-806"/>
+    </children>
+  </item>
+  <item nodeId="node-806">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-807"/>
+    </children>
+  </item>
+  <item nodeId="node-807">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Old Mall&#x000A;The hallway opens up into what appears to be an empty shopping mall. There is a high domed cieling with skylights overhead. The floor transitions from the carpeted hallway to over-large tan octagonal tiles. They air is cool here and slightly more humid, as if there were a water source nearby. You think you may even hear the distant trickle of water. A few small trees can be seen in planters, spaced decoratively. In contrast to the tense and silent hallway, This space is pleasant and serene. You can see the entrance to several shops. The Ordinary Shop is to the northeast, the Extraordinary Shop is to the northwest, and The Lonely and Dark stores are to the east and west respectively. There is also an escalator leading up to a second floor.&#x000A;&#x000A;You can go north, south, southwest, east to the Yet More Hallway, west and up from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-808"/>
+    </children>
+  </item>
+  <item nodeId="node-808">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Yet More Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side.  Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallway an unnderving air of false comfort, with vauge suggestions of austerity. You can see the end of the hallway to the north. &#x000A;&#x000A;You can go north, south to the Even More Hallway and west to the Old Mall from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-809"/>
+    </children>
+  </item>
+  <item nodeId="node-809">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hallway End&#x000A;The hallway seems to end here. There are doors to the north, east, and west. There is something deeply disquieting about the doorway to the north, ordinary as it appears.&#x000A;&#x000A;You can go north, south to the Yet More Hallway, east and west from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-810"/>
+    </children>
+  </item>
+  <item nodeId="node-810">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Empty Corridor&#x000A;This is a long section of empty hallway. Further west, you see that the hallway diverges into similar looking corridors with no doors, no furniture and no ornamentation. You sense that if you keep going to the west, you may become lost. The wallpaper is yellow here.&#x000A;&#x000A;You can go east to the Hallway End and west from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-811"/>
+    </children>
+  </item>
+  <item nodeId="node-811">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Indistinguishable Corridors&#x000A;You are in an empty corridor like many others. The wallpaper is yellow here.&#x000A;&#x000A;These hallways are identical. You panic. You have lost your sense of direction.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-812"/>
+    </children>
+  </item>
+  <item nodeId="node-812">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Empty Corridor&#x000A;This is a long section of empty hallway. Further west, you see that the hallway diverges into similar looking corridors with no doors, no furniture and no ornamentation. You sense that if you keep going to the west, you may become lost. The wallpaper is yellow here.&#x000A;&#x000A;You can go east to the Hallway End and west to Indistinguishable Corridors from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-813"/>
+    </children>
+  </item>
+  <item nodeId="node-813">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Hallway End&#x000A;The hallway seems to end here. There are doors to the north, east, and west. There is something deeply disquieting about the doorway to the north, ordinary as it appears.&#x000A;&#x000A;You can go north, south to the Yet More Hallway, east and west to the Empty Corridor from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-814"/>
+    </children>
+  </item>
+  <item nodeId="node-814">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Outside Room&#x000A;Opening the door reveals what at first looks to be a wide outdoor space filled with shrubs and grasses. A fog hangs in the air above you, obscuring the view upward. The illusion is broken by many white pillars holding up what must be a distant cieling. In the east corner of this large room is a small plastic house.&#x000A;&#x000A;You can go east and west to the Hallway End from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-815"/>
+    </children>
+  </item>
+  <item nodeId="node-815">
+    <command xml:space="preserve">enter house</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-791">
+    <command xml:space="preserve">open cabinet</command>
+    <result xml:space="preserve">As you reach for the cabinet, you realize that you cannot touch it. Your hand falls to your side.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-816">
+    <command xml:space="preserve">enter play house</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-819"/>
+    </children>
+  </item>
+  <item nodeId="node-819">
+    <command xml:space="preserve">enter house</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-823">
+    <command xml:space="preserve">exit</command>
+    <result xml:space="preserve">But you aren't in anything at the moment.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-824"/>
+    </children>
+  </item>
+  <item nodeId="node-824">
+    <command xml:space="preserve">enter</command>
+    <result xml:space="preserve">You must supply a noun.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-825"/>
+    </children>
+  </item>
+  <item nodeId="node-825">
+    <command xml:space="preserve">enter house</command>
+    <result xml:space="preserve">Play House&#x000A;This house would be very cozy if it weren't sized for children. There is a kitchenette complete with a table, plastic stove and refrigerator, and a living room which contains a chair, a small throw rug, and a well-drawn picture of a television. There are many clocks drawn on the walls in crayon, each telling different times.&#x000A;&#x000A;A little plastic stove that opens and closes.&#x000A;&#x000A;A plastic refrigerator that opens and closes.&#x000A;&#x000A;You can also see a table (on which is a plastic toaster) here.&#x000A;&#x000A;You can go west to the Outside Room from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-826"/>
+    </children>
+  </item>
+  <item nodeId="node-826">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Outside Room&#x000A;Opening the door reveals what at first looks to be a wide outdoor space filled with shrubs and grasses. A fog hangs in the air above you, obscuring the view upward. The illusion is broken by many white pillars holding up what must be a distant cieling. In the east corner of this large room is a small plastic house.&#x000A;&#x000A;You can go east to the Play House and west from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-827"/>
+    </children>
+  </item>
+  <item nodeId="node-827">
+    <command xml:space="preserve">enter</command>
+    <result xml:space="preserve">You must supply a noun.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-828"/>
+    </children>
+  </item>
+  <item nodeId="node-828">
+    <command xml:space="preserve">enter house</command>
+    <result xml:space="preserve">Play House&#x000A;This house would be very cozy if it weren't sized for children. There is a kitchenette complete with a table, plastic stove and refrigerator, and a living room which contains a chair, a small throw rug, and a well-drawn picture of a television. There are many clocks drawn on the walls in crayon, each telling different times.&#x000A;&#x000A;A little plastic stove that opens and closes.&#x000A;&#x000A;A plastic refrigerator that opens and closes.&#x000A;&#x000A;You can also see a table (on which is a plastic toaster) here.&#x000A;&#x000A;You can go west to the Outside Room from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-829"/>
+    </children>
+  </item>
+  <item nodeId="node-829">
+    <command xml:space="preserve">examine clocks</command>
+    <result xml:space="preserve">Many clocks of different colors are drawn on the walls in crayon. They each tell different times, but strangely, you have trouble reading any of them.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-840">
+    <command xml:space="preserve">put on heels</command>
+    <result xml:space="preserve">You climb into the patent leather heels and strap them to your feet. They shine pleasantly. You feel pretty, and a little embarrased.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-841"/>
+    </children>
+  </item>
+  <item nodeId="node-841">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">The high-heels protect your feet as you gingerly step over the broken glass.&#x000A;&#x000A;Tanks&#x000A;You step through the crawlspace door, and are surprised to find that the passage opens up to a room that is much plainer and easier to navigate. Here, there are five metal tanks that come up to about shoulder height. They are evenly distributed against a red brick wall. Above each tank is a pipe leading to a valve, as if to fill it. Below each tank is a second valve and pipes that lead into the floor below.&#x000A;&#x000A;There is a sign above the fifth tank.&#x000A;&#x000A;You can also see some broken glass here.&#x000A;&#x000A;The path to the south is blocked by the broken glass.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
