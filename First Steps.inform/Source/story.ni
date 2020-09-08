@@ -1,5 +1,10 @@
 "Hallways"
 
+
+When play begins: say "[bold type]ELORA[roman type] [line break] [line break] [italic type]'Elora keeps a tiny box beside her bed. [line break]And every night when she retires,[line break]she pulls a sticky silver thread[line break]straight between her eyes and out her forehead.[line break] [line break]At length, she's pulled a dozen feet or so.[line break]She tears it off between her teeth,[line break]and bundles it between her thumbs,[line break]and in the box it goes.[line break][line break]Like spider silk, the substance soon restores.[line break]Each night she must extract a little more.[line break]A bit of string's no burden on a box,[line break] but soon it filled to bursting, so she fetched the locks.[line break] [roman type]".
+The player is in the Hallway.
+
+
 [
 
 ROOM TEMPLATE:
@@ -132,7 +137,6 @@ The description of the Utility Closet is
 	
 The Corner is east of the Utility Closet.
 	"You wade through the debris and shimmy yourself into the narrow east corner of the utility closet, where it is even dirtier. You notice that the floor is damp here and the linoleum warped. There must have been a disturbance recently, because a cracked can of paste has permanently glued a pile of shattered glass to the floor on the north side of the passage. Behind it is a dingy crawlspace door.".
-	the player is here.
 	the player is carrying the heels.
 
 	
