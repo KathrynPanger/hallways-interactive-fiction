@@ -1,7 +1,7 @@
 "Hallways"
 
 
-When play begins: say "[bold type]ELORA[roman type] [line break] [line break] [italic type]'Elora keeps a tiny box beside her bed. [line break]And every night when she retires,[line break]she pulls a sticky silver thread[line break]straight between her eyes and out her forehead.[line break] [line break]At length, she's pulled a dozen feet or so.[line break]She tears it off between her teeth,[line break]and bundles it between her thumbs,[line break]and in the box it goes.[line break][line break]Like spider silk, the substance soon restores.[line break]Each night she must extract a little more.[line break]A bit of string's no burden on a box,[line break] but soon it filled to bursting, so she fetched the locks.[line break] [roman type]".
+When play begins: say "[bold type]ELORA[roman type] [line break] [line break][italic type]'Elora keeps a tiny box beside her bed. [line break]And every night when she retires,[line break]she pulls a sticky silver thread[line break]straight between her eyes and out her forehead.[line break] [line break]At length, she's pulled a dozen feet or so.[line break]She tears it off between her teeth,[line break]and bundles it between her thumbs,[line break]and in the box it goes.[line break][line break]Like spider silk, the substance soon restores.[line break]Each night she must extract a little more.[line break]A bit of string's no burden on a box,[line break] but soon it filled to bursting, so she fetched the locks.[line break] [roman type]".
 The player is in the Hallway.
 
 
@@ -117,9 +117,10 @@ The Drinking Room is east of the Even More Hallway.
 				The description of the lemon is "If you think about it for too long, you can taste it."
 		The grandfather clock is a fixed in place closed openable container. the grandfather clock is here.
 			The initial appearance of the grandfather clock is "You can see a grandfather clock here."
-			The description of the grandfather clock is "You try to read it, but you cannot make out the time. It doesn't matter though, because the clock is stopped, and the pendulum is not swinging."
-			Inside the grandfather clock is a pendulum.
-			The description of the pendulum is "It is strangely familiar to you."
+			The description of the grandfather clock is "You try to read it, but you cannot make out the time. It doesn't matter though, because the clock is stopped, and the pendulum is not swinging.".
+			the pendulum is a thing with the printed name "[if the evil_presence is on][evil-pendulum][otherwise]pendulum".
+			Inside the grandfather clock is the pendulum.
+			The description of the pendulum is "[if the evil_presence is on][evil-penduscription][otherwise]It is strangely familiar to you."
 			
 		The painting of a woman is scenery.
 		The painting of a woman is here.
@@ -402,6 +403,7 @@ instead of pushing a green button:
 	now the evil_presence is on;
 	move the walls [replace this with whatever you want to get rid of] to the evil room.
 	[note that you could also change item names to something horrifying here. Like making the key a venomous snake or a disgusting blob of puss]
+	
 
 
 [remember to put an if-else conditional in every room description and printed name to use this]		
@@ -409,6 +411,10 @@ To say evil-description:
 	say "test";
 to say evil-printname:
 	say "test";
+to say evil-pendulum:
+	say "venemous snake";
+to say evil-penduscription:
+	say "It writhes menacingly."
 	
 [drinking]
 The drunk_status is a kind of value.
