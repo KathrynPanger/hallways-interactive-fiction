@@ -1,8 +1,8 @@
 "Hallways"
 
 
-When play begins: say "[bold type]ELORA[roman type] [line break] [line break][italic type]'Elora keeps a tiny box beside her bed. [line break]And every night when she retires,[line break]she pulls a sticky silver thread[line break]straight between her eyes and out her forehead.[line break] [line break]At length, she's pulled a dozen feet or so.[line break]She tears it off between her teeth,[line break]and bundles it between her thumbs,[line break]and in the box it goes.[line break][line break]Like spider silk, the substance soon restores.[line break]Each night she must extract a little more.[line break]A bit of string's no burden on a box,[line break] but soon it filled to bursting, so she fetched the locks.[line break] [roman type]".
-The player is in the Hallway.
+When play begins: say "[bold type]ELORA[roman type] [line break][line break][italic type]Elora keeps a tiny box beside her bed. [line break]And every night when she retires,[line break]she pulls a sticky silver thread[line break]straight between her eyes and out her forehead.[line break] [line break]At length, she's pulled a dozen feet or so.[line break]She tears it off between her teeth,[line break]and bundles it between her thumbs,[line break]and in the box it goes.[line break][line break]Like spider silk, the substance soon restores.[line break]Each night she must extract a little more.[line break]A bit of string's no burden on a box,[line break]but soon it filled to bursting, so she fetched the locks.[line break][line break]A key for a lid, a box for a key, a lid for the box that held it.[line break]A second, a third, and every box so full she could barely close it.[line break]A fortnight or two and she's bricked herself completely into her room.[line break]Then over the balcony the boxes go 'till she's bricked her windows too.[line break][line break]Then at last a night came she had no place left to keep it.[line break]The sticky substance filled her head; she'd no choice but to see it.[line break] And then it filled her up so much it dripped into her eyes.[line break]And across her vision cast a veil of webby spider ties. [roman type][line break][line break]".
+
 
 
 [
@@ -30,22 +30,23 @@ Include Secret Doors by Gavin Lambert.
 
 
 The w-room 
-	is a room with the printed name "[if the evil_presence is off]Walls [otherwise] [evil-printname]".
-	"[if the evil_presence is on] [evil-description] [otherwise]You are standing on a slab of concrete that is four foot square. Around you on every side are grey brick walls that stretch upward indefinitely. Your fear resolves into a grim sense of familiarity, and a heavy burden lifts from your shoulders. You feel oddly at peace.".
+	is a room with the printed name "[if the evil_presence is off]Walls[otherwise] [evil-printname]".
+	"[if the evil_presence is on][evil-description][otherwise]You are standing on a slab of concrete that is four foot square. Around you on every side are grey brick walls that stretch upward indefinitely. Your fear resolves into a grim sense of familiarity, and a heavy burden lifts from your shoulders. You feel oddly at peace.".
 	The walls are here. The indefinite article is "the".
 	The walls is fixed in place.
 	The description of the walls is "The walls are unyielding."
 
-The Hallway is a room. 
-	"You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. There a door to the south, and something about it is deeply disquieting, ordinary as it looks. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallways an unnderving air of false comfort, with vauge suggestions of austerity.The air feels unnaturally still here."
+The Hallway 
+	is a room. 
+	"You are standing in the middle a long hallway that seems to stretch endlessly in either direction.  It is reminiscent of the halls that one might see in a fancy hotel; identical doors are spaced regularly along the walls on either side, each of which are outfitted with a black box above the handle designed to accept a key card. The walls are papered with a rich navy and powder-blue damask pattern, and a tightly knitted carpet frames the passage, tracing muted grey and gold stripes down its length.  The air feels unnaturally still here."
 	
 
 
 
-
 The More Hallway 
-	is north of the Hallway. 
-	"You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallways an unnderving air of false comfort, with vauge suggestions of austerity."
+	is a room with the printed name "Hallway".
+	The More Hallway is north of the Hallway. 
+	"You are standing in the middle a long hallway that seems to stretch endlessly in either direction.  It is reminiscent of the halls that one might see in a fancy hotel; identical doors are spaced regularly along the walls on either side, each of which are outfitted with a black box above the handle designed to accept a key card. The walls are papered with a rich navy and powder-blue damask pattern, and a tightly knitted carpet frames the passage, tracing muted grey and gold stripes down its length.  The air feels unnaturally still here."
 	
 The Foyer 
 	is west of the More Hallway.
@@ -55,7 +56,7 @@ The Foyer
 		"It is a small white fainting sofa, with much ornamentation. The apholstery is plush and pristine, as if never used before. It is fashioned with the same dark, rich wood that all of the furniture seems to be made from."
 	The shoe rack is a fixed in place supporter.
 	The shoe rack is here.
-	[The pair of women's heels is on the shoe rack.]
+	The pair of women's heels is on the shoe rack.
 	The pair of women's heels is wearable.
 		The description of the heels is "The heels are made with black, shiny pleather. The heel is a high stilletto. Looking at them makes you feel pretty and a little embarrassed.".
 		
@@ -93,14 +94,31 @@ The Place Where you Shouldn't Be
 	
 
 
-
-The Even More Hallway is north of the More Hallway. 
-	"You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallways an unnderving air of false comfort, with vauge suggestions of austerity. Near the east door, there is a spot on the wall where the wallpaper is peeling. You see a torn piece."
+The Even More Hallway 
+	is a room with the printed name "Hallway".
+	The Even More Hallway is north of the More Hallway. 
+	"You are standing in the middle a long hallway that seems to stretch endlessly in either direction.  It is reminiscent of the halls that one might see in a fancy hotel; identical doors are spaced regularly along the walls on either side, each of which are outfitted with a black box above the handle designed to accept a key card. The walls are papered with a rich navy and powder-blue damask pattern, and a tightly knitted carpet frames the passage, tracing muted grey and gold stripes down its length.  The air feels unnaturally still here.".
+		the player is here.
+	the steel knife is here.
 	The torn piece is in the Even More Hallway. 
 	The initial appearance of the torn piece is "A neat section of the blue damask wall paper has torn, revealing a patch of yellow beneath it. You admire the torn piece."
 	The description of the torn piece is "A torn piece of wall paper hangs limply from the wall."
+	The crack is a fixed in place thing.
+	Instead of taking the wall paper when the location is the Even More Hallway:
+		Try taking the torn piece;
+
 	
-The Drinking Room is east of the Even More Hallway.
+	Instead of taking the torn piece: 
+	say "Taking the torn piece between two fingers, you pull gently, and a section of paper is smoothly stripped away. Yellow wall paper is revealed behind it, printed with an identical damask pattern in white. This paper however is blemished by the presence of a now-visible crack in the drywall that branches in every direction, meeting at a point beneath the spot where the paper was lifted. You can see something inside.";
+	Now the crack is in the Even More Hallway;
+
+	
+
+	
+	
+	
+The Drinking Room 
+	is east of the Even More Hallway.
 		"This room is fully furnished including a white fainting couch, a grandfather clock, and a coffee table. All of the furniture is made of the same dark, rich wood that can be found throughout. On the wall there is a full-sized mirror and a large painting of a woman. In the northeast corner you can see a small metal gate stretched across a doorway. You think you can hear a faint ticking sound."
 
 		The bar is here.
@@ -136,11 +154,10 @@ The description of the Utility Closet is
 	"This is a cramped, narrow room full of dirty shelves and hardware. The main light source is a pair of florescent tubes which hum unpleasantly overhead; a sound which is augmented by the sqeaking of your feet on the linoleum tiles below. There are many odds and ends on the shelves: scraps of unused wall paper, cans of paste, rollers, an empty bottle of bleach, picture-frames, and two broken clocks. None of these seem useful to you. There is also a yellowed, paint-stained sink.".
 
 	
-The Corner is east of the Utility Closet.
+The Corner 
+	is east of the Utility Closet.
 	"You wade through the debris and shimmy yourself into the narrow east corner of the utility closet, where it is even dirtier. You notice that the floor is damp here and the linoleum warped. There must have been a disturbance recently, because a cracked can of paste has permanently glued a pile of shattered glass to the floor on the north side of the passage. Behind it is a dingy crawlspace door.".
-	the player is carrying the heels.
 
-	
 The broken glass is an unopenable door. The indefinite article is "some".
 The broken glass is north of the Corner and south of the Tanks.
 the description of the broken glass is "A pile of broken glass is glued to the floor, blocking the way north.".
@@ -180,9 +197,9 @@ The Bedroom is west of the Even More Hallway.
 			"It is a small unassuming cabinet made of white wood. In spite of its plainness, it exhudes a strange, foreboding aura."
 		Instead of opening the cabinet, say "As you reach for the cabinet, you realize that you cannot touch it. Your hand falls to your side.".
 
-
+The Yet More Hallway is a room with the printed name "Hallway".
 The Yet More Hallway is north of the Even More Hallway. 
-	"You are in a long hallway.  Identical doors are spaced regularly along the walls on either side.  Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallway an unnderving air of false comfort, with vauge suggestions of austerity. You can see the end of the hallway to the north. ".
+	"You are standing in the middle a long hallway that seems to stretch endlessly in either direction.  It is reminiscent of the halls that one might see in a fancy hotel; identical doors are spaced regularly along the walls on either side, each of which are outfitted with a black box above the handle designed to accept a key card. The walls are papered with a rich navy and powder-blue damask pattern, and a tightly knitted carpet frames the passage, tracing muted grey and gold stripes down its length.  The air feels unnaturally still here.".
 
 [Mall zone start]	
 
@@ -204,7 +221,13 @@ The Lonely Room is south of the Old Mall.
 	the initial appearance of you is "You are the only thing here. ".
 	the description of you is "You are the only thing here.".
 	The you carries a thing called your secret.
-	the description of your secret is "It's alright. No one knows your secret.".
+	the description of your secret is "Don't worry. No one knows your secret.".
+	Thanking is an action applying to one thing. Understand "thank [something]" as thanking. 
+	Instead of thanking the you:
+		now the player is carrying the secret;
+		say "As you thank yourself, you experience a warm feeling of satisfaction. You have been working so hard to manage things in spite of these stressful circumstances, and to hear yourself validate those efforts fills you with peace. You are so grateful for this act of kindness that you decide to share your secret with yourself at last, after a lifetime of keeping it tucked away in the back of your mind. Your relief is immesurable.";
+	Check thanking: if the thing is not your secret, say "There is no response." instead. 
+	Instead of dropping your secret: say "Your secret is precious to you. You would rather not leave it laying around for anyone to find.".
 
 
 
@@ -229,8 +252,10 @@ Up from the old mall is Second Floor Landing.
 
 	
 
-The Hallway End is north of the Yet More Hallway. 
-	"The hallway seems to end here. There are doors to the north, east, and west. There is something deeply disquieting about the doorway to the north, ordinary as it appears.". 
+The Hallway End 
+	is a room with the printed name "Hallway".
+	The Hallway End is north of the Yet More Hallway. 
+	"You are standing in the middle a long hallway that seems to stretch endlessly in either direction.  It is reminiscent of the halls that one might see in a fancy hotel; identical doors are spaced regularly along the walls on either side, each of which are outfitted with a black box above the handle designed to accept a key card. The walls are papered with a rich navy and powder-blue damask pattern, and a tightly knitted carpet frames the passage, tracing muted grey and gold stripes down its length.  The air feels unnaturally still here.". 
 	
 [MAZE CODE-----------------------------------------------------------------------]	
 
@@ -373,6 +398,8 @@ The mirror is a backdrop. The mirror is in The Drinking Room and the Bedroom.
 	"Closer inspection reveals that it is not a mirror, but a picture of a mirror. You cannot see your reflection."
 The wall clock is a backdrop. The wall clock is in The Foyer.
 	The description of the wall clock is "A closer look reveals that it is not actually a clock, but a picture of a clock firmly attached to the wall. You cannot make out the time in the picture.".
+The plastic house is a backdrop. the plastic house is in the Outside Room and the Play House.
+	The description is "It looks like a child's play house.".
 
 
 
@@ -408,13 +435,17 @@ instead of pushing a green button:
 
 [remember to put an if-else conditional in every room description and printed name to use this]		
 To say evil-description:
-	say "test";
+	say "You shouldn't be here.";
 to say evil-printname:
-	say "test";
+	say "Get Out.";
 to say evil-pendulum:
 	say "venemous snake";
 to say evil-penduscription:
-	say "It writhes menacingly."
+	say "It writhes menacingly.";
+to say evil-blackkey:
+	say "ball of puss";
+to say evil-blackdescription:
+	say "As you hold it up to examine it, the yellow and grey globule oozes in your hand. Its nauseating stench makes you gag.".
 	
 [drinking]
 The drunk_status is a kind of value.
@@ -424,9 +455,12 @@ The drunk_false is a drunk_status.
 The is_drunk is initially drunk_false.
 before drinking the gin:
 	now the is_drunk is drunk_true;
-	
+
+A wall_value is a kind of value. 1 wall specifies a wall_value.
+
+
 [new actions]
 
 [Thanking is an action applying to one animal.]
-	the plastic house is a backdrop. the plastic house is in the Outside Room and the Play House.
+
 

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-869"/>
+  <activeNode nodeId="node-925"/>
   <item nodeId="node-1">
     <command xml:space="preserve">First Steps</command>
-    <result xml:space="preserve">ELORA &#x000A; &#x000A;"Elora keeps a tiny box beside her bed. &#x000A;And every night when she retires,&#x000A;she pulls a sticky silver thread&#x000A;straight between her eyes and out her forehead.&#x000A; &#x000A;At length, she's pulled a dozen feet or so.&#x000A;She tears it off between her teeth,&#x000A;and bundles it between her thumbs,&#x000A;and in the box it goes.&#x000A;&#x000A;Like spider silk, the substance soon restores.&#x000A;Each night she must extract a little more.&#x000A;A bit of string's no burden on a box,&#x000A; but soon it filled to bursting, so she fetched the locks.&#x000A; &#x000A;Hallways&#x000A;An Interactive Fiction&#x000A;Release 1 / Serial number 200908 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. There a door to the south, and something about it is deeply disquieting, ordinary as it looks. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallways an unnderving air of false comfort, with vauge suggestions of austerity.The air feels unnaturally still here.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">ELORA &#x000A;&#x000A;Elora keeps a tiny box beside her bed. &#x000A;And every night when she retires,&#x000A;she pulls a sticky silver thread&#x000A;straight between her eyes and out her forehead.&#x000A; &#x000A;At length, she's pulled a dozen feet or so.&#x000A;She tears it off between her teeth,&#x000A;and bundles it between her thumbs,&#x000A;and in the box it goes.&#x000A;&#x000A;Like spider silk, the substance soon restores.&#x000A;Each night she must extract a little more.&#x000A;A bit of string's no burden on a box,&#x000A;but soon it filled to bursting, so she fetched the locks.&#x000A;&#x000A;A key for a lid, a box for a key, a lid for the box that held it.&#x000A;A second, a third, and every box so full she could barely close it.&#x000A;A fortnight or two and she's bricked herself completely into her room.&#x000A;Then over the balcony the boxes go "till she's bricked her windows too.&#x000A;&#x000A;Then at last a night came she had no place left to keep it.&#x000A;The sticky substance filled her head; she'd no choice but to see it.&#x000A; And then it filled her up so much it dripped into her eyes.&#x000A;And across her vision cast a veil of webby spider ties. &#x000A;&#x000A;&#x000A;Hallways&#x000A;An Interactive Fiction&#x000A;Release 1 / Serial number 200909 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Hallway&#x000A;You are standing in the middle a long hallway that seems to stretch endlessly in either direction.  It is reminiscent of the halls that one might see in a fancy hotel; identical doors are spaced regularly along the walls on either side, each of which are outfitted with a black box above the handle designed to accept a key card. The walls are papered with a rich navy and powder-blue damask pattern, and a tightly knitted carpet frames the passage, tracing muted grey and gold stripes down its length.  The air feels unnaturally still here.&#x000A;&#x000A;A neat section of the blue damask wall paper has torn, revealing a patch of yellow beneath it. You admire the torn piece.&#x000A;&#x000A;You can also see a steel knife here.&#x000A;&#x000A;You can go north, south, east and west from here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve">Hallway&#x000A;An Interactive Fiction&#x000A;Release 1 / Serial number 200818 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Hallway&#x000A;You are in a long hallway.  Identifcal doors are spaced regularly along the walls on either side. The air feels unnaturally still here.&#x000A;&#x000A;There is a door to the east.&#x000A;&#x000A;There is a door to the west.&#x000A;&#x000A;&gt;</commentary>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <children>
       <child nodeId="node-2"/>
       <child nodeId="node-3"/>
@@ -120,6 +120,13 @@
       <child nodeId="node-833"/>
       <child nodeId="node-840"/>
       <child nodeId="node-842"/>
+      <child nodeId="node-876"/>
+      <child nodeId="node-877"/>
+      <child nodeId="node-885"/>
+      <child nodeId="node-887"/>
+      <child nodeId="node-890"/>
+      <child nodeId="node-923"/>
+      <child nodeId="node-925"/>
     </children>
   </item>
   <item nodeId="node-2">
@@ -219,7 +226,7 @@
     <command xml:space="preserve">e</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>YES</changed>
+    <changed>NO</changed>
     <children>
       <child nodeId="node-15"/>
       <child nodeId="node-76"/>
@@ -1121,11 +1128,12 @@
   </item>
   <item nodeId="node-117">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Corridors&#x000A;You are in a room like many others. The wallpaper is yellow here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Old Mall&#x000A;The hallway opens up into what appears to be an empty shopping mall. There is a high domed cieling with skylights overhead. The floor transitions from the carpeted hallway to over-large tan octagonal tiles. They air is cool here and slightly more humid, as if there were a water source nearby. You think you may even hear the distant trickle of water. A few small trees can be seen in planters, spaced decoratively. In contrast to the tense and silent hallway, this space is pleasant and serene. You can see the entrance to several shops. The Ordinary Shop is to the northeast, the Extraordinary Shop is to the northwest, and The Lonely and Dark stores are to the east and west respectively. There is also an escalator leading up to a second floor.&#x000A;&#x000A;You can go north, south to the Lonely Room, southwest, east, west and up from here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-118"/>
+      <child nodeId="node-896"/>
     </children>
   </item>
   <item nodeId="node-118">
@@ -1188,6 +1196,183 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-896">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Extraordinary Room&#x000A;This room is completely dark.&#x000A;&#x000A;You can see something here.&#x000A;&#x000A;You can go east to the Old Mall from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-897"/>
+    </children>
+  </item>
+  <item nodeId="node-897">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Old Mall&#x000A;The hallway opens up into what appears to be an empty shopping mall. There is a high domed cieling with skylights overhead. The floor transitions from the carpeted hallway to over-large tan octagonal tiles. They air is cool here and slightly more humid, as if there were a water source nearby. You think you may even hear the distant trickle of water. A few small trees can be seen in planters, spaced decoratively. In contrast to the tense and silent hallway, this space is pleasant and serene. You can see the entrance to several shops. The Ordinary Shop is to the northeast, the Extraordinary Shop is to the northwest, and The Lonely and Dark stores are to the east and west respectively. There is also an escalator leading up to a second floor.&#x000A;&#x000A;You can go north, south to the Lonely Room, southwest, east, west to the Extraordinary Room and up from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-898"/>
+    </children>
+  </item>
+  <item nodeId="node-898">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side.  Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallway an unnderving air of false comfort, with vauge suggestions of austerity. &#x000A;&#x000A;You can go north, south and west to the Old Mall from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-899"/>
+    </children>
+  </item>
+  <item nodeId="node-899">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. There a door to the south, and something about it is deeply disquieting, ordinary as it looks. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallways an unnderving air of false comfort, with vauge suggestions of austerity.The air feels unnaturally still here.&#x000A;&#x000A;You can go north, south to the Hallway, east and west from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-900"/>
+    </children>
+  </item>
+  <item nodeId="node-900">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. There a door to the south, and something about it is deeply disquieting, ordinary as it looks. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallways an unnderving air of false comfort, with vauge suggestions of austerity.The air feels unnaturally still here.&#x000A;&#x000A;You can go north and south to the Hallway from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-901"/>
+    </children>
+  </item>
+  <item nodeId="node-901">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallways an unnderving air of false comfort, with vauge suggestions of austerity.&#x000A;&#x000A;You can go north, south to the Hallway, east and west from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-902"/>
+    </children>
+  </item>
+  <item nodeId="node-902">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallways an unnderving air of false comfort, with vauge suggestions of austerity. Near the east door, there is a spot on the wall where the wallpaper is peeling. You see a torn piece.&#x000A;&#x000A;A neat section of the blue damask wall paper has torn, revealing a patch of yellow beneath it. You admire the torn piece.&#x000A;&#x000A;You can go north to the Hallway, south to the Hallway, east and west from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-903"/>
+    </children>
+  </item>
+  <item nodeId="node-903">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side.  Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallway an unnderving air of false comfort, with vauge suggestions of austerity. &#x000A;&#x000A;You can go north to the Hallway, south to the Hallway and west to the Old Mall from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-904"/>
+    </children>
+  </item>
+  <item nodeId="node-904">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. There a door to the south, and something about it is deeply disquieting, ordinary as it looks. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallways an unnderving air of false comfort, with vauge suggestions of austerity.The air feels unnaturally still here.&#x000A;&#x000A;You can go north to the Hallway, south to the Hallway, east and west from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-905"/>
+    </children>
+  </item>
+  <item nodeId="node-905">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. There a door to the south, and something about it is deeply disquieting, ordinary as it looks. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallways an unnderving air of false comfort, with vauge suggestions of austerity.The air feels unnaturally still here.&#x000A;&#x000A;You can go north to the Hallway and south to the Hallway from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-906"/>
+    </children>
+  </item>
+  <item nodeId="node-906">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallways an unnderving air of false comfort, with vauge suggestions of austerity.&#x000A;&#x000A;You can go north to the Hallway, south to the Hallway, east and west from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-907"/>
+    </children>
+  </item>
+  <item nodeId="node-907">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallways an unnderving air of false comfort, with vauge suggestions of austerity. Near the east door, there is a spot on the wall where the wallpaper is peeling. You see a torn piece.&#x000A;&#x000A;A neat section of the blue damask wall paper has torn, revealing a patch of yellow beneath it. You admire the torn piece.&#x000A;&#x000A;You can go north to the Hallway, south to the Hallway, east and west from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-908"/>
+    </children>
+  </item>
+  <item nodeId="node-908">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side.  Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallway an unnderving air of false comfort, with vauge suggestions of austerity. &#x000A;&#x000A;You can go north to the Hallway, south to the Hallway and west to the Old Mall from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-909"/>
+    </children>
+  </item>
+  <item nodeId="node-909">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. There a door to the south, and something about it is deeply disquieting, ordinary as it looks. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallways an unnderving air of false comfort, with vauge suggestions of austerity.The air feels unnaturally still here.&#x000A;&#x000A;You can go north to the Hallway, south to the Hallway, east and west from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-910"/>
+    </children>
+  </item>
+  <item nodeId="node-910">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. There a door to the south, and something about it is deeply disquieting, ordinary as it looks. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallways an unnderving air of false comfort, with vauge suggestions of austerity.The air feels unnaturally still here.&#x000A;&#x000A;You can go north to the Hallway and south to the Hallway from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-911"/>
+    </children>
+  </item>
+  <item nodeId="node-911">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallways an unnderving air of false comfort, with vauge suggestions of austerity.&#x000A;&#x000A;You can go north to the Hallway, south to the Hallway, east and west from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-912"/>
+    </children>
+  </item>
+  <item nodeId="node-912">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallways an unnderving air of false comfort, with vauge suggestions of austerity. Near the east door, there is a spot on the wall where the wallpaper is peeling. You see a torn piece.&#x000A;&#x000A;A neat section of the blue damask wall paper has torn, revealing a patch of yellow beneath it. You admire the torn piece.&#x000A;&#x000A;You can go north to the Hallway, south to the Hallway, east and west from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-913"/>
+    </children>
+  </item>
+  <item nodeId="node-913">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Bedroom&#x000A;This looks like a bedroom. There is a bed, a wardrobe, and a mirror. There is also a small night light plugged into an outlet in the wall.&#x000A;&#x000A; The night light is off.&#x000A;&#x000A;You can also see a wardrobe (closed) and a cabinet (closed) here.&#x000A;&#x000A;You can go east to the Hallway from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-914"/>
+    </children>
+  </item>
+  <item nodeId="node-914">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallways an unnderving air of false comfort, with vauge suggestions of austerity. Near the east door, there is a spot on the wall where the wallpaper is peeling. You see a torn piece.&#x000A;&#x000A;A neat section of the blue damask wall paper has torn, revealing a patch of yellow beneath it. You admire the torn piece.&#x000A;&#x000A;You can go north to the Hallway, south to the Hallway, east and west to the Bedroom from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-915"/>
+    </children>
+  </item>
+  <item nodeId="node-915">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side.  Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallway an unnderving air of false comfort, with vauge suggestions of austerity. &#x000A;&#x000A;You can go north to the Hallway, south to the Hallway and west to the Old Mall from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-125">
     <command xml:space="preserve">examine wall paper</command>
     <result xml:space="preserve">The wall paper is a rich navy and yellow damask pattern. Combined with the dark wooden wainscotting, it gives the hallways an unnderving air of false comfort, with vauge suggestions of austerity.&#x000A;&#x000A;&gt;</result>
@@ -1196,7 +1381,7 @@
   </item>
   <item nodeId="node-126">
     <command xml:space="preserve">w</command>
-    <result xml:space="preserve">Utility Closet&#x000A;This is a cramped, narrow room full of dirty shelves and hardware. The main light source is a pair of florescent tubes which hum unpleasantly overhead. This is augmented by the sqeaking of your feet on the linoleum tiles below. There are many odds and ends on the shelves: scraps of unused wall paper, cans of paste, rollers, an empty bottle of bleach, picture-frames, and two broken clocks. None of these seem to  be useful to you. There is also a yellowed, paint-stained sink.&#x000A;&#x000A;You can see a metal gate here.&#x000A;&#x000A;You can go southwest through the metal gate (closed) and east to the Corner from here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve">Nothing Room&#x000A;The door opens to a room in darkness. You step into the darkness and sense that there is nothing nearby.&#x000A;&#x000A;&gt;</commentary>
     <changed>YES</changed>
     <children>
@@ -2204,11 +2389,12 @@
   </item>
   <item nodeId="node-242">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">Yet More Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Each door has a sign beside it bearing a room number. There are two doors to your immediate left and right (east and west). You can see the end of the hallway to the north.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Old Mall&#x000A;The hallway opens up into what appears to be an empty shopping mall. There is a high domed cieling with skylights overhead. The floor transitions from the carpeted hallway to over-large tan octagonal tiles. They air is cool here and slightly more humid, as if there were a water source nearby. You think you may even hear the distant trickle of water. A few small trees can be seen in planters, spaced decoratively. In contrast to the tense and silent hallway, this space is pleasant and serene. You can see the entrance to several shops. The Ordinary Shop is to the northeast, the Extraordinary Shop is to the northwest, and The Lonely and Dark stores are to the east and west respectively. There is also an escalator leading up to a second floor.&#x000A;&#x000A;You can go north, south to the Lonely Room, southwest, east, west and up from here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-243"/>
+      <child nodeId="node-919"/>
     </children>
   </item>
   <item nodeId="node-243">
@@ -2223,6 +2409,39 @@
   <item nodeId="node-244">
     <command xml:space="preserve">w</command>
     <result xml:space="preserve">Trap Room&#x000A;As you enter this room, the door behind you closes and locks.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-919">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Extraordinary Room&#x000A;This room is completely dark.&#x000A;&#x000A;You can see something here.&#x000A;&#x000A;You can go east to the Old Mall from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-920"/>
+    </children>
+  </item>
+  <item nodeId="node-920">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Old Mall&#x000A;The hallway opens up into what appears to be an empty shopping mall. There is a high domed cieling with skylights overhead. The floor transitions from the carpeted hallway to over-large tan octagonal tiles. They air is cool here and slightly more humid, as if there were a water source nearby. You think you may even hear the distant trickle of water. A few small trees can be seen in planters, spaced decoratively. In contrast to the tense and silent hallway, this space is pleasant and serene. You can see the entrance to several shops. The Ordinary Shop is to the northeast, the Extraordinary Shop is to the northwest, and The Lonely and Dark stores are to the east and west respectively. There is also an escalator leading up to a second floor.&#x000A;&#x000A;You can go north, south to the Lonely Room, southwest, east, west to the Extraordinary Room and up from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-921"/>
+    </children>
+  </item>
+  <item nodeId="node-921">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Hallway&#x000A;You are standing in the middle a long hallway that seems to stretch endlessly in either direction.  It is reminiscent of the halls that one might see in a fancy hotel; identical doors are spaced regularly along the walls on either side, each of which are outfitted with a black box above the handle designed to accept a key card. The walls are papered with a rich navy and powder-blue damask pattern, and a tightly knitted carpet frames the passage, tracing muted grey and gold stripes down its length.  The air feels unnaturally still here.&#x000A;&#x000A;You can go north, south and west to the Old Mall from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-922"/>
+    </children>
+  </item>
+  <item nodeId="node-922">
+    <command xml:space="preserve"></command>
+    <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -2775,7 +2994,7 @@
   </item>
   <item nodeId="node-308">
     <command xml:space="preserve">n</command>
-    <result xml:space="preserve">More Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallways an unnderving air of false comfort, with vauge suggestions of austerity.&#x000A;&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Old Mall&#x000A;The hallway opens up into what appears to be an empty shopping mall. There is a high domed cieling with skylights overhead. The floor transitions from the carpeted hallway to over-large tan octagonal tiles. They air is cool here and slightly more humid, as if there were a water source nearby. You think you may even hear the distant trickle of water. A few small trees can be seen in planters, spaced decoratively. In contrast to the tense and silent hallway, this space is pleasant and serene. You can see the entrance to several shops. The Ordinary Shop is to the northeast, the Extraordinary Shop is to the northwest, and The Lonely and Dark stores are to the east and west respectively. There is also an escalator leading up to a second floor.&#x000A;&#x000A;You can go north, south to the Lonely Room, southwest, east, west and up from here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>YES</changed>
     <children>
@@ -2993,7 +3212,34 @@
   </item>
   <item nodeId="node-323">
     <command xml:space="preserve">w</command>
+    <result xml:space="preserve">Extraordinary Room&#x000A;This room is completely dark.&#x000A;&#x000A;You can see something here.&#x000A;&#x000A;You can go east to the Old Mall from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-916"/>
+    </children>
+  </item>
+  <item nodeId="node-916">
+    <command xml:space="preserve">w</command>
     <result xml:space="preserve">You can't go that way.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-917"/>
+    </children>
+  </item>
+  <item nodeId="node-917">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Old Mall&#x000A;The hallway opens up into what appears to be an empty shopping mall. There is a high domed cieling with skylights overhead. The floor transitions from the carpeted hallway to over-large tan octagonal tiles. They air is cool here and slightly more humid, as if there were a water source nearby. You think you may even hear the distant trickle of water. A few small trees can be seen in planters, spaced decoratively. In contrast to the tense and silent hallway, this space is pleasant and serene. You can see the entrance to several shops. The Ordinary Shop is to the northeast, the Extraordinary Shop is to the northwest, and The Lonely and Dark stores are to the east and west respectively. There is also an escalator leading up to a second floor.&#x000A;&#x000A;You can go north, south to the Lonely Room, southwest, east, west to the Extraordinary Room and up from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-918"/>
+    </children>
+  </item>
+  <item nodeId="node-918">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side.  Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallway an unnderving air of false comfort, with vauge suggestions of austerity. &#x000A;&#x000A;You can go north, south and west to the Old Mall from here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -5667,6 +5913,60 @@
     <result xml:space="preserve">I beg your pardon?&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-870"/>
+    </children>
+  </item>
+  <item nodeId="node-870">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">More Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallways an unnderving air of false comfort, with vauge suggestions of austerity.&#x000A;&#x000A;You can go north, south to the Hallway, east and west from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-871"/>
+    </children>
+  </item>
+  <item nodeId="node-871">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">Even More Hallway&#x000A;You are in a long hallway.  Identical doors are spaced regularly along the walls on either side. Many of the doors are closed and locked, but there are two doors to your immediate left and right (east and west) that are slightly ajar, and you can see two similar doors further down the hallway. The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallways an unnderving air of false comfort, with vauge suggestions of austerity. Near the east door, there is a spot on the wall where the wallpaper is peeling. You see a torn piece.&#x000A;&#x000A;A neat section of the blue damask wall paper has torn, revealing a patch of yellow beneath it. You admire the torn piece.&#x000A;&#x000A;You can go north, south to the More Hallway, east and west from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-872"/>
+    </children>
+  </item>
+  <item nodeId="node-872">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Drinking Room&#x000A;This room is fully furnished including a white fainting couch, a grandfather clock, and a coffee table. All of the furniture is made of the same dark, rich wood that can be found throughout. On the wall there is a full-sized mirror and a large painting of a woman. In the northeast corner you can see a small metal gate stretched across a doorway. You think you can hear a faint ticking sound.&#x000A;&#x000A;There is a fully stocked bar in the corner. It is has a beautiful curved countertop and many shelves of liqours which reach to the cieling behind it. Almost all of the bottles are brand new and sealed.&#x000A;&#x000A;On the bar are a bottle of whiskey, a bottle of vodka, a bottle of gin and a lemon.&#x000A;&#x000A;You can see a grandfather clock here.&#x000A;&#x000A;You can also see a metal gate here.&#x000A;&#x000A;You can go northeast through the metal gate (closed) and west to the Even More Hallway from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-873"/>
+    </children>
+  </item>
+  <item nodeId="node-873">
+    <command xml:space="preserve">open clock</command>
+    <result xml:space="preserve">You open the grandfather clock, revealing a pendulum.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-874"/>
+    </children>
+  </item>
+  <item nodeId="node-874">
+    <command xml:space="preserve">take pendulum</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-875"/>
+    </children>
+  </item>
+  <item nodeId="node-875">
+    <command xml:space="preserve">examine pendulum</command>
+    <result xml:space="preserve">It is strangely familiar to you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-632">
     <command xml:space="preserve">north</command>
@@ -7421,6 +7721,188 @@
   <item nodeId="node-842">
     <command xml:space="preserve">m</command>
     <result xml:space="preserve">That's not a verb I recognise.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-876">
+    <command xml:space="preserve">thank you</command>
+    <result xml:space="preserve">As you thank yourself, you experience a warm feeling of satisfaction. You have been working so hard to manage things in spite of these stressful circumstances, and to hear yourself validate those efforts fills you with peace. You are so grateful for this act of kindness that you decide to share your secret with yourself at last, after a lifetime of keeping it tucked away in the back of your mind. Your relief is immesurable.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-891"/>
+      <child nodeId="node-893"/>
+    </children>
+  </item>
+  <item nodeId="node-891">
+    <command xml:space="preserve">drop secret</command>
+    <result xml:space="preserve">Your secret is precious to you. You would rather not leave it laying around for anyone to find.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-892"/>
+    </children>
+  </item>
+  <item nodeId="node-892">
+    <command xml:space="preserve">examine secret</command>
+    <result xml:space="preserve">It's alright. No one knows your secret.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-893">
+    <command xml:space="preserve">take secret</command>
+    <result xml:space="preserve">You already have that.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-894"/>
+    </children>
+  </item>
+  <item nodeId="node-894">
+    <command xml:space="preserve">drop secret</command>
+    <result xml:space="preserve">Your secret is precious to you. You would rather not leave it laying around for anyone to find.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-895"/>
+    </children>
+  </item>
+  <item nodeId="node-895">
+    <command xml:space="preserve">examine secret</command>
+    <result xml:space="preserve">Don't worry. No one knows your secret.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-877">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a pair of women's heels&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-878"/>
+      <child nodeId="node-882"/>
+    </children>
+  </item>
+  <item nodeId="node-878">
+    <command xml:space="preserve">take secret</command>
+    <result xml:space="preserve">That seems to belong to you.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-879"/>
+    </children>
+  </item>
+  <item nodeId="node-879">
+    <command xml:space="preserve">examine you</command>
+    <result xml:space="preserve">You are the only thing here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-880"/>
+    </children>
+  </item>
+  <item nodeId="node-880">
+    <command xml:space="preserve">thank you</command>
+    <result xml:space="preserve">You are welcome.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-881"/>
+    </children>
+  </item>
+  <item nodeId="node-881">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  your secret&#x000A;  a pair of women's heels&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-882">
+    <command xml:space="preserve">thank you</command>
+    <result xml:space="preserve">As you thank yourself, you feel a warm sensation of satisfaction. You have been working so hard to manage things well in spite of these strange and stressful circumstances; so to hear yourself validate your own success fills you with peace. You are so greatful for this act of kindness that you decide to share your secret with yourself at last, after a lifetime of keeping it tucked away in the back of your mind. Your relief is immesurable.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-883"/>
+    </children>
+  </item>
+  <item nodeId="node-883">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  your secret&#x000A;  a pair of women's heels&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-884"/>
+    </children>
+  </item>
+  <item nodeId="node-884">
+    <command xml:space="preserve">examine secret</command>
+    <result xml:space="preserve">It's alright. No one knows your secret.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-885">
+    <command xml:space="preserve">Thank you</command>
+    <result xml:space="preserve">As you thank yourself, you feel a warm sensation of satisfaction. You have been working so hard to manage things well in spite of these stressful circumstances; so to hear yourself validating those efforts fills you with peace. You are so greatful for this act of kindness that you decide to share your secret with yourself at last, after a lifetime of keeping it tucked away in the back of your mind. Your relief is immesurable.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-886"/>
+    </children>
+  </item>
+  <item nodeId="node-886">
+    <command xml:space="preserve">thank secret</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-887">
+    <command xml:space="preserve">thank wall</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-888"/>
+    </children>
+  </item>
+  <item nodeId="node-888">
+    <command xml:space="preserve">thank you</command>
+    <result xml:space="preserve">As you thank yourself, you experience a warm feeling of satisfaction. You have been working so hard to manage things well in spite of these stressful circumstances, and to hear yourself validate those efforts fills you with peace. You are so greatful for this act of kindness that you decide to share your secret with yourself at last, after a lifetime of keeping it tucked away in the back of your mind. Your relief is immesurable.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-889"/>
+    </children>
+  </item>
+  <item nodeId="node-889">
+    <command xml:space="preserve">thank secret</command>
+    <result xml:space="preserve">There is no response.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-890">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Lonely Room&#x000A;This is a small room.&#x000A;&#x000A;You are the only thing here. &#x000A;&#x000A;You can go north from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-923">
+    <command xml:space="preserve">take wall apper</command>
+    <result xml:space="preserve">I only understood you as far as wanting to take the wall paper.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-924"/>
+    </children>
+  </item>
+  <item nodeId="node-924">
+    <command xml:space="preserve">take wall paper</command>
+    <result xml:space="preserve">That's hardly portable.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-925">
+    <command xml:space="preserve">take paper</command>
+    <result xml:space="preserve">test,&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
