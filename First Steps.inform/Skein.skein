@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-925"/>
+  <activeNode nodeId="node-935"/>
   <item nodeId="node-1">
     <command xml:space="preserve">First Steps</command>
     <result xml:space="preserve">ELORA &#x000A;&#x000A;Elora keeps a tiny box beside her bed. &#x000A;And every night when she retires,&#x000A;she pulls a sticky silver thread&#x000A;straight between her eyes and out her forehead.&#x000A; &#x000A;At length, she's pulled a dozen feet or so.&#x000A;She tears it off between her teeth,&#x000A;and bundles it between her thumbs,&#x000A;and in the box it goes.&#x000A;&#x000A;Like spider silk, the substance soon restores.&#x000A;Each night she must extract a little more.&#x000A;A bit of string's no burden on a box,&#x000A;but soon it filled to bursting, so she fetched the locks.&#x000A;&#x000A;A key for a lid, a box for a key, a lid for the box that held it.&#x000A;A second, a third, and every box so full she could barely close it.&#x000A;A fortnight or two and she's bricked herself completely into her room.&#x000A;Then over the balcony the boxes go "till she's bricked her windows too.&#x000A;&#x000A;Then at last a night came she had no place left to keep it.&#x000A;The sticky substance filled her head; she'd no choice but to see it.&#x000A; And then it filled her up so much it dripped into her eyes.&#x000A;And across her vision cast a veil of webby spider ties. &#x000A;&#x000A;&#x000A;Hallways&#x000A;An Interactive Fiction&#x000A;Release 1 / Serial number 200909 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Hallway&#x000A;You are standing in the middle a long hallway that seems to stretch endlessly in either direction.  It is reminiscent of the halls that one might see in a fancy hotel; identical doors are spaced regularly along the walls on either side, each of which are outfitted with a black box above the handle designed to accept a key card. The walls are papered with a rich navy and powder-blue damask pattern, and a tightly knitted carpet frames the passage, tracing muted grey and gold stripes down its length.  The air feels unnaturally still here.&#x000A;&#x000A;A neat section of the blue damask wall paper has torn, revealing a patch of yellow beneath it. You admire the torn piece.&#x000A;&#x000A;You can also see a steel knife here.&#x000A;&#x000A;You can go north, south, east and west from here.&#x000A;&#x000A;&gt;</result>
@@ -7775,12 +7775,13 @@
   </item>
   <item nodeId="node-877">
     <command xml:space="preserve">i</command>
-    <result xml:space="preserve">You are carrying:&#x000A;  a pair of women's heels&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">You are carrying:&#x000A;  a solutions manual&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-878"/>
       <child nodeId="node-882"/>
+      <child nodeId="node-929"/>
     </children>
   </item>
   <item nodeId="node-878">
@@ -7837,6 +7838,66 @@
   <item nodeId="node-884">
     <command xml:space="preserve">examine secret</command>
     <result xml:space="preserve">It's alright. No one knows your secret.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-929">
+    <command xml:space="preserve">read manual</command>
+    <result xml:space="preserve">You flip the pages randomly and arrive at page 2:&#x000A;&#x000A;It says: "Thank You."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-930"/>
+    </children>
+  </item>
+  <item nodeId="node-930">
+    <command xml:space="preserve">read manual</command>
+    <result xml:space="preserve">You flip the pages randomly and arrive at page 5:&#x000A;&#x000A;It says: "Another Hint"&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-931"/>
+    </children>
+  </item>
+  <item nodeId="node-931">
+    <command xml:space="preserve">read manual</command>
+    <result xml:space="preserve">You flip the pages randomly and arrive at page 2:&#x000A;&#x000A;It says: "Thank You."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-932"/>
+    </children>
+  </item>
+  <item nodeId="node-932">
+    <command xml:space="preserve">read page 5</command>
+    <result xml:space="preserve">(in the solutions manual)&#x000A;It says: "Another Hint"&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-933"/>
+    </children>
+  </item>
+  <item nodeId="node-933">
+    <command xml:space="preserve">read page 1</command>
+    <result xml:space="preserve">(in the solutions manual)&#x000A;It says: "The darkness opens up."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-934"/>
+    </children>
+  </item>
+  <item nodeId="node-934">
+    <command xml:space="preserve">read page 2</command>
+    <result xml:space="preserve">(in the solutions manual)&#x000A;It says: "Thank You."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-935"/>
+    </children>
+  </item>
+  <item nodeId="node-935">
+    <command xml:space="preserve">examine manual</command>
+    <result xml:space="preserve">You see nothing special about the solutions manual.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -7902,7 +7963,32 @@
   </item>
   <item nodeId="node-925">
     <command xml:space="preserve">take paper</command>
-    <result xml:space="preserve">test,&#x000A;&gt;</result>
+    <result xml:space="preserve">Taking the torn piece between two fingers, you pull gently, and a section of paper is smoothly stripped away. Yellow wall paper is revealed behind it, printed with an identical damask pattern in white. This paper however is blemished by the presence of a now-visible crack in the drywall that branches in every direction, meeting at a point beneath the spot where the paper was lifted. You can see something inside.&#x000A;&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-926"/>
+      <child nodeId="node-928"/>
+    </children>
+  </item>
+  <item nodeId="node-926">
+    <command xml:space="preserve">take knife</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-927"/>
+    </children>
+  </item>
+  <item nodeId="node-927">
+    <command xml:space="preserve">cut crack with knife</command>
+    <result xml:space="preserve">I only understood you as far as wanting to cut the crack.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-928">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a torn piece&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>

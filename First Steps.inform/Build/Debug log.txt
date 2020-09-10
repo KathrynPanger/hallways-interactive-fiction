@@ -14,7 +14,7 @@ Reading language definition from <C:\Program Files (x86)\Inform 7\Internal\Langu
 Phase I ... Lexical analysis
 -----------------------------------------------------
 
-I've now read your source text, which is 4494 words long.
+I've now read your source text, which is 5087 words long.
 
 
 -----------------------------------------------------
@@ -137,6 +137,8 @@ Phase XII ... Code generation
 
 ==== Phase XII.13 ... Compiling second block of phrases ====
 
+                                        Fail: thing (~) number = nothing
+                                        Fail: thing (~) number = nothing
 
 
 ==== Phase XII.14 ... Compiling noun and scope filter tokens ====
@@ -176,8 +178,8 @@ Providing for a total heap of 8192, given requirement of 8192
 Phase XIII ... Compilation now complete
 -----------------------------------------------------
 
-Total of 109 files written as streams.
-CPU time: 118 centiseconds
+Total of 112 files written as streams.
+CPU time: 158 centiseconds
 
 
 That concludes the debugging log from this run of Inform.

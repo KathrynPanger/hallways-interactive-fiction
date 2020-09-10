@@ -108,8 +108,8 @@ The Even More Hallway
 		Try taking the torn piece;
 
 	
-	Instead of taking the torn piece: 
-	say "Taking the torn piece between two fingers, you pull gently, and a section of paper is smoothly stripped away. Yellow wall paper is revealed behind it, printed with an identical damask pattern in white. This paper however is blemished by the presence of a now-visible crack in the drywall that branches in every direction, meeting at a point beneath the spot where the paper was lifted. You can see something inside.";
+	Before taking the torn piece: 
+	say "Holding the torn piece between two fingers, you pull gently, and a section of paper is smoothly stripped away. Yellow wall paper is revealed behind it, printed with an identical damask pattern in white. This paper however is blemished by the presence of a now-visible crack in the drywall that branches in every direction, meeting at a point beneath the spot where the paper was lifted. You can see something inside.";
 	Now the crack is in the Even More Hallway;
 
 	
@@ -210,6 +210,8 @@ The Ordinary Room is north of the Old Mall.
 	"This room is completely dark."
 	In the Ordinary Room is a neuter animal called nothing.
 	it carries the meaning.
+
+		
 	
 The Extraordinary Room is  west of the Old Mall.
 	"This room is completely dark."
@@ -463,4 +465,82 @@ A wall_value is a kind of value. 1 wall specifies a wall_value.
 
 [Thanking is an action applying to one animal.]
 
+[book code]
+	 The solutions manual is carried by the player. The solutions manual has a number called the last page read. The solutions manual has a number called the length. The length of the solutions manual is 5. 
+
+	Understand the command "read" as something new. 
+
+	Understand "read [something]" or "consult [something]" or "read in/from [something]" as reading. Reading is an action applying to one thing, requiring light. 
+
+	Understand "read [number] in/from/of [something]" or "read page [number] in/from/of [something]" or "look up page [number] in/from/of [something]" or "consult page [number] in/from/of [something]" as reading it in. Reading it in is an action applying to one number and one thing, requiring light. 
+
+	Named page is a kind of value. The named pages are first page, last page, next page, previous page. 
+
+	To decide what number is the effective value of (L - last page):
+		decide on the length of the solutions manual. 
+
+	To decide what number is the effective value of (F - first page):
+		decide on 1. 
+
+	To decide what number is the effective value of (N - next page):
+		let X be the last page read of the solutions manual plus 1;
+		decide on X. 
+
+	To decide what number is the effective value of (P - previous page):
+		let X be the last page read of the solutions manual minus 1;
+		decide on X. 
+
+	Understand "read [named page] in/from/of [something]" or "read the [named page] in/from/of [something]" as reading it relatively in. Reading it relatively in is an action applying to one named page and one thing, requiring light. 
+
+	Does the player mean reading something in the solutions manual: it is very likely. 
+
+	This is the book requirement rule:
+		if the player is not carrying the solutions manual, say "Read what?." instead. 
+
+	Check reading it relatively in:
+		if the second noun is not the solutions manual, say "There are no pages in [the second noun]." instead;
+		abide by the book requirement rule. 
+
+	Carry out reading it relatively in:
+		let N be the effective value of the named page understood;
+		now the number understood is N;
+		try reading N in the solutions manual. 
+
+	Check reading it in:
+		if the second noun is not the solutions manual, say "There are no pages in [the second noun]." instead;
+		abide by the book requirement rule. 
+
+	Check reading it in:
+		if the number understood is greater than the length of the solutions manual, say "There are only [length of solutions manual in words] pages in the book." instead;
+		if the number understood is less than 1, say "The page numbering begins with 1." instead. 
+
+	Carry out reading it in:
+		read page number understood. 
+
+	Check reading:
+		if the noun is not the solutions manual, say "There are no pages in [the noun]." instead;
+		abide by the book requirement rule. 
+
+	Carry out reading:
+		let N be a random number between 1 and the length of the solutions manual; now the number understood is N;
+		say "You flip the pages randomly and arrive at page [the number understood]:[paragraph break]";
+		try reading the number understood in the solutions manual. 
+
+	Table of Book Contents
+page	content
+1	"The darkness opens up."
+2	"Thank you."
+3	"Nothing has meaning."
+4	"Another Hint"
+5	"Another Hint"
+
+
+
+To read page (N - a number):
+	now the last page read of the solutions manual is N;
+	if there is a content corresponding to a page of N in the Table of Book Contents:
+		choose row with a page of N in the Table of Book Contents;
+		say "It says: '[content entry]'[paragraph break]";
+	otherwise:
+		say "Page [N] appears to be blank." 
 
