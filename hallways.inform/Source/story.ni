@@ -203,11 +203,15 @@ The Bedroom is west of the Even More Hallway.
 		The drawer is a fixed in place opaque openable closed container.
 		The drawer is part of the nightstand.
 		The nightstand is here.
-		The ornamental box is on the nightstand.
+		the ornamental box is a locked opaque container.
+		the ornamental key unlocks the ornamental box.
+		the ornamental box is on the nightstand.
 		
-		The box selection is a thing in the wardrobe with the printed name "tiny boxes". The indefinite article is "many". Understand "tiny boxes" as the box selection. The description is "Tiny wooden boxes, all of which are missing their lid." 
+
+		The box selection is a thing in the wardrobe with the printed name "tiny boxes". The indefinite article is "many". Understand "tiny box" as the box selection. Understand "tiny boxes" as the box selection. Understand "boxes" as the box selection. The description is "Tiny wooden boxes, all of which are missing their lid." 
 		
 		A tiny box is a kind of thing.
+		the description is "A tiny wooden box. The lid is missing.".
 		10 tiny boxes are in the limbo room.
 		
 instead of opening a tiny box:
@@ -611,5 +615,6 @@ To read page (N - a number):
 		
 [rule for printing the name of a room when the evil_presence is on:]
 
-	
+Rule for printing room description details of containers:
+	 stop.	
 

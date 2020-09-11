@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-1108"/>
+  <activeNode nodeId="node-1160"/>
   <item nodeId="node-1">
     <command xml:space="preserve">hallways</command>
-    <result xml:space="preserve">Hallways&#x000A;An Interactive Fiction&#x000A;Release 1 / Serial number 200910 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Bedroom&#x000A;This looks like a child's bedroom.&#x000A;&#x000A;There is a framed text on the wall. It looks like a nursery rhyme.&#x000A;&#x000A;You can also see a wardrobe (closed), a cabinet (closed) and a nightstand (on which is an ornamental box) here.&#x000A;&#x000A;You can go east from here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Hallways&#x000A;An Interactive Fiction&#x000A;Release 1 / Serial number 200910 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Bedroom&#x000A;This looks like a child's bedroom.&#x000A;&#x000A;There is a framed text on the wall. It looks like a nursery rhyme.&#x000A;&#x000A;You can also see a wardrobe (closed), a cabinet (closed) and a nightstand (on which is an ornamental box (closed)) here.&#x000A;&#x000A;You can go east from here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve">Hallway&#x000A;An Interactive Fiction&#x000A;Release 1 / Serial number 200818 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Hallway&#x000A;You are in a long hallway.  Identifcal doors are spaced regularly along the walls on either side. The air feels unnaturally still here.&#x000A;&#x000A;There is a door to the east.&#x000A;&#x000A;There is a door to the west.&#x000A;&#x000A;&gt;</commentary>
     <changed>NO</changed>
     <children>
@@ -141,6 +141,12 @@
       <child nodeId="node-1076"/>
       <child nodeId="node-1078"/>
       <child nodeId="node-1093"/>
+      <child nodeId="node-1119"/>
+      <child nodeId="node-1151"/>
+      <child nodeId="node-1154"/>
+      <child nodeId="node-1156"/>
+      <child nodeId="node-1157"/>
+      <child nodeId="node-1159"/>
     </children>
   </item>
   <item nodeId="node-2">
@@ -8857,11 +8863,12 @@
   </item>
   <item nodeId="node-968">
     <command xml:space="preserve">examine nightstand</command>
-    <result xml:space="preserve">You see nothing special about the nightstand.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">On the nightstand is an ornamental box (closed).&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-969"/>
+      <child nodeId="node-1160"/>
     </children>
   </item>
   <item nodeId="node-969">
@@ -8876,6 +8883,12 @@
   <item nodeId="node-970">
     <command xml:space="preserve">examine drawer</command>
     <result xml:space="preserve">You see nothing special about the drawer.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1160">
+    <command xml:space="preserve">open drawer</command>
+    <result xml:space="preserve">You open the drawer.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -9232,6 +9245,8 @@
     <children>
       <child nodeId="node-1079"/>
       <child nodeId="node-1107"/>
+      <child nodeId="node-1109"/>
+      <child nodeId="node-1129"/>
     </children>
   </item>
   <item nodeId="node-1079">
@@ -9241,6 +9256,8 @@
     <changed>NO</changed>
     <children>
       <child nodeId="node-1080"/>
+      <child nodeId="node-1110"/>
+      <child nodeId="node-1145"/>
     </children>
   </item>
   <item nodeId="node-1080">
@@ -9351,18 +9368,292 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
-  <item nodeId="node-1107">
-    <command xml:space="preserve">examine boxes</command>
-    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+  <item nodeId="node-1110">
+    <command xml:space="preserve">take boxes</command>
+    <result xml:space="preserve">You take one tiny box.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
     <children>
+      <child nodeId="node-1111"/>
+    </children>
+  </item>
+  <item nodeId="node-1111">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Bedroom&#x000A;This looks like a child's bedroom.&#x000A;&#x000A;There is a framed text on the wall. It looks like a nursery rhyme.&#x000A;&#x000A;You can also see a wardrobe (in which is many tiny boxes), a cabinet (closed) and a nightstand (on which is an ornamental box) here.&#x000A;&#x000A;You can go east from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1112"/>
+    </children>
+  </item>
+  <item nodeId="node-1112">
+    <command xml:space="preserve">examine rhyme</command>
+    <result xml:space="preserve">A poem written in violet ink is printed on a lavender page and decorated with bursts of gold and royal blue. In the bottom right corner is an illustration of a little girl lying in bed with a hole in her forehead. It looks like it might be a page out of a children's book.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1113"/>
+    </children>
+  </item>
+  <item nodeId="node-1113">
+    <command xml:space="preserve">read rhyme</command>
+    <result xml:space="preserve">ELORA &#x000A;&#x000A;Elora keeps a tiny box beside her bed. &#x000A;And every night when she retires,&#x000A;she pulls a sticky silver thread&#x000A;straight between her eyes and out her forehead.&#x000A; &#x000A;At length, she's pulled a dozen feet or so.&#x000A;She tears it off between her teeth,&#x000A;and bundles it around her thumbs,&#x000A;and in the box it goes.&#x000A;&#x000A;Like spider silk, the substance soon restores.&#x000A;Each night she must extract a little more.&#x000A;A bit of string's no burden on a box,&#x000A;but soon it filled to bursting, so she fetched the locks.&#x000A;&#x000A;A key for a lid, a box for a key, a lid for the box that held it.&#x000A;A second, a third, and every box so full she could barely close it.&#x000A;A fortnight or two and she's bricked herself completely into her room.&#x000A;Then over the balcony the boxes go 'till she's bricked her windows too.&#x000A;&#x000A;Then at last a night came she had no place left to keep it.&#x000A;The sticky substance filled her head; she'd no choice but to see it.&#x000A; And then it filled her up so much it dripped into her eyes.&#x000A;And across her vision cast a veil of webby spider ties. &#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1114"/>
+    </children>
+  </item>
+  <item nodeId="node-1114">
+    <command xml:space="preserve">examine boxes</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1115"/>
+    </children>
+  </item>
+  <item nodeId="node-1115">
+    <command xml:space="preserve">examine tiny boxes</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1116"/>
+    </children>
+  </item>
+  <item nodeId="node-1116">
+    <command xml:space="preserve">examine box selection</command>
+    <result xml:space="preserve">Tiny wooden boxes, all of which are missing their lid.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1117"/>
+    </children>
+  </item>
+  <item nodeId="node-1117">
+    <command xml:space="preserve">examine tiny box</command>
+    <result xml:space="preserve">You see nothing special about the tiny box.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1118"/>
+    </children>
+  </item>
+  <item nodeId="node-1118">
+    <command xml:space="preserve">examine wardrobe</command>
+    <result xml:space="preserve">In the wardrobe is many tiny boxes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1145">
+    <command xml:space="preserve">tiny</command>
+    <result xml:space="preserve">You take one tiny box.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1146"/>
+    </children>
+  </item>
+  <item nodeId="node-1146">
+    <command xml:space="preserve">examine tiny box</command>
+    <result xml:space="preserve">(the tiny box)&#x000A;A tiny wooden box. The lid is missing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1147"/>
+    </children>
+  </item>
+  <item nodeId="node-1147">
+    <command xml:space="preserve">take all boxes</command>
+    <result xml:space="preserve">tiny boxes: You take one tiny box.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1148"/>
+    </children>
+  </item>
+  <item nodeId="node-1148">
+    <command xml:space="preserve">examine ornamental box</command>
+    <result xml:space="preserve">You see nothing special about the ornamental box.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1149"/>
+    </children>
+  </item>
+  <item nodeId="node-1149">
+    <command xml:space="preserve">examine tiny box</command>
+    <result xml:space="preserve">(the tiny box)&#x000A;A tiny wooden box. The lid is missing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1150"/>
+    </children>
+  </item>
+  <item nodeId="node-1150">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Bedroom&#x000A;This looks like a child's bedroom.&#x000A;&#x000A;There is a framed text on the wall. It looks like a nursery rhyme.&#x000A;&#x000A;You can also see a wardrobe (in which is many tiny boxes), a cabinet (closed) and a nightstand (on which is an ornamental box) here.&#x000A;&#x000A;You can go east from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1107">
+    <command xml:space="preserve">examine boxes</command>
+    <result xml:space="preserve">Tiny wooden boxes, all of which are missing their lid.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
       <child nodeId="node-1108"/>
+      <child nodeId="node-1132"/>
     </children>
   </item>
   <item nodeId="node-1108">
     <command xml:space="preserve">examine tiny boxes</command>
     <result xml:space="preserve">Tiny wooden boxes, all of which are missing their lid.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1132">
+    <command xml:space="preserve">take box</command>
+    <result xml:space="preserve">Which do you mean, the tiny boxes or the ornamental box?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1133"/>
+    </children>
+  </item>
+  <item nodeId="node-1133">
+    <command xml:space="preserve">take tiny box</command>
+    <result xml:space="preserve">You take one tiny box.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1134"/>
+    </children>
+  </item>
+  <item nodeId="node-1134">
+    <command xml:space="preserve">examine tiny box</command>
+    <result xml:space="preserve">(the tiny box)&#x000A;You see nothing special about the tiny box.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1135"/>
+    </children>
+  </item>
+  <item nodeId="node-1135">
+    <command xml:space="preserve">examine tiny boxes</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1136"/>
+    </children>
+  </item>
+  <item nodeId="node-1136">
+    <command xml:space="preserve">examine boxes in wardrobe</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1137"/>
+    </children>
+  </item>
+  <item nodeId="node-1137">
+    <command xml:space="preserve">examine boxes</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1138"/>
+    </children>
+  </item>
+  <item nodeId="node-1138">
+    <command xml:space="preserve">drop tiny box</command>
+    <result xml:space="preserve">(the tiny box)&#x000A;Dropped.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1139"/>
+    </children>
+  </item>
+  <item nodeId="node-1139">
+    <command xml:space="preserve">examine tiny box</command>
+    <result xml:space="preserve">(the tiny box)&#x000A;You see nothing special about the tiny box.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1140"/>
+    </children>
+  </item>
+  <item nodeId="node-1140">
+    <command xml:space="preserve">examine boxes</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1141"/>
+    </children>
+  </item>
+  <item nodeId="node-1141">
+    <command xml:space="preserve">examine tiny boxes</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1142"/>
+    </children>
+  </item>
+  <item nodeId="node-1142">
+    <command xml:space="preserve">take box</command>
+    <result xml:space="preserve">(the tiny box)&#x000A;Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1143"/>
+    </children>
+  </item>
+  <item nodeId="node-1143">
+    <command xml:space="preserve">examine wardrobe</command>
+    <result xml:space="preserve">In the wardrobe is many tiny boxes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1144"/>
+    </children>
+  </item>
+  <item nodeId="node-1144">
+    <command xml:space="preserve">examine tiny box</command>
+    <result xml:space="preserve">(the tiny box)&#x000A;You see nothing special about the tiny box.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1109">
+    <command xml:space="preserve">take boxes</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1129">
+    <command xml:space="preserve">take tiny box</command>
+    <result xml:space="preserve">You take one tiny box.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1130"/>
+    </children>
+  </item>
+  <item nodeId="node-1130">
+    <command xml:space="preserve">examine tiny box</command>
+    <result xml:space="preserve">(the tiny box)&#x000A;You see nothing special about the tiny box.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1131"/>
+    </children>
+  </item>
+  <item nodeId="node-1131">
+    <command xml:space="preserve">examine tiny boxes</command>
+    <result xml:space="preserve">You see nothing special about the tiny box.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
@@ -9486,6 +9777,157 @@
   <item nodeId="node-1106">
     <command xml:space="preserve">examine tiny boxes</command>
     <result xml:space="preserve">You see nothing special about the tiny box.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1119">
+    <command xml:space="preserve">ACTIONS</command>
+    <result xml:space="preserve">Actions listing on.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1120"/>
+      <child nodeId="node-1125"/>
+    </children>
+  </item>
+  <item nodeId="node-1120">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">[looking]&#x000A;Bedroom&#x000A;This looks like a child's bedroom.&#x000A;&#x000A;There is a framed text on the wall. It looks like a nursery rhyme.&#x000A;&#x000A;You can also see a wardrobe (closed), a cabinet (closed) and a nightstand (on which is an ornamental box) here.&#x000A;&#x000A;You can go east from here.&#x000A;&#x000A;[looking - succeeded]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1121"/>
+    </children>
+  </item>
+  <item nodeId="node-1121">
+    <command xml:space="preserve">open wardrobe</command>
+    <result xml:space="preserve">[opening the wardrobe]&#x000A;You open the wardrobe, revealing many tiny boxes.&#x000A;[opening the wardrobe - succeeded]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1122"/>
+    </children>
+  </item>
+  <item nodeId="node-1122">
+    <command xml:space="preserve">examine boxes</command>
+    <result xml:space="preserve">[examining the tiny boxes]&#x000A;Tiny wooden boxes, all of which are missing their lid.&#x000A;&#x000A;[examining the tiny boxes - succeeded]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1123"/>
+    </children>
+  </item>
+  <item nodeId="node-1123">
+    <command xml:space="preserve">take box</command>
+    <result xml:space="preserve">Which do you mean, the tiny boxes or the ornamental box?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1124"/>
+    </children>
+  </item>
+  <item nodeId="node-1124">
+    <command xml:space="preserve">take tiny box</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1125">
+    <command xml:space="preserve">open wardrobe</command>
+    <result xml:space="preserve">[opening the wardrobe]&#x000A;You open the wardrobe, revealing many tiny boxes.&#x000A;[opening the wardrobe - succeeded]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1126"/>
+    </children>
+  </item>
+  <item nodeId="node-1126">
+    <command xml:space="preserve">take boxes</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1127"/>
+    </children>
+  </item>
+  <item nodeId="node-1127">
+    <command xml:space="preserve">take box</command>
+    <result xml:space="preserve">Which do you mean, the tiny boxes or the ornamental box?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1128"/>
+    </children>
+  </item>
+  <item nodeId="node-1128">
+    <command xml:space="preserve">take tiny box</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1151">
+    <command xml:space="preserve">examine box</command>
+    <result xml:space="preserve">You see nothing special about the ornamental box.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1152"/>
+    </children>
+  </item>
+  <item nodeId="node-1152">
+    <command xml:space="preserve">open box</command>
+    <result xml:space="preserve">It isn't something you can open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1153"/>
+    </children>
+  </item>
+  <item nodeId="node-1153">
+    <command xml:space="preserve">open ornamental box</command>
+    <result xml:space="preserve">It isn't something you can open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1154">
+    <command xml:space="preserve">open ornamental bo</command>
+    <result xml:space="preserve">I only understood you as far as wanting to open the ornamental box.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1155"/>
+    </children>
+  </item>
+  <item nodeId="node-1155">
+    <command xml:space="preserve">open ornamental box</command>
+    <result xml:space="preserve">It isn't something you can open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1156">
+    <command xml:space="preserve">open ornamental box</command>
+    <result xml:space="preserve">It isn't something you can open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1157">
+    <command xml:space="preserve">examine ornamental box</command>
+    <result xml:space="preserve">You see nothing special about the ornamental box.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1158"/>
+    </children>
+  </item>
+  <item nodeId="node-1158">
+    <command xml:space="preserve">open ornamental box</command>
+    <result xml:space="preserve">It isn't something you can open.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1159">
+    <command xml:space="preserve">open cute box</command>
+    <result xml:space="preserve">It seems to be locked.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
