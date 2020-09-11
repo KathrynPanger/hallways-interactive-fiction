@@ -120,7 +120,7 @@ The Drinking Room
 		"This room is fully furnished including a white fainting couch, a grandfather clock, and a coffee table. All of the furniture is made of the same dark, rich wood that can be found throughout. On the wall there is a full-sized mirror and a large painting of a woman. In the northeast corner you can see a small metal gate stretched across a doorway. You think you can hear a faint ticking sound."
 
 		The bar is here.
-			"There is a fully stocked bar in the corner. It is has a beautiful curved countertop and many shelves of liqours which reach to the cieling behind it. Almost all of the bottles are brand new and sealed."
+			"There is a fully stocked bar in the corner. It is has a beautiful curved countertop and many shelves of liquors which reach to the cieling behind it. Almost all of the bottles are brand new and sealed."
 		The bar is a supporter.
 			The bottle of whiskey is on the bar.
 				The description of the bottle of whiskey is "You hate whiskey."
@@ -203,30 +203,49 @@ The Bedroom is west of the Even More Hallway.
 		The drawer is a fixed in place opaque openable closed container.
 		The drawer is part of the nightstand.
 		The nightstand is here.
-		the ornamental box is a locked opaque container.
-		the ornamental key unlocks the ornamental box.
-		the ornamental box is on the nightstand.
+			"Against the far wall is a small white nightstand with a single drawer.".
+		instead of opening the nightstand:
+			try opening the drawer;
+	
+		The ornamental box is a locked opaque container.
+		The ornamental key unlocks the ornamental box.
+		The ornamental box is on the nightstand.
 		
-
-		The box selection is a thing in the wardrobe with the printed name "tiny boxes". The indefinite article is "many". Understand "tiny box" as the box selection. Understand "tiny boxes" as the box selection. Understand "boxes" as the box selection. The description is "Tiny wooden boxes, all of which are missing their lid." 
+		The box pile is a thing in the wardrobe with the printed name "tiny boxes". The indefinite article is "many". Understand "tiny box" as the box pile. Understand "tiny boxes" as the box pile. Understand "boxes" as the box pile. The description is "Tiny wooden boxes, all of which are missing their lid." 
 		
 		A tiny box is a kind of thing.
 		the description is "A tiny wooden box. The lid is missing.".
-		10 tiny boxes are in the limbo room.
+		5 tiny boxes are in the limbo room.
 		
 instead of opening a tiny box:
 	say "it doesn't have a lid.";
-	
 
 
 the limbo room is a room.
-instead of taking the box selection:
+instead of taking the box pile:
 	let chosen box be a random tiny box in the limbo room;
 	if the chosen box is nothing:
 		say "You consider taking another box, but think better of it. You have enough.";
 	otherwise:
 		move the chosen box to the player;
 		say "You take one tiny box.";
+
+The key pile is a thing in the drawer with the printed name "tiny keys". The indefinite article is "many". Understand "tiny key" as the key pile. Understand "tiny keys" as the key pile. Understand "keys" as the key pile. The description is "The drawer is filled to the brim with tiny gold keys." 
+		
+		A tiny key is a kind of thing.
+		the description is "A tiny gold key".
+		5 tiny keys are in the limbo room.
+
+
+
+the limbo room is a room.
+instead of taking the key pile:
+	let chosen key be a random tiny key in the limbo room;
+	if the chosen key is nothing:
+		say "You consider taking another key, but think better of it. You have enough.";
+	otherwise:
+		move the chosen key to the player;
+		say "You take one tiny key.";
 
 [how to remove take all]
 [After reading a command:
@@ -248,7 +267,7 @@ the player is in the bedroom.
 instead of taking the nursery rhyme:
 	say "It is fixed to the wall.";
 instead of reading the nursery rhyme:
-	say "[line break][bold type]ELORA[roman type] [line break][line break][italic type]Elora keeps a tiny box beside her bed. [line break]And every night when she retires,[line break]she pulls a sticky silver thread[line break]straight between her eyes and out her forehead.[line break] [line break]At length, she's pulled a dozen feet or so.[line break]She tears it off between her teeth,[line break]and bundles it around her thumbs,[line break]and in the box it goes.[line break][line break]Like spider silk, the substance soon restores.[line break]Each night she must extract a little more.[line break]A bit of string's no burden on a box,[line break]but soon it filled to bursting, so she fetched the locks.[line break][line break]A key for a lid, a box for a key, a lid for the box that held it.[line break]A second, a third, and every box so full she could barely close it.[line break]A fortnight or two and she's bricked herself completely into her room.[line break]Then over the balcony the boxes go [apostrophe]till she's bricked her windows too.[line break][line break]Then at last a night came she had no place left to keep it.[line break]The sticky substance filled her head; she'd no choice but to see it.[line break] And then it filled her up so much it dripped into her eyes.[line break]And across her vision cast a veil of webby spider ties. [roman type][line break][line break]".
+	say "[line break][bold type]ELORA[roman type] [line break][line break][italic type]Elora keeps a tiny box beside her bed. [line break]And every night when she retires,[line break]she pulls a sticky silver thread[line break]straight between her eyes and out her forehead.[line break] [line break]At length, she's pulled a dozen feet or so.[line break]She tears it off between her teeth,[line break]and bundles it around her thumbs,[line break]and in the box it goes.[line break][line break]Like spider silk, the substance soon restores.[line break]Each night she must extract a little more.[line break]A bit of string's no burden on a box,[line break]but soon it filled to bursting, so she fetched the locks.[line break][line break]A key for a lid, a box for a key, a lock for the box that held it.[line break]A second, a third, and every box so full she could barely close it.[line break]A fortnight or two and she's bricked herself completely into her room.[line break]Then over the balcony the boxes go [apostrophe]till she's bricked her windows too.[line break][line break]Then at last a night came she had no place left to keep it.[line break]The sticky substance filled her head; she'd no choice but to see it.[line break] And then it filled her up so much it dripped into her eyes.[line break]And across her vision cast a veil of webby spider ties. [roman type][line break][line break]".
 
 The Yet More Hallway is a room with the printed name "Hallway".
 The Yet More Hallway is north of the Even More Hallway. 
@@ -270,7 +289,8 @@ instead of giving up:
 		say "Nothing stops you from giving up. Nothing gives you meaning.";
 		now the player carries the meaning;
 	otherwise:
-		end the story finally saying "When you decide to give up, nothing can stop you.";
+		say "When you decide to give up, nothing can stop you.";
+		end the story finally saying "YOU HAVE GIVEN UP";
 	
 The Extraordinary Room is  west of the Old Mall.
 	"This room is completely dark."
@@ -535,7 +555,7 @@ A wall_value is a kind of value. 1 wall specifies a wall_value.
 [Thanking is an action applying to one animal.]
 
 [book code]
-	 The solutions manual is carried by the player. The solutions manual has a number called the last page read. The solutions manual has a number called the length. The length of the solutions manual is 5. 
+	 The solutions manual is carried by the player. The solutions manual has a number called the last page read. The solutions manual has a number called the length. The length of the solutions manual is 6. 
 
 	Understand the command "read" as something new. 
 
@@ -601,7 +621,8 @@ page	content
 2	"THANK YOU."
 3	"NOTHING HAS MEANING. LET NOTHING STOP YOU FROM GIVING UP."
 4	"SOMETHING IS WRONG."
-5	"hint."
+5	"AMAZING."
+6	"THE WORLD."
 
 
 
@@ -613,6 +634,12 @@ To read page (N - a number):
 	otherwise:
 		say "Page [N] appears to be blank." 
 		
+	figure of the mazemap is the file "mazemap.png".
+After reading the number understood in the solutions manual:
+	if the number understood is 5:
+		display the figure of the mazemap;	
+	otherwise:
+		continue the action;
 [rule for printing the name of a room when the evil_presence is on:]
 
 Rule for printing room description details of containers:

@@ -16,6 +16,7 @@ ifiction "C:\Users\kathr\OneDrive\Documents\Inform\Projects\hallways.inform\Meta
 cover "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
 picture 1 "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
 picture 3 "C:\Users\kathr\OneDrive\Documents\Inform\Projects\hallways.materials\Figures\symbol.png"
+picture 4 "C:\Users\kathr\OneDrive\Documents\Inform\Projects\hallways.materials\Figures\mazemap.png"
 
 ! Placeholder variables
 

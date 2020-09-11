@@ -6,6 +6,8 @@
         <dict>
             <key>3</key>
             <string>Figures\symbol.png</string>
+            <key>4</key>
+            <string>Figures\mazemap.png</string>
         </dict>
     </dict>
 </plist>

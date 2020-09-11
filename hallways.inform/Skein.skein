@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-1160"/>
+  <activeNode nodeId="node-1210"/>
   <item nodeId="node-1">
     <command xml:space="preserve">hallways</command>
-    <result xml:space="preserve">Hallways&#x000A;An Interactive Fiction&#x000A;Release 1 / Serial number 200910 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Bedroom&#x000A;This looks like a child's bedroom.&#x000A;&#x000A;There is a framed text on the wall. It looks like a nursery rhyme.&#x000A;&#x000A;You can also see a wardrobe (closed), a cabinet (closed) and a nightstand (on which is an ornamental box (closed)) here.&#x000A;&#x000A;You can go east from here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Hallways&#x000A;An Interactive Fiction&#x000A;Release 1 / Serial number 200910 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Bedroom&#x000A;This looks like a child's bedroom.&#x000A;&#x000A;There is a framed text on the wall. It looks like a nursery rhyme.&#x000A;&#x000A;Against the far wall is a small white nightstand with a single drawer.&#x000A;&#x000A;On the nightstand is an ornamental box.&#x000A;&#x000A;You can also see a wardrobe and a cabinet here.&#x000A;&#x000A;You can go east from here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve">Hallway&#x000A;An Interactive Fiction&#x000A;Release 1 / Serial number 200818 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Hallway&#x000A;You are in a long hallway.  Identifcal doors are spaced regularly along the walls on either side. The air feels unnaturally still here.&#x000A;&#x000A;There is a door to the east.&#x000A;&#x000A;There is a door to the west.&#x000A;&#x000A;&gt;</commentary>
     <changed>NO</changed>
     <children>
@@ -147,6 +147,8 @@
       <child nodeId="node-1156"/>
       <child nodeId="node-1157"/>
       <child nodeId="node-1159"/>
+      <child nodeId="node-1161"/>
+      <child nodeId="node-1162"/>
     </children>
   </item>
   <item nodeId="node-2">
@@ -8595,11 +8597,12 @@
   </item>
   <item nodeId="node-936">
     <command xml:space="preserve">give up</command>
-    <result xml:space="preserve">Nothing stops you from giving up. Nothing gives you meaning.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">When you decide to give up, nothing can stop you.&#x000A;&#x000A;&#x000A;&#x000A;    *** YOU HAVE GIVEN UP ***&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>YES</changed>
     <children>
       <child nodeId="node-937"/>
+      <child nodeId="node-1174"/>
     </children>
   </item>
   <item nodeId="node-937">
@@ -8608,13 +8611,218 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-1174">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Bedroom&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1175"/>
+    </children>
+  </item>
+  <item nodeId="node-1175">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Hallway&#x000A;You are standing in the middle a long hallway that seems to stretch endlessly in either direction.  It is reminiscent of the halls that one might see in a fancy hotel; identical doors are spaced regularly along the walls on either side, each of which are outfitted with a black box above the handle designed to accept a key card. The walls are papered with a rich navy and powder-blue damask pattern, and a tightly knitted carpet frames the passage, tracing muted grey and gold stripes down its length.  The air feels unnaturally still here.&#x000A;&#x000A;A neat section of the blue damask wall paper has torn, revealing a patch of yellow beneath it. You admire the torn piece.&#x000A;&#x000A;You can also see a steel knife here.&#x000A;&#x000A;You can go north, south, east and west to the Bedroom from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1176"/>
+    </children>
+  </item>
+  <item nodeId="node-1176">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">Drinking Room&#x000A;This room is fully furnished including a white fainting couch, a grandfather clock, and a coffee table. All of the furniture is made of the same dark, rich wood that can be found throughout. On the wall there is a full-sized mirror and a large painting of a woman. In the northeast corner you can see a small metal gate stretched across a doorway. You think you can hear a faint ticking sound.&#x000A;&#x000A;There is a fully stocked bar in the corner. It is has a beautiful curved countertop and many shelves of liqours which reach to the cieling behind it. Almost all of the bottles are brand new and sealed.&#x000A;&#x000A;On the bar are a bottle of whiskey, a bottle of vodka, a bottle of gin and a lemon.&#x000A;&#x000A;You can see a grandfather clock here.&#x000A;&#x000A;You can also see a metal gate here.&#x000A;&#x000A;You can go northeast through the metal gate (closed) and west to the Hallway from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1177"/>
+    </children>
+  </item>
+  <item nodeId="node-1177">
+    <command xml:space="preserve">ne</command>
+    <result xml:space="preserve">(first opening the metal gate)&#x000A;It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1178"/>
+    </children>
+  </item>
+  <item nodeId="node-1178">
+    <command xml:space="preserve">open gate</command>
+    <result xml:space="preserve">It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1179"/>
+    </children>
+  </item>
+  <item nodeId="node-1179">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a solutions manual&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1180"/>
+    </children>
+  </item>
+  <item nodeId="node-1180">
+    <command xml:space="preserve">read manual</command>
+    <result xml:space="preserve">You flip the pages randomly and arrive at page 5:&#x000A;&#x000A;It says: "hint."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1181"/>
+    </children>
+  </item>
+  <item nodeId="node-1181">
+    <command xml:space="preserve">read manual</command>
+    <result xml:space="preserve">You flip the pages randomly and arrive at page 5:&#x000A;&#x000A;It says: "hint."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1182"/>
+    </children>
+  </item>
+  <item nodeId="node-1182">
+    <command xml:space="preserve">read manual</command>
+    <result xml:space="preserve">You flip the pages randomly and arrive at page 2:&#x000A;&#x000A;It says: "THANK YOU."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1183"/>
+    </children>
+  </item>
+  <item nodeId="node-1183">
+    <command xml:space="preserve">read manual</command>
+    <result xml:space="preserve">You flip the pages randomly and arrive at page 5:&#x000A;&#x000A;It says: "hint."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1184"/>
+    </children>
+  </item>
+  <item nodeId="node-1184">
+    <command xml:space="preserve">read manual</command>
+    <result xml:space="preserve">You flip the pages randomly and arrive at page 3:&#x000A;&#x000A;It says: "NOTHING HAS MEANING. LET NOTHING STOP YOU FROM GIVING UP."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1185"/>
+    </children>
+  </item>
+  <item nodeId="node-1185">
+    <command xml:space="preserve">read manual</command>
+    <result xml:space="preserve">You flip the pages randomly and arrive at page 5:&#x000A;&#x000A;It says: "hint."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1186"/>
+    </children>
+  </item>
+  <item nodeId="node-1186">
+    <command xml:space="preserve">read page 4</command>
+    <result xml:space="preserve">(in the solutions manual)&#x000A;It says: "SOMETHING IS WRONG."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1187"/>
+    </children>
+  </item>
+  <item nodeId="node-1187">
+    <command xml:space="preserve">look behind box</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1188"/>
+    </children>
+  </item>
+  <item nodeId="node-1188">
+    <command xml:space="preserve">look behind manual</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1189"/>
+    </children>
+  </item>
+  <item nodeId="node-1189">
+    <command xml:space="preserve">look behind nightstand</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1190"/>
+    </children>
+  </item>
+  <item nodeId="node-1190">
+    <command xml:space="preserve">move nightstand</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1191"/>
+    </children>
+  </item>
+  <item nodeId="node-1191">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Drinking Room&#x000A;This room is fully furnished including a white fainting couch, a grandfather clock, and a coffee table. All of the furniture is made of the same dark, rich wood that can be found throughout. On the wall there is a full-sized mirror and a large painting of a woman. In the northeast corner you can see a small metal gate stretched across a doorway. You think you can hear a faint ticking sound.&#x000A;&#x000A;There is a fully stocked bar in the corner. It is has a beautiful curved countertop and many shelves of liqours which reach to the cieling behind it. Almost all of the bottles are brand new and sealed.&#x000A;&#x000A;On the bar are a bottle of whiskey, a bottle of vodka, a bottle of gin and a lemon.&#x000A;&#x000A;You can see a grandfather clock here.&#x000A;&#x000A;You can also see a metal gate here.&#x000A;&#x000A;You can go northeast through the metal gate (closed) and west to the Hallway from here.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1192"/>
+    </children>
+  </item>
+  <item nodeId="node-1192">
+    <command xml:space="preserve">look behind clock</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1193"/>
+    </children>
+  </item>
+  <item nodeId="node-1193">
+    <command xml:space="preserve">look behind bar</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1194"/>
+    </children>
+  </item>
+  <item nodeId="node-1194">
+    <command xml:space="preserve">look bar</command>
+    <result xml:space="preserve">On the bar are a bottle of whiskey, a bottle of vodka, a bottle of gin and a lemon.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1195"/>
+    </children>
+  </item>
+  <item nodeId="node-1195">
+    <command xml:space="preserve">move bar</command>
+    <result xml:space="preserve">It is fixed in place.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1196"/>
+    </children>
+  </item>
+  <item nodeId="node-1196">
+    <command xml:space="preserve">move lemon</command>
+    <result xml:space="preserve">Nothing obvious happens.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-938">
     <command xml:space="preserve">read manual</command>
-    <result xml:space="preserve">You flip the pages randomly and arrive at page 2:&#x000A;&#x000A;It says: "THANK YOU."&#x000A;&#x000A;Something tells you  (put conditional here later)&#x000A;Something tells you  (put conditional here later)&#x000A;&gt;</result>
+    <result xml:space="preserve">You flip the pages randomly and arrive at page 4:&#x000A;&#x000A;It says: "SOMETHING IS WRONG."&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>YES</changed>
     <children>
       <child nodeId="node-939"/>
+      <child nodeId="node-1197"/>
     </children>
   </item>
   <item nodeId="node-939">
@@ -8758,6 +8966,129 @@
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
+  <item nodeId="node-1197">
+    <command xml:space="preserve">read page 5</command>
+    <result xml:space="preserve">(in the solutions manual)&#x000A;It says: "THIS WAY."&#x000A;&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1198"/>
+    </children>
+  </item>
+  <item nodeId="node-1198">
+    <command xml:space="preserve">read manual</command>
+    <result xml:space="preserve">You flip the pages randomly and arrive at page 2:&#x000A;&#x000A;It says: "THANK YOU."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1199"/>
+    </children>
+  </item>
+  <item nodeId="node-1199">
+    <command xml:space="preserve">read manual</command>
+    <result xml:space="preserve">You flip the pages randomly and arrive at page 4:&#x000A;&#x000A;It says: "SOMETHING IS WRONG."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1200"/>
+    </children>
+  </item>
+  <item nodeId="node-1200">
+    <command xml:space="preserve">read manual</command>
+    <result xml:space="preserve">You flip the pages randomly and arrive at page 4:&#x000A;&#x000A;It says: "SOMETHING IS WRONG."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1201"/>
+    </children>
+  </item>
+  <item nodeId="node-1201">
+    <command xml:space="preserve">read manual</command>
+    <result xml:space="preserve">You flip the pages randomly and arrive at page 4:&#x000A;&#x000A;It says: "SOMETHING IS WRONG."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1202"/>
+    </children>
+  </item>
+  <item nodeId="node-1202">
+    <command xml:space="preserve">read manual</command>
+    <result xml:space="preserve">You flip the pages randomly and arrive at page 2:&#x000A;&#x000A;It says: "THANK YOU."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1203"/>
+    </children>
+  </item>
+  <item nodeId="node-1203">
+    <command xml:space="preserve">read manual</command>
+    <result xml:space="preserve">You flip the pages randomly and arrive at page 4:&#x000A;&#x000A;It says: "SOMETHING IS WRONG."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1204"/>
+    </children>
+  </item>
+  <item nodeId="node-1204">
+    <command xml:space="preserve">read manual</command>
+    <result xml:space="preserve">You flip the pages randomly and arrive at page 3:&#x000A;&#x000A;It says: "NOTHING HAS MEANING. LET NOTHING STOP YOU FROM GIVING UP."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1205"/>
+    </children>
+  </item>
+  <item nodeId="node-1205">
+    <command xml:space="preserve">read manual</command>
+    <result xml:space="preserve">You flip the pages randomly and arrive at page 1:&#x000A;&#x000A;It says: "THE DARKNESS OPENS UP."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1206"/>
+    </children>
+  </item>
+  <item nodeId="node-1206">
+    <command xml:space="preserve">read manual</command>
+    <result xml:space="preserve">You flip the pages randomly and arrive at page 1:&#x000A;&#x000A;It says: "THE DARKNESS OPENS UP."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1207"/>
+    </children>
+  </item>
+  <item nodeId="node-1207">
+    <command xml:space="preserve">read manual</command>
+    <result xml:space="preserve">You flip the pages randomly and arrive at page 3:&#x000A;&#x000A;It says: "NOTHING HAS MEANING. LET NOTHING STOP YOU FROM GIVING UP."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1208"/>
+    </children>
+  </item>
+  <item nodeId="node-1208">
+    <command xml:space="preserve">read manual</command>
+    <result xml:space="preserve">You flip the pages randomly and arrive at page 1:&#x000A;&#x000A;It says: "THE DARKNESS OPENS UP."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1209"/>
+    </children>
+  </item>
+  <item nodeId="node-1209">
+    <command xml:space="preserve">read manual</command>
+    <result xml:space="preserve">You flip the pages randomly and arrive at page 1:&#x000A;&#x000A;It says: "THE DARKNESS OPENS UP."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1210"/>
+    </children>
+  </item>
+  <item nodeId="node-1210">
+    <command xml:space="preserve">read manual</command>
+    <result xml:space="preserve">You flip the pages randomly and arrive at page 5:&#x000A;&#x000A;It says: "THIS WAY."&#x000A;&#x000A;&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
   <item nodeId="node-955">
     <command xml:space="preserve">read </command>
     <result xml:space="preserve">(the solutions manual)&#x000A;You flip the pages randomly and arrive at page 2:&#x000A;&#x000A;It says: "Thank you."&#x000A;&#x000A;&gt;</result>
@@ -8863,7 +9194,7 @@
   </item>
   <item nodeId="node-968">
     <command xml:space="preserve">examine nightstand</command>
-    <result xml:space="preserve">On the nightstand is an ornamental box (closed).&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">On the nightstand is an ornamental box.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>YES</changed>
     <children>
@@ -9928,6 +10259,115 @@
   <item nodeId="node-1159">
     <command xml:space="preserve">open cute box</command>
     <result xml:space="preserve">It seems to be locked.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1161">
+    <command xml:space="preserve">open nightstand</command>
+    <result xml:space="preserve">You open the drawer.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+  </item>
+  <item nodeId="node-1162">
+    <command xml:space="preserve">open drawer</command>
+    <result xml:space="preserve">You open the drawer, revealing many tiny keys.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-1163"/>
+      <child nodeId="node-1164"/>
+    </children>
+  </item>
+  <item nodeId="node-1163">
+    <command xml:space="preserve">examine drawer</command>
+    <result xml:space="preserve">The drawer is empty.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1164">
+    <command xml:space="preserve">take key</command>
+    <result xml:space="preserve">You take one tiny key.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1165"/>
+    </children>
+  </item>
+  <item nodeId="node-1165">
+    <command xml:space="preserve">examine key</command>
+    <result xml:space="preserve">(the tiny key)&#x000A;A tiny gold key&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1166"/>
+    </children>
+  </item>
+  <item nodeId="node-1166">
+    <command xml:space="preserve">take all keys</command>
+    <result xml:space="preserve">tiny keys: You take one tiny key.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1167"/>
+    </children>
+  </item>
+  <item nodeId="node-1167">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  two tiny keys&#x000A;  a solutions manual&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1168"/>
+    </children>
+  </item>
+  <item nodeId="node-1168">
+    <command xml:space="preserve">open wardrobe</command>
+    <result xml:space="preserve">You open the wardrobe, revealing many tiny boxes.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1169"/>
+    </children>
+  </item>
+  <item nodeId="node-1169">
+    <command xml:space="preserve">take box</command>
+    <result xml:space="preserve">Which do you mean, the tiny boxes or the ornamental box?&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1170"/>
+    </children>
+  </item>
+  <item nodeId="node-1170">
+    <command xml:space="preserve">take tiny box</command>
+    <result xml:space="preserve">You take one tiny box.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1171"/>
+    </children>
+  </item>
+  <item nodeId="node-1171">
+    <command xml:space="preserve">open box with key</command>
+    <result xml:space="preserve">(the tiny box with the tiny key)&#x000A;That doesn't seem to be something you can unlock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1172"/>
+    </children>
+  </item>
+  <item nodeId="node-1172">
+    <command xml:space="preserve">examine tiny box</command>
+    <result xml:space="preserve">(the tiny box)&#x000A;A tiny wooden box. The lid is missing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1173"/>
+    </children>
+  </item>
+  <item nodeId="node-1173">
+    <command xml:space="preserve">open ornamental box with tiny key</command>
+    <result xml:space="preserve">(the tiny key)&#x000A;That doesn't seem to fit the lock.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
