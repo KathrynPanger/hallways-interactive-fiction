@@ -35,9 +35,43 @@ The Hallway
 	is a room. 
 	"You are standing in the middle a long hallway that seems to stretch endlessly in either direction.  It is reminiscent of the halls that one might see in a fancy hotel; identical doors are spaced regularly along the walls on either side, each of which are outfitted with a black box above the handle designed to accept a key card. The walls are papered with a rich navy and powder-blue damask pattern, and a tightly knitted carpet frames the passage, tracing muted grey and gold stripes down its length.  The air feels unnaturally still here."
 	
+The Library Lobby
+	is east of the Hallway.
+	
+The Nook
+	is north of the Library.
+	"A long stroll across the diameter of the massive lobby takes you to one of many small, cozy nooks. Sofas and wing-backed chairs are tastefully framed by tall bookshelves lining each of the back walls."
+	The display case is a fixed in place closed transparent locked container. 
+	The initial appearance of the display case is "Near the center of the room there is a glass display case containing many curious items. A small notice is taped to the glass.".
+	the display case is here.
+	The spellbook is in the display case.
+	The linking book is in the display case.
+	The encycolpedia frobozzica is in the display case.
+	The coin pouch is a container.
+		five coins are in the coin pouch.
+	the coin pouch is in the display case.
+	The strange orb is in the display case.
+the notice is part of the display case.
+the description of the notice is "It says: [quotation mark]Rare items from oft-imagined worlds.[quotation mark]".
+after examining the display case:
+	say "There is a small notice taped to the glass on top of the display case.";
+instead of reading the notice:
+	try examining the notice;
 
-
-
+The Records Room
+	is west of the Hallway.
+	The metal fan is here.
+	The metal fan is a fixed in place device. The metal fan is switched on. 
+	The description of the Records Room is "This is an austere looking room with beige tile floors below and white flourescent lighting overhead. A number of file cabinets line the north and south walls. In the furthest corner is a grey metal desk with two locking drawers and a bankers lamp with a green glass shade. It is uncomfortably warm in here. In the corner, standing metal fan is [if the metal fan is switched on]noisily failing to cool it.[otherwise]doing nothing to cool it.".
+	Some file cabinets are here. The file cabinets are fixed in place.
+	
+The Archives is a room with the printed name "The Archives".
+The Archives is west of the Records Room.
+The description of The Archives is "The room opens up into a wide, sprawling space, the center of which is filled with rows upon rows of identical metal desks. The rest of the room is dominated by parallel isles of grey shelving, each of which is stacked with important-looking documents."
+	
+	A man called Foster is here.
+	
+	
 The More Hallway 
 	is a room with the printed name "Hallway".
 	The More Hallway is north of the Hallway. 
@@ -257,7 +291,7 @@ failing is an action applying to nothing. Understand “fail” as failing.
 Carry out failing:
 say “That doesn't work.”]
 
-the player is in the bedroom.
+
 	
 
 

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Skein rootNode="node-1">
   <generator>Windows Inform 7 6M62</generator>
-  <activeNode nodeId="node-1210"/>
+  <activeNode nodeId="node-1232"/>
   <item nodeId="node-1">
     <command xml:space="preserve">hallways</command>
-    <result xml:space="preserve">Hallways&#x000A;An Interactive Fiction&#x000A;Release 1 / Serial number 200910 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Bedroom&#x000A;This looks like a child's bedroom.&#x000A;&#x000A;There is a framed text on the wall. It looks like a nursery rhyme.&#x000A;&#x000A;Against the far wall is a small white nightstand with a single drawer.&#x000A;&#x000A;On the nightstand is an ornamental box.&#x000A;&#x000A;You can also see a wardrobe and a cabinet here.&#x000A;&#x000A;You can go east from here.&#x000A;&#x000A;&gt;</result>
+    <result xml:space="preserve">Hallways&#x000A;An Interactive Fiction&#x000A;Release 1 / Serial number 200911 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Records Room&#x000A;This is an austere looking room with beige tile floors below and white flourescent lighting overhead. A number of file cabinets line the north and south walls. In the furthest corner is a grey metal desk with two locking drawers and a bankers lamp with a green glass shade. It is uncomfortably warm in here. In the corner, standing metal fan is noisily failing to cool it.&#x000A;&#x000A;You can see a fan and some file cabinets here.&#x000A;&#x000A;You can go east from here.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve">Hallway&#x000A;An Interactive Fiction&#x000A;Release 1 / Serial number 200818 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD&#x000A;&#x000A;Hallway&#x000A;You are in a long hallway.  Identifcal doors are spaced regularly along the walls on either side. The air feels unnaturally still here.&#x000A;&#x000A;There is a door to the east.&#x000A;&#x000A;There is a door to the west.&#x000A;&#x000A;&gt;</commentary>
-    <changed>NO</changed>
+    <changed>YES</changed>
     <children>
       <child nodeId="node-2"/>
       <child nodeId="node-3"/>
@@ -149,6 +149,14 @@
       <child nodeId="node-1159"/>
       <child nodeId="node-1161"/>
       <child nodeId="node-1162"/>
+      <child nodeId="node-1215"/>
+      <child nodeId="node-1218"/>
+      <child nodeId="node-1220"/>
+      <child nodeId="node-1221"/>
+      <child nodeId="node-1222"/>
+      <child nodeId="node-1224"/>
+      <child nodeId="node-1226"/>
+      <child nodeId="node-1231"/>
     </children>
   </item>
   <item nodeId="node-2">
@@ -9088,6 +9096,42 @@
     <result xml:space="preserve">You flip the pages randomly and arrive at page 5:&#x000A;&#x000A;It says: "THIS WAY."&#x000A;&#x000A;&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
+    <children>
+      <child nodeId="node-1211"/>
+    </children>
+  </item>
+  <item nodeId="node-1211">
+    <command xml:space="preserve">give up</command>
+    <result xml:space="preserve">When you decide to give up, nothing can stop you.&#x000A;&#x000A;&#x000A;&#x000A;    *** YOU HAVE GIVEN UP ***&#x000A;&#x000A;&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1212"/>
+    </children>
+  </item>
+  <item nodeId="node-1212">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">Please give one of the answers above.&#x000A;&#x000A;Would you like to RESTART, RESTORE a saved game, QUIT or UNDO the last command?&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1213"/>
+    </children>
+  </item>
+  <item nodeId="node-1213">
+    <command xml:space="preserve">undo</command>
+    <result xml:space="preserve">Bedroom&#x000A;[Previous turn undone.]&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1214"/>
+    </children>
+  </item>
+  <item nodeId="node-1214">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:&#x000A;  a solutions manual&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
   </item>
   <item nodeId="node-955">
     <command xml:space="preserve">read </command>
@@ -10368,6 +10412,142 @@
   <item nodeId="node-1173">
     <command xml:space="preserve">open ornamental box with tiny key</command>
     <result xml:space="preserve">(the tiny key)&#x000A;That doesn't seem to fit the lock.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1215">
+    <command xml:space="preserve">examine case</command>
+    <result xml:space="preserve">In the display case are a spellbook, a linking book, an encycolpedia frobozzica and a coin pouch.&#x000A;&#x000A;There is a small notice taped to the glass on top of the display case.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+    <children>
+      <child nodeId="node-1216"/>
+      <child nodeId="node-1219"/>
+    </children>
+  </item>
+  <item nodeId="node-1216">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Library&#x000A;The narrow doorway opens up intos a large, comfortable library with a vaulted cieling. Sofas and wing-backed chairs are tastefully framed by tall bookshelves lining each of the back walls.&#x000A;&#x000A;Near the center of the room there is a glass display case containing many curious items.&#x000A;&#x000A;You can see no obvious exits.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1217"/>
+    </children>
+  </item>
+  <item nodeId="node-1217">
+    <command xml:space="preserve">examine case</command>
+    <result xml:space="preserve">The display case is empty.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1219">
+    <command xml:space="preserve">read notice</command>
+    <result xml:space="preserve">There are no pages in the notice.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1218">
+    <command xml:space="preserve">examine display case</command>
+    <result xml:space="preserve">In the display case are a spellbook, a linking book, an encycolpedia frobozzica and a coin pouch.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1220">
+    <command xml:space="preserve">read notice</command>
+    <result xml:space="preserve">It says: "Rare items from oft-imagined worlds."&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+  </item>
+  <item nodeId="node-1221">
+    <command xml:space="preserve">turn off fan</command>
+    <result xml:space="preserve">You switch the fan off.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>YES</changed>
+  </item>
+  <item nodeId="node-1222">
+    <command xml:space="preserve">examine file cabinets</command>
+    <result xml:space="preserve">You see nothing special about the file cabinets.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1223"/>
+    </children>
+  </item>
+  <item nodeId="node-1223">
+    <command xml:space="preserve">take cabinets</command>
+    <result xml:space="preserve">Taken.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1224">
+    <command xml:space="preserve">examine first cabinet</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1225"/>
+    </children>
+  </item>
+  <item nodeId="node-1225">
+    <command xml:space="preserve">examine cabinet</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1226">
+    <command xml:space="preserve">examine file cabinet</command>
+    <result xml:space="preserve">I only understood you as far as wanting to examine 3 file cabinets.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1227"/>
+    </children>
+  </item>
+  <item nodeId="node-1227">
+    <command xml:space="preserve">examine cabinets</command>
+    <result xml:space="preserve">You see nothing special about 3 file cabinets.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1228"/>
+    </children>
+  </item>
+  <item nodeId="node-1228">
+    <command xml:space="preserve">open cabinet</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1229"/>
+    </children>
+  </item>
+  <item nodeId="node-1229">
+    <command xml:space="preserve">open cabinets</command>
+    <result xml:space="preserve">You open 3 file cabinets.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1230"/>
+    </children>
+  </item>
+  <item nodeId="node-1230">
+    <command xml:space="preserve">close 2 cabinets</command>
+    <result xml:space="preserve">You can't use multiple objects with that verb.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+  </item>
+  <item nodeId="node-1231">
+    <command xml:space="preserve">examine cabinets</command>
+    <result xml:space="preserve">You see nothing special about the file cabinets.&#x000A;&#x000A;&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <changed>NO</changed>
+    <children>
+      <child nodeId="node-1232"/>
+    </children>
+  </item>
+  <item nodeId="node-1232">
+    <command xml:space="preserve">open cabinet</command>
+    <result xml:space="preserve">You can't see any such thing.&#x000A;&#x000A;&gt;</result>
     <commentary xml:space="preserve"></commentary>
     <changed>NO</changed>
   </item>
