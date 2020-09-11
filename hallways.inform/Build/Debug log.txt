@@ -1,0 +1,124 @@
+Debugging log of Inform 7
+Inform called as: C:\Program Files (x86)\Inform 7\Compilers\ni -internal C:\Program Files (x86)\Inform 7\Internal -project C:\Users\kathr\OneDrive\Documents\Inform\Projects\hallways.inform -format=ulx
+Found language bundle 'English' (built in)
+Found language bundle 'French' (built in)
+Found language bundle 'German' (built in)
+Found language bundle 'Italian' (built in)
+Found language bundle 'Spanish' (built in)
+Found language bundle 'Swedish' (built in)
+Reading language definition from <C:\Program Files (x86)\Inform 7\Internal\Languages\English\Syntax.preform>
+720 declarations read (14183 words)
+
+
+-----------------------------------------------------
+Phase I ... Lexical analysis
+-----------------------------------------------------
+
+I've now read your source text, which is 5504 words long.
+
+
+-----------------------------------------------------
+Phase II ... Semantic analysis Ia
+-----------------------------------------------------
+
+I've also read Standard Rules by Graham Nelson, which is 42655 words long.
+I've also read English Language by Graham Nelson, which is 2297 words long.
+I've also read Exit Lister by Gavin Lambert, which is 3465 words long.
+I've also read Secret Doors by Gavin Lambert, which is 1065 words long.
+
+
+-----------------------------------------------------
+Phase III ... Initialise language semantics
+-----------------------------------------------------
+
+
+
+-----------------------------------------------------
+Phase IV ... Semantic analysis Ib
+-----------------------------------------------------
+
+
+
+-----------------------------------------------------
+Phase V ... Semantic analysis II
+-----------------------------------------------------
+
+
+
+-----------------------------------------------------
+Phase VI ... Semantic analysis III
+-----------------------------------------------------
+
+
+
+-----------------------------------------------------
+Phase VII ... First pass through assertions
+-----------------------------------------------------
+
+
+
+-----------------------------------------------------
+Phase VIII ... Second pass through assertions
+-----------------------------------------------------
+
+
+
+-----------------------------------------------------
+Phase IX ... Making the model world
+-----------------------------------------------------
+
+
+
+-----------------------------------------------------
+Phase X ... Tables and grammar
+-----------------------------------------------------
+
+
+
+-----------------------------------------------------
+Phase XI ... Phrases and rules
+-----------------------------------------------------
+
+PHUD: <instead of examining the boxes>: rule attachment mode RULE_IN_RULEBOOK_EFF
+  Rule preamble: <instead of examining the boxes>
+  Rule parameter: <examining the boxes>
+  Owned by rulebook: Rulebook 20 (instead)
+  Placement: MIDDLE_PLACEMENT
+Bad action pattern: examining the boxes =   [Invalid]  Action: unspecified
+
+PAP failure reason: 1
+Problem PM_APUnknown issued from inform7/Chapter 28/Phrase Usage.w, line 848
+
+  >--> You wrote 'instead of examining the boxes' (source text, line 216),
+    which seems to introduce a rule taking effect only if the action is
+    'examining the boxes'. But that did not make sense as a description of an
+    action. I am unable to place this rule into any rulebook.
+
+
+
+-----------------------------------------------------
+Phase XII ... Compilation now complete
+-----------------------------------------------------
+
+Total of 4 files written as streams.
+CPU time: 52 centiseconds
+
+
+That concludes the debugging log from this run of Inform.
+Its contents were as follows, and can be changed by placing
+text like 'Include property creations in the debugging log.'
+or 'Omit everything from the debugging log.' in the source.
+
+Included:
+  debugging log contents  debugging log inclusions
+Omitted:
+  action creations   action pattern compilation  action pattern parsing  assemblies    assertions    case insensitive filehandling
+  conditions    constructed past participles  constructed plurals   description compilation   excerpt meanings   excerpt parsing 
+  expressions    extensions census   figure creations   grammar    grammar construction   headings  
+  implications    inferences    kind changes   kind checking   kind creations   lexical output 
+  local variables   matching    meaning list allocation  memory allocation   noun resolution   object compilation 
+  object creations   object tree   phrase comparisons   phrase compilation   phrase creations   phrase registration 
+  phrase usage   predicate calculus   predicate calculus workings  pronouns    property creations   property provision 
+  property translations   relation definitions   rule attachments   rulebook compilation   spatial map   spatial map workings
+  specification permissions   specification usage   specificities    table construction   template reading   text substitutions 
+  time periods   variable creations   verifications    vocabulary  

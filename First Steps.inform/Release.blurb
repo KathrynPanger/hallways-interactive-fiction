@@ -15,6 +15,7 @@ storyfile "C:\Users\kathr\OneDrive\Documents\Inform\Projects\First Steps.inform\
 ifiction "C:\Users\kathr\OneDrive\Documents\Inform\Projects\First Steps.inform\Metadata.iFiction" include
 cover "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
 picture 1 "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
+picture 3 "C:\Users\kathr\OneDrive\Documents\Inform\Projects\First Steps.materials\Figures\symbol.png"
 
 ! Placeholder variables
 

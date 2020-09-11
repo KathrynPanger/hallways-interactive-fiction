@@ -1,12 +1,7 @@
 "Hallways"
 
 
-When play begins: say "[bold type]ELORA[roman type] [line break][line break][italic type]Elora keeps a tiny box beside her bed. [line break]And every night when she retires,[line break]she pulls a sticky silver thread[line break]straight between her eyes and out her forehead.[line break] [line break]At length, she's pulled a dozen feet or so.[line break]She tears it off between her teeth,[line break]and bundles it between her thumbs,[line break]and in the box it goes.[line break][line break]Like spider silk, the substance soon restores.[line break]Each night she must extract a little more.[line break]A bit of string's no burden on a box,[line break]but soon it filled to bursting, so she fetched the locks.[line break][line break]A key for a lid, a box for a key, a lid for the box that held it.[line break]A second, a third, and every box so full she could barely close it.[line break]A fortnight or two and she's bricked herself completely into her room.[line break]Then over the balcony the boxes go 'till she's bricked her windows too.[line break][line break]Then at last a night came she had no place left to keep it.[line break]The sticky substance filled her head; she'd no choice but to see it.[line break] And then it filled her up so much it dripped into her eyes.[line break]And across her vision cast a veil of webby spider ties. [roman type][line break][line break]".
-
-
-
 [
-
 ROOM TEMPLATE:
 
 The room [ROOM]
@@ -92,13 +87,16 @@ The Place Where you Shouldn't Be
 	The black door is lockable and locked. The matching key of the black door is the black key.
 	The description of the black door is "It frightens you.".
 	
-
+	figure of the symbol is the file "symbol.png".
+	After examining the black door:
+		display the figure of the symbol.
+	
 
 The Even More Hallway 
 	is a room with the printed name "Hallway".
 	The Even More Hallway is north of the More Hallway. 
 	"You are standing in the middle a long hallway that seems to stretch endlessly in either direction.  It is reminiscent of the halls that one might see in a fancy hotel; identical doors are spaced regularly along the walls on either side, each of which are outfitted with a black box above the handle designed to accept a key card. The walls are papered with a rich navy and powder-blue damask pattern, and a tightly knitted carpet frames the passage, tracing muted grey and gold stripes down its length.  The air feels unnaturally still here.".
-		the player is here.
+	
 	the steel knife is here.
 	The torn piece is in the Even More Hallway. 
 	The initial appearance of the torn piece is "A neat section of the blue damask wall paper has torn, revealing a patch of yellow beneath it. You admire the torn piece."
@@ -183,19 +181,36 @@ The description of the Tanks is
 	
 	
 The Bedroom is west of the Even More Hallway.
-	"This looks like a bedroom. There is a bed, a wardrobe, and a mirror. There is also a small night light plugged into an outlet in the wall."
+	"This looks like a child's bedroom."
 	The bed is scenery. 
 		The bed is here.
 	The wardrobe is a fixed in place opaque closed openable container.
 		The wardrobe is here.
-	The night light is a device.
-		"[if switched on] The night light glows brightly.[otherwise] The night light is off."
-		The night light is here.
+	[The night light is a device.
+		"[if switched on] The night light glows brightly.[otherwise]The night light is off."
+		The night light is here.]
 	The cabinet is an opaque closed openable fixed in place container.
 	The cabinet is here.
 		The description of the cabinet is 
 			"It is a small unassuming cabinet made of white wood. In spite of its plainness, it exhudes a strange, foreboding aura."
 		Instead of opening the cabinet, say "As you reach for the cabinet, you realize that you cannot touch it. Your hand falls to your side.".
+	The nursery rhyme is here.
+		The nursery rhyme is a fixed in place thing.
+		understand "text" as the nursery rhyme.
+		the initial appearance of the nursery rhyme is "There is a framed text on the wall. It looks like a nursery rhyme.".
+		the description of the nursery rhyme is "A poem written in violet ink is printed on a lavender page and decorated with bursts of gold and royal blue. In the bottom right corner is an illustration of a little girl lying in bed with a hole in her forehead. It looks like it might be a page out of a children's book.".
+		The nightstand is a fixed in place supporter. 
+		The drawer is a fixed in place opaque openable closed container.
+		The drawer is part of the nightstand.
+		The nightstand is here.
+
+		
+
+		
+instead of taking the nursery rhyme:
+	say "It is fixed to the wall.";
+instead of reading the nursery rhyme:
+	say "[line break][bold type]ELORA[roman type] [line break][line break][italic type]Elora keeps a tiny box beside her bed. [line break]And every night when she retires,[line break]she pulls a sticky silver thread[line break]straight between her eyes and out her forehead.[line break] [line break]At length, she's pulled a dozen feet or so.[line break]She tears it off between her teeth,[line break]and bundles it around her thumbs,[line break]and in the box it goes.[line break][line break]Like spider silk, the substance soon restores.[line break]Each night she must extract a little more.[line break]A bit of string's no burden on a box,[line break]but soon it filled to bursting, so she fetched the locks.[line break][line break]A key for a lid, a box for a key, a lid for the box that held it.[line break]A second, a third, and every box so full she could barely close it.[line break]A fortnight or two and she's bricked herself completely into her room.[line break]Then over the balcony the boxes go [apostrophe]till she's bricked her windows too.[line break][line break]Then at last a night came she had no place left to keep it.[line break]The sticky substance filled her head; she'd no choice but to see it.[line break] And then it filled her up so much it dripped into her eyes.[line break]And across her vision cast a veil of webby spider ties. [roman type][line break][line break]".
 
 The Yet More Hallway is a room with the printed name "Hallway".
 The Yet More Hallway is north of the Even More Hallway. 
@@ -210,8 +225,16 @@ The Ordinary Room is north of the Old Mall.
 	"This room is completely dark."
 	In the Ordinary Room is a neuter animal called nothing.
 	it carries the meaning.
+	Giving up is an action applying to nothing. Understand "give up" as giving up. 
+	
+instead of giving up:
+	if the location is the Ordinary Room:
+		say "Nothing stops you from giving up. Nothing gives you meaning.";
+		now the player carries the meaning;
+	otherwise:
+		end the story finally saying "When you decide to give up, nothing can stop you.";
 
-		
+the player is in the bedroom.		
 	
 The Extraordinary Room is  west of the Old Mall.
 	"This room is completely dark."
@@ -498,7 +521,7 @@ A wall_value is a kind of value. 1 wall specifies a wall_value.
 		if the player is not carrying the solutions manual, say "Read what?." instead. 
 
 	Check reading it relatively in:
-		if the second noun is not the solutions manual, say "There are no pages in [the second noun]." instead;
+		if the second noun is not the solutions manual, say "There's nothing there to read." instead;
 		abide by the book requirement rule. 
 
 	Carry out reading it relatively in:
@@ -530,8 +553,8 @@ A wall_value is a kind of value. 1 wall specifies a wall_value.
 page	content
 1	"The darkness opens up."
 2	"Thank you."
-3	"Nothing has meaning."
-4	"Another Hint"
+3	"Nothing has meaning. If you want to give up, let nothing stop you."
+4	"Hint"
 5	"Another Hint"
 
 
@@ -543,4 +566,8 @@ To read page (N - a number):
 		say "It says: '[content entry]'[paragraph break]";
 	otherwise:
 		say "Page [N] appears to be blank." 
+		
+[rule for printing the name of a room when the evil_presence is on:]
+
+	
 
