@@ -1,8 +1,10 @@
 "Hallways"
 
+[Intro v1]
+[when play begins, say "[italic type] There are places which are sacred to us. Sometimes these places are real, like a child's bedroom or a secret vaction spot. At other times they are fictional, like the world described in a favorite book, or an imaginary medow to medidate in. When we create fictional spaces, we design a universe tailored to our own desires. This allows us, for a brief time, to cloister away deep inside of ourselves where no one can reach us or do us harm. These places represent home, perhaps more profoundly than any physical home ever could. Just like a real home however, a fictional home can become unsafe. When this happens, our dreams are corrupted, our desires twisted, and we lose grip of our basic sense of reality. There are some who find excitement in this experience, and we should pity them, because for these people, safety itself is a fiction. [line break] [line break] This story is one such fiction, dreamed up by one such person. It is an unsafe, sacred home, and it is not yours. You have not been invited here, you are not welcome here, and you should leave. [bold type]This place isn't for you.[italic type] If you insist on staying anyway however, then perhaps you are such a person yourself, and you are in good company. [line break] [line break]"]
 
-[
-ROOM TEMPLATE:
+[ROOM TEMPLATE:
+
 
 The room [ROOM]
 	is [dir] of [parent].
@@ -24,49 +26,137 @@ Include Exit Lister by Gavin Lambert.
 Include Secret Doors by Gavin Lambert.
 
 
+[spells]
+
+Casting is an action applying to one noun and one thing.
+	
+[Long descriptions]
+
+To say hallway_long:
+	say "You are standing in the middle a long hallway that seems to stretch endlessly in either direction.  It is reminiscent of the halls that one might see in a fancy hotel; identical doors are spaced regularly along the walls on either side, each of which are outfitted with a black box above the handle designed to accept a key card. The walls are papered with a rich navy and powder-blue damask pattern, and a tightly knitted carpet frames the passage, tracing muted grey and gold stripes down its length.  The air feels unnaturally still here.";
+to say hallway_short:
+	say "[bold type]Hallway[line break][roman type]You are in the main hallway. It stretches indefinitely in either direction. There are doors to your east and west."
+	
+After going to a corridors more than one time:
+		say "[hallway_short]";
+
+[The Tension]
+
+
+[Status is a kind of value. The statuses are no tension, a little tense, very tense, extremely tense, and overwhelmed. 
+The tension_level is a status that varies.
+the the tension_level is initially no tension.
+
+The tension is a backdrop. The tension is everywhere. The tension has a number called the degree. The degree is initially 1.
+
+
+Instead of doing something other than touching to the tension:
+	say "That isn't something you can do to your feelings of tension."
+Instead of touching the tension:
+	if the degree of the tension is 0:
+		say "You are completely relaxed; a rare and special experience.";
+	else if the degree of the tension is 1:
+		say "You are a little tense.";
+	else if the degree of the tension is 2:
+		say "You feel very tense.";
+	else if the degree of the tension is 3:
+		say "You feel extremely tense.";
+	otherwise:
+		say "You feel overwhelmed";
+]
+
+[Status is a kind of value. 
+The tension is a status that varies. 
+no tension is a status. 
+a little tense is a status.
+very tense is a status.
+extremely tense is a status.
+overwhelmed is a status.
+The tension is initially no tension.]
+
+
+
 The w-room 
 	is a room with the printed name "[if the evil_presence is off]Walls[otherwise] [evil-printname]".
 	"[if the evil_presence is on][evil-description][otherwise]You are standing on a slab of concrete that is four foot square. Around you on every side are grey brick walls that stretch upward indefinitely. Your fear resolves into a grim sense of familiarity, and a heavy burden lifts from your shoulders. You feel oddly at peace.".
 	The walls are here. The indefinite article is "the".
 	The walls is fixed in place.
 	The description of the walls is "The walls are unyielding."
+	
+  
+Cell is a room.
+The player is in Cell.
+The Hallway is east of Cell.
+Cell is a dark room.
+The kerosene lighter is in Cell.
+
+
+
 
 The Hallway 
 	is a room. 
-	"You are standing in the middle a long hallway that seems to stretch endlessly in either direction.  It is reminiscent of the halls that one might see in a fancy hotel; identical doors are spaced regularly along the walls on either side, each of which are outfitted with a black box above the handle designed to accept a key card. The walls are papered with a rich navy and powder-blue damask pattern, and a tightly knitted carpet frames the passage, tracing muted grey and gold stripes down its length.  The air feels unnaturally still here."
+	the description of the hallway is "[hallway_long]"
 	
-The Library Lobby
-	is east of the Hallway.
+
+
+
+
+
+The Narrow Corridor is west of the Hallway.
+	"This narrow corridor branches off of the main hallway. There is a door to the west that looks slightly different from the others. The wood is richer and brighter, and it opens outward rather than inward. A brass plaque is posted on the wall next to it."
+	The brass plaque is a fixed in place thing. The brass plaque is here.
+	instead of reading the brass plaque, try examining the brass plaque.
+		The description of the brass plaque is "it says: [line break][quotation mark][bold type]LIBRARY[roman type][line break](Caution: When in Evanidus, this door will not exist.)[quotation mark]".
+	The unusual door is a door. 
+			The unusual door is west of the Narrow Corridor and east of the Library Entrance.
+			The unusual door is lockable and locked. The matching key of the unusual door is the library card.
+			The description of the unusual door is 
+				"This door looks slightly different from the others. The wood is richer and brighter, and it opens outward rather than inward. A brass plaque is posted on the wall next to it.".
+Before going west from the narrow corridor:
+	if the unusual door is unlocked:
+		try opening the unusual door;
+		say "A draft of air blows past you and the corridor opens up into an impossibly large space. For a moment you feel dizzy as you are overcome by a sudden awareness of your relative smallness. You gaze upward at the huge and distant cieling...";
+	otherwise:
+		continue the action;
+
 	
+The Library Entrance is a room.
+	"You are standing in a massive cillindrical atrium which rises twelve stories from ground level terminating in a wide domed cieling of blue glass. On this level, the entire outer wall is lined with shelves of leather-bound books of irregular shape and color. Also spaced along the cylindrical wall are four equidistant spiral staircases that wind clockwise all the way to the top, with landings at each level. Looking up, you can see that each of the floors above are filled with countless winding isles of bookcases that stretch back into unseen parts of the building. Chic and varied pieces of blue and yellow furniture are strategically placed throughout, creating many small comfortable pockets for reclusive reading, Everything, including the stairs, is made with lustrous pieces of rich, polished mahogany. In the center of the dome, some distance away and to the west, you can see what looks to be the library's front desk, though it is hard to tell since the building is completely empty. "
+	
+
+The Front Desk
+	is west of the Library Entrance.
+
 The Nook
-	is north of the Library.
-	"A long stroll across the diameter of the massive lobby takes you to one of many small, cozy nooks. Sofas and wing-backed chairs are tastefully framed by tall bookshelves lining each of the back walls."
-	The display case is a fixed in place closed transparent locked container. 
-	The initial appearance of the display case is "Near the center of the room there is a glass display case containing many curious items. A small notice is taped to the glass.".
-	the display case is here.
-	The spellbook is in the display case.
-	The linking book is in the display case.
-	The encycolpedia frobozzica is in the display case.
+	is north of the Front Desk.
+	"A long stroll across the radius of the dome takes you to one of many small, cozy nooks. Here a sofa, a coffee table and a wing-backed chair is sectioned off from the main space by a room-dividing bookshelf."
+	The glass display case is a fixed in place closed transparent locked container. 
+	The initial appearance of the glass display case is "Near the center of the room there is a glass display case containing many curious items. A small notice is taped to the glass.".
+	the glass display case is here.
+	The spellbook is in the glass display case.
+	The linking book is in the glass display case.
+	The encycolpedia frobozzica is in the glass display case.
 	The coin pouch is a container.
 		five coins are in the coin pouch.
-	the coin pouch is in the display case.
-	The strange orb is in the display case.
-the notice is part of the display case.
+	the coin pouch is in the glass display case.
+	The strange orb is in the glass display case.
+	the description of the strange orb is "Gazing into the orb, you can see the outlines of many people. They are frozen in place, as if time were stopped.".
+the notice is part of the glass display case.
 the description of the notice is "It says: [quotation mark]Rare items from oft-imagined worlds.[quotation mark]".
-after examining the display case:
+after examining the glass display case:
 	say "There is a small notice taped to the glass on top of the display case.";
 instead of reading the notice:
 	try examining the notice;
 
 The Records Room
-	is west of the Hallway.
+	is east of the Hallway.
 	The metal fan is here.
 	The metal fan is a fixed in place device. The metal fan is switched on. 
-	The description of the Records Room is "This is an austere looking room with beige tile floors below and white flourescent lighting overhead. A number of file cabinets line the north and south walls. In the furthest corner is a grey metal desk with two locking drawers and a bankers lamp with a green glass shade. It is uncomfortably warm in here. In the corner, standing metal fan is [if the metal fan is switched on]noisily failing to cool it.[otherwise]doing nothing to cool it.".
+	The description of the Records Room is "This is an austere looking room with beige tile floors below and white flourescent lighting overhead. A number of file cabinets line the north and south walls. In the furthest corner is a grey metal desk with two locking drawers and a bankers lamp with a green glass shade. It is uncomfortably warm in here. In the corner, a standing metal fan is [if the metal fan is switched on]noisily failing to cool it.[otherwise]doing nothing to cool it.".
 	Some file cabinets are here. The file cabinets are fixed in place.
 	
 The Archives is a room with the printed name "The Archives".
-The Archives is west of the Records Room.
+The Archives is east of the Records Room.
 The description of The Archives is "The room opens up into a wide, sprawling space, the center of which is filled with rows upon rows of identical metal desks. The rest of the room is dominated by parallel isles of grey shelving, each of which is stacked with important-looking documents."
 	
 	A man called Foster is here.
@@ -75,7 +165,7 @@ The description of The Archives is "The room opens up into a wide, sprawling spa
 The More Hallway 
 	is a room with the printed name "Hallway".
 	The More Hallway is north of the Hallway. 
-	"You are standing in the middle a long hallway that seems to stretch endlessly in either direction.  It is reminiscent of the halls that one might see in a fancy hotel; identical doors are spaced regularly along the walls on either side, each of which are outfitted with a black box above the handle designed to accept a key card. The walls are papered with a rich navy and powder-blue damask pattern, and a tightly knitted carpet frames the passage, tracing muted grey and gold stripes down its length.  The air feels unnaturally still here."
+	"This is a long hallway that seems to stretch endlessly in either direction.  It is reminiscent of the halls that one might see in a fancy hotel; identical doors are spaced regularly along the walls on either side, each of which are outfitted with a black box above the handle designed to accept a key card. The walls are papered with a rich navy and powder-blue damask pattern, and a tightly knitted carpet frames the passage, tracing muted grey and gold stripes down its length.  The air feels unnaturally still here."
 	
 The Foyer 
 	is west of the More Hallway.
@@ -89,7 +179,15 @@ The Foyer
 	The pair of women's heels is wearable.
 		The description of the heels is "The heels are made with black, shiny pleather. The heel is a high stilletto. Looking at them makes you feel pretty and a little embarrassed.".
 	
+The stair-region is a region. The Stair Landing, the Halfway Down the Stairs, and the Bottom of the Stairs are in the stair-region.
 
+After going down to a stair-region:
+	Increase the tension-number of the player by 1;
+	if the tension-number of the player is less than 5:
+		say "These stairs frighten you. You can feel the tension increasing. You are now [the tension-status]";
+	if the tension-number of the player is at least 5:
+		say "The terrible feeling that the stairs give you pushes you over the edge. You are completely overwhelmed. You become dizzy, and after a few moments of panicked breathing, you lose consiousness. [line break] ... [line break]";
+		now the player is in the Walls;
 
 The Stair Landing 
 	is northwest from the Foyer.
@@ -98,20 +196,27 @@ The Stair Landing
 	The staircase is a thing.
 	The staircase is fixed in place.
 	the staircase is here.
-	The description of the staircase is "The stairway is inexplicibly horrifying to you; it conjures up thoughts too terrible to acknowledge and twisted memories of unnameable deeds. Looking at them makes you feel ill, but you are drawn to them. You know that you must follow them down.".
-
-
-instead of going down:
-	if  is_drunk is drunk_false:
-		say "There is something terrible about the staircase that chills you to the core. As you take your first step down, you are overcome with waves of fear and weakness. Unnameable images flash through your mind. You gasp for breath, but there is no air. Darkness consumes you as your body falls limp into the void.";
-		now the player is in the w-room;
-	otherwise:
-		say "Normally, descending the stairs would terrify you, but you are pleasantly numb to your feelings, you find that it is easy to descend the stairs.";
-		now the player is in the Bottom of the Stairs;
+	The description of the staircase is "The stairway is inexplicibly horrifying to you; it conjures up thoughts too terrible to acknowledge and twisted memories of unnameable deeds.".
 	
 
-The Bottom of the Stairs
-	is down from the Stair Landing.
+
+Halfway Down the Stairs is down from the Stair Landing.
+
+The Bottom of the Stairs is down from Halfway Down the Stairs.
+
+The Forest is west of the Bottom of the Stairs.
+
+The Clearing is west of Forest.
+
+The Elevator is west of the clearing.
+
+the down button is a fixed in place device. The down button is in the elevator.
+the up button is a fixed in place device. the up button is in the elevator.
+Instead of pushing the down button:
+	say "the elevator starts to move.";
+	change the east exit of the elevator to nothing;
+
+
 
 
 The Place Where you Shouldn't Be  
@@ -132,6 +237,7 @@ The Even More Hallway
 	"You are standing in the middle a long hallway that seems to stretch endlessly in either direction.  It is reminiscent of the halls that one might see in a fancy hotel; identical doors are spaced regularly along the walls on either side, each of which are outfitted with a black box above the handle designed to accept a key card. The walls are papered with a rich navy and powder-blue damask pattern, and a tightly knitted carpet frames the passage, tracing muted grey and gold stripes down its length.  The air feels unnaturally still here.".
 	
 	the steel knife is here.
+		"A steel knife is embedded in the wall nearby."
 	The torn piece is in the Even More Hallway. 
 	The initial appearance of the torn piece is "A neat section of the blue damask wall paper has torn, revealing a patch of yellow beneath it. You admire the torn piece."
 	The description of the torn piece is "A torn piece of wall paper hangs limply from the wall."
@@ -180,8 +286,10 @@ The Drinking Room
 			The metal gate is northeast of the Drinking Room and southwest of the Utility Closet.
 			The metal gate is lockable and locked. The matching key of the metal gate is the padlock key.
 			The description of the metal gate is 
-				"It is a small moveable metal gate, similar to those you have seen guarding elevators in old buildings. It could be easily pushed aside except that it is currently padlocked shut. Behind it is a narrow blue door left slightly ajar. You can see a small room behind it; possibly a closet. There is a sign on the gate that says: WARNING: MAINTENENCE ONLY."
-			
+				"It is a small moveable metal gate, similar to those you have seen guarding elevators in old buildings. It could be easily pushed aside except that it is currently padlocked shut. Behind it is a narrow blue door left slightly ajar. You can see a small room behind it; possibly a closet. There is a sign on the gate that says: WARNING: MAINTENENCE ONLY.".
+		
+Instead of listening to the Drinking Room, say  "You try to discern the source of the noise, but it seems to come from everywhere and nowhere at once.".
+
 The description of the Utility Closet is
 	"This is a cramped, narrow room full of dirty shelves and hardware. The main light source is a pair of florescent tubes which hum unpleasantly overhead; a sound which is augmented by the sqeaking of your feet on the linoleum tiles below. There are many odds and ends on the shelves: scraps of unused wall paper, cans of paste, rollers, an empty bottle of bleach, picture-frames, and two broken clocks. None of these seem useful to you. There is also a yellowed, paint-stained sink.".
 
@@ -301,7 +409,7 @@ say “That doesn't work.”]
 instead of taking the nursery rhyme:
 	say "It is fixed to the wall.";
 instead of reading the nursery rhyme:
-	say "[line break][bold type]ELORA[roman type] [line break][line break][italic type]Elora keeps a tiny box beside her bed. [line break]And every night when she retires,[line break]she pulls a sticky silver thread[line break]straight between her eyes and out her forehead.[line break] [line break]At length, she's pulled a dozen feet or so.[line break]She tears it off between her teeth,[line break]and bundles it around her thumbs,[line break]and in the box it goes.[line break][line break]Like spider silk, the substance soon restores.[line break]Each night she must extract a little more.[line break]A bit of string's no burden on a box,[line break]but soon it filled to bursting, so she fetched the locks.[line break][line break]A key for a lid, a box for a key, a lock for the box that held it.[line break]A second, a third, and every box so full she could barely close it.[line break]A fortnight or two and she's bricked herself completely into her room.[line break]Then over the balcony the boxes go [apostrophe]till she's bricked her windows too.[line break][line break]Then at last a night came she had no place left to keep it.[line break]The sticky substance filled her head; she'd no choice but to see it.[line break] And then it filled her up so much it dripped into her eyes.[line break]And across her vision cast a veil of webby spider ties. [roman type][line break][line break]".
+	say "[line break][bold type]ELORA[roman type] [line break][line break][italic type]Elora keeps a tiny box beside her bed. [line break]And every night when she retires,[line break]she pulls a sticky silver thread[line break]straight between her eyes and out her forehead.[line break] [line break]At length, she's pulled a dozen feet or so.[line break]She tears it off between her teeth,[line break]and bundles it around her thumbs,[line break]and in the box it goes.[line break][line break]Like spider silk, the substance soon restores.[line break]Each night she must extract a little more.[line break]A bit of string's no burden on a box,[line break]but soon it filled to bursting, so she fetched the locks.[line break][line break]A key for a lock, a box for a key, a lid for the box that held it.[line break]A second, a third, and every box so full she could barely close it.[line break]A fortnight or two and she's bricked herself completely into her room.[line break]Then over the balcony the boxes go [apostrophe]till she's bricked her windows too.[line break][line break]Then at last a night came she had no place left to keep it.[line break]The sticky substance filled her head; she'd no choice but to see it.[line break] And then it filled her up so much it dripped into her eyes.[line break]And across her vision cast a veil of webby spider ties. [roman type][line break][line break]".
 
 The Yet More Hallway is a room with the printed name "Hallway".
 The Yet More Hallway is north of the Even More Hallway. 
@@ -362,7 +470,7 @@ The d-room
 	The description of the d-room is "It is dark here.".
 	The darkness is here. "You see nothing but the darkness.".
 		The darkness is an opaque closed fixed in place openable container. 
-			The description of the darkness is "[if open]The yawning darkness is all around you.[otherwise]You gaze into the darkness. It feels as if it could open up." .
+			The description of the darkness is "[if open]The yawning darkness is all around you.[otherwise]You gaze into the darkness." .
 			The black key is in the darkness.
 			The description of the black key is "It is a black key. It frightens you.".
 			After taking the black key, say "As you take the key, you are breifly overcome by a wave of vertigo. A knot forms in your stomach, and you have the terrible feeling that you have taken something which does not belong to you.".
@@ -384,7 +492,7 @@ The Hallway End
 	
 [MAZE CODE-----------------------------------------------------------------------]	
 
-[wall color, set to yellow.]
+
 Color is a kind of value. 
 The wall_color is a color that varies. 
 yellow is a color. 
@@ -395,11 +503,22 @@ The wall_color is initially yellow.
 [mazelands]
 The mazelands is a region. maze1, maze2, maze3, maze4, maze5, maze6, maze7, maze8, maze9, and maze10 are in the mazelands.
 
+
+instead of going nowhere in the mazelands, say "You try going [noun], but there isn't an exit there.".
+instead of doing it for the second time, say "You try going [noun], but there isn't an exit there. You are beginning to feel lost.".
+instead of doing it for the third time, say "You try going [noun], but there isn't an exit there. You are beginning to panic.".
+instead of doing it for the fourth time, say "You try going [noun], but there isn't an exit there. Your panic is increasing.".
+Instead of doing it more than four times, say "You run headfirst into the [noun] wall. There isn't an exit there. You can feel the tension in the back of your mind increasing.".
+
+
+
+
+
 [maze definition]
 A maze is a kind of room with the printed name "Indistinguishable Corridors".
 every maze is in the mazelands.
 	the description is "You are in an empty corridor like many others. The wallpaper is [wall_color] here.".
-	Rule for listing exits when the location is a maze: say "These hallways are identical. You panic. You have lost your sense of direction."
+	Rule for listing exits when the location is a maze: say "These hallways are identical. There are exits here, but you have lost your sense of direction.".
 
 
 
@@ -436,6 +555,8 @@ The Empty Corridor is west of the Hallway End.
 		the maze11 is a maze.
 	the maze12 is west of maze11.
 		the maze12 is a maze.
+		
+
 [machine code]
 	 An on/off button is a kind of device. 
 Instead of pushing an on/off button which is part of a device (called the machine):
@@ -462,7 +583,7 @@ The m-room is a  room with the printed name "Machine Room".
 	The grey button is an on/off button.
 	The grey button is part of the machine.
 		the grey button  is a fixed in place device.
-	The red button is an wall_changing button.
+	The red button is a wall_changing button.
 	The red button is part of the machine.
 		the red button is a fixed in place device.
 	The red lever is part of the machine.
@@ -509,8 +630,23 @@ East of the Outside Room is the Play House.
 		"The throw rug is too big to lug around, but too small to sit on comfortably.".
 
 
-The tension is a backdrop. "You can feel a persistant, inesplicable tension in the air." The tension is everywhere.
+
+[the test room]
+the test room is a room.
+	inside the test room is a man called the inventory expert.
+
+
+Victoria is a woman.
+	Victoria is in the test room.
+	After asking victoria about "Evanidus", say "She says: [quotation mark]What, the whole world? You'll need to be more specific.[quotation mark]"
+
+
 The Corridors is a region. The Hallway and the More Hallway and the Even More Hallway and the Yet More Hallway and the Hallway End are in the Corridors.
+Before going to a corridors from a corridors:
+	say "[line break]...you walk some distance down the length of the hallway until you arrive at the next set of adjacent doors...[line break]";
+
+[Rule for printing the locale description of a room in the Corridors:
+	say "Mist coils around your feet, thick as a blanket. You cannot even see the ground you walk upon." instead]
 
 The wall paper is a backdrop. 
 The description of the wall paper is "The wall paper is a rich navy and powder-blue damask pattern. Combined with the dark wooden wainscotting, it gives the hallways an unnderving air of false comfort, with vauge suggestions of austerity."
@@ -548,11 +684,13 @@ on is a evil.
 off is a evil.
 the evil_presence is initially off.
 
+
 [evil room rules; use these to teleport items out of the game]
 the evil room is a room.
 the green button [replace this with whatever mechanism the player uses] is in the evil room [change this to whatever room the player is in].
 instead of pushing a green button:
 	now the evil_presence is on;
+	now the left hand status line is "You don't belong here";
 	move the walls [replace this with whatever you want to get rid of] to the evil room.
 	[note that you could also change item names to something horrifying here. Like making the key a venomous snake or a disgusting blob of puss]
 	
@@ -571,17 +709,50 @@ to say evil-blackkey:
 	say "ball of puss";
 to say evil-blackdescription:
 	say "As you hold it up to examine it, the yellow and grey globule oozes in your hand. Its nauseating stench makes you gag.".
+
+
+The player has a number called the tension-number. The tension-number of the player is 3.	
+
+
+
+
+to say the tension-status:
+	if the tension-number of the player is 0:
+		say "you are completely relaxed.";
+	otherwise if the tension-number of the player is 1:
+		say "you are slightly tense.";
+	otherwise if the tension-number  of the player is 2:
+		say "you are a little tense.";
+	otherwise if the tension-number  of the player is 3:
+		say "you are very tense.";
+	otherwise if the tension-number  of the player is 4:
+		say "you are extremely tense.";
+	otherwise if the tension-number  of the player is 5:
+		say "You are overwhelmed."
 	
+the player is carrying the booze.
+
 [drinking]
-The drunk_status is a kind of value.
-the is_drunk is a drunk_status that varies.
-The drunk_true is a drunk_status.
-The drunk_false is a drunk_status.
-The is_drunk is initially drunk_false.
-before drinking the gin:
-	now the is_drunk is drunk_true;
+A person is either drunk or sober. A person is usually sober.
+A person has a number called the drunk-timer. the drunk-timer of the player is 0.	
+instead of drinking the booze:
+	now the player is drunk;
+	now the booze is nowhere;
+	decrease the tension-number of the player by 3;
+	say "You down it in one gulp. It relaxes you. You can feel the tension in the back of your mind decreasing.";
+	If the tension-number of the player is less than 0:
+		say "That was a little more than you can handle.";
+	If the tension-number of the player is at least 0:
+		say "You are now [the tension-status]";
+
+
+	
+	
+
+
 
 A wall_value is a kind of value. 1 wall specifies a wall_value.
+
 
 
 [new actions]
@@ -668,13 +839,45 @@ To read page (N - a number):
 	otherwise:
 		say "Page [N] appears to be blank." 
 		
-	figure of the mazemap is the file "mazemap.png".
+figure of the mazemap is the file "mazemap.png".	
+figure of the evilpage is the file "manual_evil.png".
 After reading the number understood in the solutions manual:
-	if the number understood is 5:
-		display the figure of the mazemap;	
-	otherwise:
-		continue the action;
-[rule for printing the name of a room when the evil_presence is on:]
+	if the evil_presence is on:
+		display the figure of the evilpage;
+	otherwise:	
+		if the number understood is 5:
+			display the figure of the mazemap;	
+		otherwise:
+			continue the action;
+			
+
+[
+	Table of Announcements
+level	phrase
+1	"YOU SHOULDN'T BE HERE." [instead of tension, for the rest of the game you feel panic]
+3	"THESE ARE NOT YOUR HALLWAYS."' [room names change]
+4	"THAT IS NOT YOUR DRESS." [dress is removed]
+5	"THOSE ARE NOT YOUR SHOES." [shoes are removed]
+6	"DID YOU REALLY THINK THAT WAS A NECKLACE?" 
+7	"NOW, IT ISN'T." [necklace becomes ball python. neck tightens uncomfortably, sense something has changed. must check inventory to understand what.]
+9	"I'LL MAKE YOU REGRET TOUCHING MY THINGS." [your items turn into disgusting or deadly things]
+2	"I GET TO DECIDE WHAT HAPPENS HERE." [a huge piece of drywall falls out of the wall and nearly misses you]
+7	"I GET TO DECIDE WHAT'S IN THESE ROOMS." [a giant deadly scorpian is in the room]
+8	"I GET TO DECIDE WHAT'S IN YOUR POCKETS." [new stuff enters your pocket that could kill you]
+10	"I GET TO DECIDE WHAT MATTERS HERE. " [feeling of foreboding]
+11	"YOU DON'T." [now you can't move]
+
+11	"GET OUT OF MY HALLWAYS." [a black cloud]
+12 	"GET OUT OF MY HOME" [cloud gets worse]
+13	"GET OUT GET OUT GET OUT GET OUT" [cloud crackles with electricity]
+14	"DIE!" [player deis, game ends]
+
+[note also that there should be specific events that happen only if the player makes it to certain locations or does certain things]
+]
+
+
+
+[game settings]
 
 Rule for printing room description details of containers:
 	 stop.	

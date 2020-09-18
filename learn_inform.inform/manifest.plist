@@ -4,12 +4,6 @@
     <dict>
         <key>Graphics</key>
         <dict>
-            <key>3</key>
-            <string>Figures\symbol.png</string>
-            <key>4</key>
-            <string>Figures\mazemap.png</string>
-            <key>5</key>
-            <string>Figures\manual_evil.png</string>
         </dict>
     </dict>
 </plist>
