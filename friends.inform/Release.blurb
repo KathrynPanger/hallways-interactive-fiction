@@ -10,7 +10,7 @@ release to "C:\Users\kathr\OneDrive\Documents\Inform\Projects\friends.materials\
 
 ! Blorb instructions
 
-storyfile leafname "friends.gblorb"
+storyfile leafname "story.gblorb"
 storyfile "C:\Users\kathr\OneDrive\Documents\Inform\Projects\friends.inform\Build\output.ulx" include
 ifiction "C:\Users\kathr\OneDrive\Documents\Inform\Projects\friends.inform\Metadata.iFiction" include
 cover "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
@@ -21,8 +21,8 @@ picture 1 "C:\Program Files (x86)\Inform 7\Internal\Miscellany\Cover.jpg"
 placeholder [IFID] = "753A52C7-0BAB-4747-823C-8452BDBEF039"
 placeholder [RELEASE] = "1"
 placeholder [YEAR] = "2020"
-placeholder [TITLE] = "friends"
-placeholder [AUTHOR] = "Kathryn Panger"
+placeholder [TITLE] = "Untitled"
+placeholder [AUTHOR] = "Anonymous"
 placeholder [BLURB] = "A work of interactive fiction."
 
 ! Other material to release
