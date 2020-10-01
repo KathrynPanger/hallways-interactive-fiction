@@ -28,6 +28,20 @@ outside_gate is east of western road.
 inside_gate is east of outside_gate.
 courtyard is east of inside_gate.
 center is east of courtyard.
+west hall is south of inside_gate.
+tower is south of west hall.
+south hall is east of tower.
+gallery is east of south hall.
+the frobozz portrait is in the gallery.
+the flathead portrait is in the gallery.
+south gate is east of gallery.
+meadow is south of south gate.
+beach is southeast of meadow.
+the turtle is in the beach.
+east hall is north of sourth gate.
+banquet hall is north of east hall.
+tower is east of south gate.
+engine room is up from tower.
 
 long road is west of fork.
 the why sign is here.

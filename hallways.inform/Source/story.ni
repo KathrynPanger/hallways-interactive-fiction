@@ -1,5 +1,83 @@
 "Hallways"
 
+[When play begins, say: "You are Alice Davenport, magic investigator. You sit in the hut of Natasha Grey, witch of the east wood. By mysterious circumstances, her daughter, Abigale, has been stricken with a curse of homicidal madness. For weeks the witch's spawn has wrecked havok across the land, hexing and cursing all who cross her path. Natasha is convinced that the source of her dauther's madness can be found within her dreams, and so she seeks your services as a magic investigator to travel to the land of nightmares and discover what evil resides within her."]
+
+The Ordinary Room is a room.
+	"This is a very plain room about 14 foot square. The walls are white."
+
+The pair of glasses is in the Ordinary Room.
+	The glasses are a wearable thing.
+	The description of the glasses is "It is a pair of half-moon spectacles with red frames. They glow faintly, as if by magic.".
+	The short bookcase is in the Ordinary Room. The bookcase is a fixed in place supporter.
+	The white book is a thing.
+		The description of the white book is "It is a plain, white, hardcover book. The title is: [quotation mark]You Will Read This Book[quotation mark].".
+	the white book is on the short bookcase.
+	
+
+	
+instead of looking in the Ordinary Room for the first time, say "You are in a dream; not yours, but someone else's. There is a pair of glasses and a short bookcase here.".
+
+
+[White book code starts here]
+trance is a kind of value. 
+The book_trance is a trance that varies. 
+yes is a trance. 
+no is a trance.
+the book_trance is initially no.
+
+Instead of reading the white book:
+	now the player is carrying the white book;
+	now the book_trance is yes;
+	say "[book_phrase]";
+	increase the sleep_number of the player by 1;
+
+The player has a number called the sleep_number. The sleep_number of the player is 0.	
+
+
+to say book_phrase:
+	if the sleep_number of the player is 0:
+		say "The first page says: [quotation mark]YOU ARE READING THIS BOOK.[quotation mark]";
+	otherwise if the sleep_number of the player is less than 4:
+		say "The next page says: [quotation mark]YOU ARE STILL READING THIS BOOK.[quotation mark]";
+	otherwise if the sleep_number of the player is 4:
+		say "The next page says: [quotation mark]YOU ARE STILL READING THIS BOOK.[quotation mark][line break][line break]All this reading is making you tired.";
+	otherwise if the sleep_number of the player is 5:
+		say "The next page says: [quotation mark]YOU CONTINUE TO READ THIS BOOK.[quotation mark][line break][line break]The more you read, the more tired you feel.";		
+	otherwise if the sleep_number of the player is 6:
+		say "The next page says: [quotation mark]YOU CONTINUE TO READ THIS BOOK.[quotation mark][line break][line break]You feel drained. It's getting harder to understand the words.";
+	otherwise if the sleep_number of the player is 7:
+		say "The next page says: [quotation mark]YOU CONTINUE TO READ THIS BOOK.[quotation mark][line break][line break]In fact, its getting harder to think of anything at all.";	
+	otherwise if the sleep_number of the player is 8:
+		say "The next page says: [quotation mark]YOU CONTINUE TO READ THIS BOOK.[quotation mark][line break][line break]You're exhausted. You feel as if you might pass out soon.";	
+		
+The eyes are a backdrop. The eyes are everywhere.
+instead of closing the eyes:
+	if the book_trance is yes:
+		say "You try to close your eyes, but you only blink. You feel compelled to keep reading.[no line break]";
+	otherwise:
+		say "You close your eyes briefly. Unsurprisingly, it solves nothing.";
+		
+screaming is an action applying to nothing. Understand "scream" as screaming.
+instead of screaming:
+	say "Did that make you feel better?"
+			
+instead of doing something other than closing the eyes when the book_trance is yes: 
+	if the sleep_number of the player is less than 9:
+		say "[book_phrase]";
+		increase the sleep_number of the player by 1;
+	otherwise:
+		if the hallway is unvisited:
+			say "The last page says: [quotation mark]YOU HAVE FINISHED...[line break][line break]The book drops from your hand as you fall asleep mid-sentence, sinking into warm darkness. Time passes, and you awake lying face-down on the carpet in an unfamiliar hallway. There is something strange about this place, but you can't quite explain it. You also sense that something important has changed. You feel a vague but persistent tension growing in the back of your mind. You slowly stand, and after a brief dizzy spell, regain your footing.[line break][line break]";
+		otherwise:
+			say "The book drops from your hand as you fall asleep mid-sentence, sinking into warm darkness. Time passes, and you once again awake in the middle of the now-familiar hallway.";
+		now the sleep_number of the player is 0;
+		now the book_trance is no;
+		now the player is in the Hallway;
+				
+[white book code ends here]
+
+
+
 [Intro v1]
 [when play begins, say "[italic type] There are places which are sacred to us. Sometimes these places are real, like a child's bedroom or a secret vaction spot. At other times they are fictional, like the world described in a favorite book, or an imaginary medow to medidate in. When we create fictional spaces, we design a universe tailored to our own desires. This allows us, for a brief time, to cloister away deep inside of ourselves where no one can reach us or do us harm. These places represent home, perhaps more profoundly than any physical home ever could. Just like a real home however, a fictional home can become unsafe. When this happens, our dreams are corrupted, our desires twisted, and we lose grip of our basic sense of reality. There are some who find excitement in this experience, and we should pity them, because for these people, safety itself is a fiction. [line break] [line break] This story is one such fiction, dreamed up by one such person. It is an unsafe, sacred home, and it is not yours. You have not been invited here, you are not welcome here, and you should leave. [bold type]This place isn't for you.[italic type] If you insist on staying anyway however, then perhaps you are such a person yourself, and you are in good company. [line break] [line break]"]
 
@@ -24,21 +102,23 @@ The room [ROOM]
 
 Include Exit Lister by Gavin Lambert.
 Include Secret Doors by Gavin Lambert.
+Include Exit Lister by Eric Eve.
 
 
 [spells]
 
-Casting is an action applying to one noun and one thing.
+
 	
 [Long descriptions]
 
 To say hallway_long:
-	say "You are standing in the middle a long hallway that seems to stretch endlessly in either direction.  It is reminiscent of the halls that one might see in a fancy hotel; identical doors are spaced regularly along the walls on either side, each of which are outfitted with a black box above the handle designed to accept a key card. The walls are papered with a rich navy and powder-blue damask pattern, and a tightly knitted carpet frames the passage, tracing muted grey and gold stripes down its length.  The air feels unnaturally still here.";
-to say hallway_short:
-	say "[bold type]Hallway[line break][roman type]You are in the main hallway. It stretches indefinitely in either direction. There are doors to your east and west."
+	say "This is a long hallway that seems to stretch endlessly in either direction.  It is reminiscent of the halls of a fancy hotel; identical doors are spaced regularly along the walls on either side, each of which are outfitted with a black box above the handle designed to accept a key card. The walls are papered with a rich navy and powder-blue damask pattern, and a tightly knitted carpet frames the passage, tracing muted grey and gold stripes down its length. The air feels unnaturally still.";
 	
-After going to a corridors more than one time:
-		say "[hallway_short]";
+to say hallway_short:
+	say "You are in the main hallway. It stretches indefinitely in either direction. There are doors to your east and west."
+	
+		
+
 
 [The Tension]
 
@@ -79,23 +159,21 @@ The tension is initially no tension.]
 The w-room 
 	is a room with the printed name "[if the evil_presence is off]Walls[otherwise] [evil-printname]".
 	"[if the evil_presence is on][evil-description][otherwise]You are standing on a slab of concrete that is four foot square. Around you on every side are grey brick walls that stretch upward indefinitely. Your fear resolves into a grim sense of familiarity, and a heavy burden lifts from your shoulders. You feel oddly at peace.".
-	The walls are here. The indefinite article is "the".
+	The walls are here. 
 	The walls is fixed in place.
-	The description of the walls is "The walls are unyielding."
+	The description of the walls is "The walls are unyielding.".
+after going to the w-room:
+	now the tension-number is 0;
 	
   
-Cell is a room.
-The player is in Cell.
-The Hallway is east of Cell.
-Cell is a dark room.
-The kerosene lighter is in Cell.
+
 
 
 
 
 The Hallway 
 	is a room. 
-	the description of the hallway is "[hallway_long]"
+	the description of the hallway is "[if unvisited][hallway_long][otherwise][hallway_short]"
 	
 
 
@@ -165,7 +243,7 @@ The description of The Archives is "The room opens up into a wide, sprawling spa
 The More Hallway 
 	is a room with the printed name "Hallway".
 	The More Hallway is north of the Hallway. 
-	"This is a long hallway that seems to stretch endlessly in either direction.  It is reminiscent of the halls that one might see in a fancy hotel; identical doors are spaced regularly along the walls on either side, each of which are outfitted with a black box above the handle designed to accept a key card. The walls are papered with a rich navy and powder-blue damask pattern, and a tightly knitted carpet frames the passage, tracing muted grey and gold stripes down its length.  The air feels unnaturally still here."
+	"[if unvisited][hallway_long][otherwise][hallway_short]"
 	
 The Foyer 
 	is west of the More Hallway.
@@ -184,10 +262,10 @@ The stair-region is a region. The Stair Landing, the Halfway Down the Stairs, an
 After going down to a stair-region:
 	Increase the tension-number of the player by 1;
 	if the tension-number of the player is less than 5:
-		say "These stairs frighten you. You can feel the tension increasing. You are now [the tension-status]";
+		say "These stairs frighten you. You can feel the tension increasing. [the tension-status]";
 	if the tension-number of the player is at least 5:
 		say "The terrible feeling that the stairs give you pushes you over the edge. You are completely overwhelmed. You become dizzy, and after a few moments of panicked breathing, you lose consiousness. [line break] ... [line break]";
-		now the player is in the Walls;
+		now the player is in the w-room;
 
 The Stair Landing 
 	is northwest from the Foyer.
@@ -224,7 +302,7 @@ The Place Where you Shouldn't Be
 	"This is a square room with little ornamentation. You feel as if you shouldn't be here."
 	The black door is a door. it is north of The Place Where you Shouldn't Be. Through it is the w-room.
 	The black door is lockable and locked. The matching key of the black door is the black key.
-	The description of the black door is "It frightens you.".
+	The description of the black door is "Unlike the other doors, it has a traditional keyhole. There's something odd about this doorway. It frightens you.".
 	
 	figure of the symbol is the file "symbol.png".
 	After examining the black door:
@@ -234,29 +312,59 @@ The Place Where you Shouldn't Be
 The Even More Hallway 
 	is a room with the printed name "Hallway".
 	The Even More Hallway is north of the More Hallway. 
-	"You are standing in the middle a long hallway that seems to stretch endlessly in either direction.  It is reminiscent of the halls that one might see in a fancy hotel; identical doors are spaced regularly along the walls on either side, each of which are outfitted with a black box above the handle designed to accept a key card. The walls are papered with a rich navy and powder-blue damask pattern, and a tightly knitted carpet frames the passage, tracing muted grey and gold stripes down its length.  The air feels unnaturally still here.".
+	"[if unvisited][hallway_long][otherwise][hallway_short]".
+	The player is in the Even More Hallway.
 	
+
+Cutting it with is an action applying to two things.
+Understand "Cut [something] with [something]" as cutting it with.
+
+Check cutting it with:
+	if the second noun is not a knife:
+		say "[The second noun] would make a poor knife." instead. 
+
 	the steel knife is here.
 		"A steel knife is embedded in the wall nearby."
 	The torn piece is in the Even More Hallway. 
-	The initial appearance of the torn piece is "A neat section of the blue damask wall paper has torn, revealing a patch of yellow beneath it. You admire the torn piece."
-	The description of the torn piece is "A torn piece of wall paper hangs limply from the wall."
-	The crack is a fixed in place thing.
-	Instead of taking the wall paper when the location is the Even More Hallway:
-		Try taking the torn piece;
+	the torn piece is fixed in place.
+	The initial appearance of the torn piece is "A torn piece of wall paper hangs limply from the wall.".
+	The description of the torn piece is "A torn piece of wall paper.".
+	the drinking key card is a thing with the printed name "sticky key-card".
+	the description of the drinking key card is "It's all sticky from the wallpaper.".
+	the drinking key card is in limbo.
+	
+instead of taking the knife:
+	say "With a firm yank, you dislodge the knife from the wall.";
+	now the player is carrying the knife;
+	
+instead of cutting the torn piece with the knife:
+	if the drinking key card is in limbo:
+		try taking the knife;
+		say "You carefully cut the torn piece from the wall and discard it. A plastic key card is revealed beneath it. It falls to the carpet.";
+		now the drinking key card is in the Even More Hallway;
+		now the torn piece is in limbo;
+		now the description of the torn piece is "It's a torn piece of wallpaper. You have no more use for it.";
+	otherwise:
+		say  "You already did that!";
+instead of cutting the wall paper with the knife:
+	if the player is in the Even More Hallway:
+		if the drinking card is in limbo:
+			try cutting the torn piece with the knife;
+		otherwise:
+			say "You already did that!";
+	otherwise:
+		say "Slicing up random sections of wallpaper won't solve anything.";
+	
 
 	
-	Before taking the torn piece: 
-	say "Holding the torn piece between two fingers, you pull gently, and a section of paper is smoothly stripped away. Yellow wall paper is revealed behind it, printed with an identical damask pattern in white. This paper however is blemished by the presence of a now-visible crack in the drywall that branches in every direction, meeting at a point beneath the spot where the paper was lifted. You can see something inside.";
-	Now the crack is in the Even More Hallway;
-
-	
-
+The drinking door is a door with the printed name "east door".
+The drinking door is east of the Even More Hallway and west of the Drinking Room.
+The drinking door is lockable and locked. The matching key of the drinking door is the drinking key card.
 	
 	
 	
 The Drinking Room 
-	is east of the Even More Hallway.
+	is a room.
 		"This room is fully furnished including a white fainting couch, a grandfather clock, and a coffee table. All of the furniture is made of the same dark, rich wood that can be found throughout. On the wall there is a full-sized mirror and a large painting of a woman. In the northeast corner you can see a small metal gate stretched across a doorway. You think you can hear a faint ticking sound."
 
 		The bar is here.
@@ -413,39 +521,39 @@ instead of reading the nursery rhyme:
 
 The Yet More Hallway is a room with the printed name "Hallway".
 The Yet More Hallway is north of the Even More Hallway. 
-	"You are standing in the middle a long hallway that seems to stretch endlessly in either direction.  It is reminiscent of the halls that one might see in a fancy hotel; identical doors are spaced regularly along the walls on either side, each of which are outfitted with a black box above the handle designed to accept a key card. The walls are papered with a rich navy and powder-blue damask pattern, and a tightly knitted carpet frames the passage, tracing muted grey and gold stripes down its length.  The air feels unnaturally still here.".
+	"[if unvisited][hallway_long][otherwise][hallway_short]".
 
 [Mall zone start]	
 
 The Old Mall is west of the Yet More Hallway.
 	"The hallway opens up into what appears to be an empty shopping mall. There is a high domed cieling with skylights overhead. The floor transitions from the carpeted hallway to over-large tan octagonal tiles. They air is cool here and slightly more humid, as if there were a water source nearby. You think you may even hear the distant trickle of water. A few small trees can be seen in planters, spaced decoratively. In contrast to the tense and silent hallway, this space is pleasant and serene. You can see the entrance to several shops. The Ordinary Shop is to the northeast, the Extraordinary Shop is to the northwest, and The Lonely and Dark stores are to the east and west respectively. There is also an escalator leading up to a second floor."
 
-The Ordinary Room is north of the Old Mall.
+The Nothing Shop is north of the Old Mall.
 	"This room is completely dark."
-	In the Ordinary Room is a neuter animal called nothing.
+	In the Nothing Shop is a neuter animal called nothing.
 	it carries the meaning.
 	Giving up is an action applying to nothing. Understand "give up" as giving up. 
 	
 instead of giving up:
-	if the location is the Ordinary Room:
+	if the location is the Nothing Shop:
 		say "Nothing stops you from giving up. Nothing gives you meaning.";
 		now the player carries the meaning;
 	otherwise:
 		say "When you decide to give up, nothing can stop you.";
 		end the story finally saying "YOU HAVE GIVEN UP";
 	
-The Extraordinary Room is  west of the Old Mall.
+The Something Shop is  west of the Old Mall.
 	"This room is completely dark."
 	Dude is a man with the printed name "something".
 		"You sense that something is here."
-	Dude is in the Extraordinary Room.
+	Dude is in the Something Shop.
 Rule for printing a parser error:
-	If the location is the Extraordinary Room:
+	If the location is the Something Shop:
 		say "You grope around in the dark for a while, but cannot find it.";
 	otherwise:
 		continue the action.
 
-After doing anything except looking, reading, or going while the player is in the extraordinary room: say "Something tells you  (put conditional here later)".
+After doing anything except looking, reading, or going while the player is in the Something Shop: say "Something tells you  (put conditional here later)".
 
 	
 The Lonely Room is south of the Old Mall.
@@ -488,7 +596,7 @@ Up from the old mall is Second Floor Landing.
 The Hallway End 
 	is a room with the printed name "Hallway".
 	The Hallway End is north of the Yet More Hallway. 
-	"You are standing in the middle a long hallway that seems to stretch endlessly in either direction.  It is reminiscent of the halls that one might see in a fancy hotel; identical doors are spaced regularly along the walls on either side, each of which are outfitted with a black box above the handle designed to accept a key card. The walls are papered with a rich navy and powder-blue damask pattern, and a tightly knitted carpet frames the passage, tracing muted grey and gold stripes down its length.  The air feels unnaturally still here.". 
+	"[if unvisited][hallway_long][otherwise][hallway_short]". 
 	
 [MAZE CODE-----------------------------------------------------------------------]	
 
@@ -675,7 +783,7 @@ The plastic house is a backdrop. the plastic house is in the Outside Room and th
 Rule for listing exits when the location is The Corner: say "You can go west to the Utility Closet. The path to the north is blocked by the broken glass."
 Rule for listing exits when the location is The Tanks: say "The path to the south is blocked by the broken glass."
 Rule for listing exits when evil_presence is on:
-	say "".
+	stop.
 
 [evil rules]
 evil is a kind of value. 
@@ -729,9 +837,8 @@ to say the tension-status:
 		say "you are extremely tense.";
 	otherwise if the tension-number  of the player is 5:
 		say "You are overwhelmed."
-	
-the player is carrying the booze.
-
+		
+the booze is a thing. the player is carrying the booze.
 [drinking]
 A person is either drunk or sober. A person is usually sober.
 A person has a number called the drunk-timer. the drunk-timer of the player is 0.	
@@ -743,7 +850,7 @@ instead of drinking the booze:
 	If the tension-number of the player is less than 0:
 		say "That was a little more than you can handle.";
 	If the tension-number of the player is at least 0:
-		say "You are now [the tension-status]";
+		say "[the tension-status]";
 
 
 	
@@ -792,7 +899,7 @@ A wall_value is a kind of value. 1 wall specifies a wall_value.
 		if the player is not carrying the solutions manual, say "Read what?." instead. 
 
 	Check reading it relatively in:
-		if the second noun is not the solutions manual, say "There's nothing there to read." instead;
+		if the second noun is not the solutions manual, say "You'd rather not." instead;
 		abide by the book requirement rule. 
 
 	Carry out reading it relatively in:
@@ -801,7 +908,7 @@ A wall_value is a kind of value. 1 wall specifies a wall_value.
 		try reading N in the solutions manual. 
 
 	Check reading it in:
-		if the second noun is not the solutions manual, say "There are no pages in [the second noun]." instead;
+		if the second noun is not the solutions manual, say "You'd rather not." instead;
 		abide by the book requirement rule. 
 
 	Check reading it in:
@@ -812,7 +919,7 @@ A wall_value is a kind of value. 1 wall specifies a wall_value.
 		read page number understood. 
 
 	Check reading:
-		if the noun is not the solutions manual, say "There are no pages in [the noun]." instead;
+		if the noun is not the solutions manual, say "You'd rather not." instead;
 		abide by the book requirement rule. 
 
 	Carry out reading:
@@ -881,4 +988,7 @@ level	phrase
 
 Rule for printing room description details of containers:
 	 stop.	
+	
+
+		
 

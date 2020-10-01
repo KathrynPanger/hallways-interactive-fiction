@@ -4402,7 +4402,7 @@ Global lightflag = false;
 ! ListWriter.i6t: Memory
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant REQUISITION_STACK_SIZE = 3*43;
+Constant REQUISITION_STACK_SIZE = 3*57;
 Array requisition_stack --> REQUISITION_STACK_SIZE;
 Global requisition_stack_pointer = 0;
 
@@ -10570,7 +10570,7 @@ Constant DirectionObject_9 = I60_down;
 Constant DirectionObject_10 = in_obj;
 Constant DirectionObject_11 = out_obj;
 Array Map_Storage -->
- 0 I126_outside_of_shack 0 0 I133_dusty_trail 0 0 I153_long_road 0 0 0 0 ! Exits from: I125_fork
+ 0 I126_outside_of_shack 0 0 I133_dusty_trail 0 0 I167_long_road 0 0 0 0 ! Exits from: I125_fork
  I127_insides_shack I141_normal_trail 0 0 0 I125_fork 0 0 0 0 0 0 ! Exits from: I126_outside_of_shack
  0 0 0 I126_outside_of_shack 0 0 0 0 0 0 0 0 ! Exits from: I127_insides_shack
  0 0 I125_fork 0 I134_loop 0 0 0 0 0 0 0 ! Exits from: I133_dusty_trail
@@ -10586,10 +10586,21 @@ Array Map_Storage -->
  0 0 0 0 0 I144_trail_head 0 0 0 0 0 0 ! Exits from: I146_shady_brook
  0 0 0 0 0 0 I149_outside_gate I143_eastern_fork 0 0 0 0 ! Exits from: I148_western_road
  0 0 0 0 0 0 I150_inside_gate I148_western_road 0 0 0 0 ! Exits from: I149_outside_gate
- 0 0 0 0 0 0 I151_courtyard I149_outside_gate 0 0 0 0 ! Exits from: I150_inside_gate
+ 0 0 0 I153_west_hall 0 0 I151_courtyard I149_outside_gate 0 0 0 0 ! Exits from: I150_inside_gate
  0 0 0 0 0 0 I152_center I150_inside_gate 0 0 0 0 ! Exits from: I151_courtyard
  0 0 0 0 0 0 0 I151_courtyard 0 0 0 0 ! Exits from: I152_center
- 0 0 0 0 0 0 I125_fork 0 0 0 0 0 ! Exits from: I153_long_road
+ I150_inside_gate 0 0 I154_tower 0 0 0 0 0 0 0 0 ! Exits from: I153_west_hall
+ I153_west_hall 0 0 0 0 0 I155_south_hall I159_south_gate I166_engine_room 0 0 0 ! Exits from: I154_tower
+ 0 0 0 0 0 0 I156_gallery I154_tower 0 0 0 0 ! Exits from: I155_south_hall
+ 0 0 0 0 0 0 I159_south_gate I155_south_hall 0 0 0 0 ! Exits from: I156_gallery
+ 0 0 0 I160_meadow 0 0 I154_tower I156_gallery 0 0 0 0 ! Exits from: I159_south_gate
+ I159_south_gate 0 0 0 I161_beach 0 0 0 0 0 0 0 ! Exits from: I160_meadow
+ 0 0 I160_meadow 0 0 0 0 0 0 0 0 0 ! Exits from: I161_beach
+ I165_banquet_hall 0 0 I164_sourth_gate 0 0 0 0 0 0 0 0 ! Exits from: I163_east_hall
+ I163_east_hall 0 0 0 0 0 0 0 0 0 0 0 ! Exits from: I164_sourth_gate
+ 0 0 0 I163_east_hall 0 0 0 0 0 0 0 0 ! Exits from: I165_banquet_hall
+ 0 0 0 0 0 0 0 0 0 I154_tower 0 0 ! Exits from: I166_engine_room
+ 0 0 0 0 0 0 I125_fork 0 0 0 0 0 ! Exits from: I167_long_road
 ;
 
 Class VPH_Class;
@@ -11433,7 +11444,7 @@ Object -> I147_water ""
     with vector 0
     has mark_as_thing
     with IK2_Count 9
-    with IK2_Link I154_why_sign
+    with IK2_Link I157_frobozz_portrait
     with KD_Count 2
     with name 'water' 'things//p' 
     with action_bitmap 0 0 0 0 0 
@@ -11525,7 +11536,7 @@ Object I152_center ""
     with cap_short_name BC_303
     has mark_as_room
     with IK1_Count 18
-    with IK1_Link I153_long_road
+    with IK1_Link I153_west_hall
     with KD_Count 1
     with name 'center' 'rooms//p' 
     with description BC_304
@@ -11534,7 +11545,7 @@ Object I152_center ""
     with article BC_307
 ;
 
-Object I153_long_road ""
+Object I153_west_hall ""
     class K1_room
     with short_name BC_308
     has proper
@@ -11543,30 +11554,279 @@ Object I153_long_road ""
     with cap_short_name BC_309
     has mark_as_room
     with IK1_Count 19
-    with IK1_Link nothing
+    with IK1_Link I154_tower
     with KD_Count 1
-    with name 'long' 'road' 'rooms//p' 
+    with name 'west' 'hall' 'rooms//p' 
     with description BC_310
     with list_together BC_311
     with plural BC_312
     with article BC_313
 ;
 
-Object -> I154_why_sign ""
-    class K2_thing
+Object I154_tower ""
+    class K1_room
     with short_name BC_314
+    has proper
+    with vector 0
+    with room_index -1
+    with cap_short_name BC_315
+    has mark_as_room
+    with IK1_Count 20
+    with IK1_Link I155_south_hall
+    with KD_Count 1
+    with name 'tower' 'rooms//p' 
+    with description BC_316
+    with list_together BC_317
+    with plural BC_318
+    with article BC_319
+;
+
+Object I155_south_hall ""
+    class K1_room
+    with short_name BC_320
+    has proper
+    with vector 0
+    with room_index -1
+    with cap_short_name BC_321
+    has mark_as_room
+    with IK1_Count 21
+    with IK1_Link I156_gallery
+    with KD_Count 1
+    with name 'south' 'hall' 'rooms//p' 
+    with description BC_322
+    with list_together BC_323
+    with plural BC_324
+    with article BC_325
+;
+
+Object I156_gallery ""
+    class K1_room
+    with short_name BC_326
+    has proper
+    with vector 0
+    with room_index -1
+    with cap_short_name BC_327
+    has mark_as_room
+    with IK1_Count 22
+    with IK1_Link I159_south_gate
+    with KD_Count 1
+    with name 'gallery' 'rooms//p' 
+    with description BC_328
+    with list_together BC_329
+    with plural BC_330
+    with article BC_331
+;
+
+Object -> I157_frobozz_portrait ""
+    class K2_thing
+    with short_name BC_332
     with vector 0
     has mark_as_thing
     with IK2_Count 10
+    with IK2_Link I158_flathead_portrait
+    with KD_Count 2
+    with name 'frobozz' 'portrait' 'things//p' 
+    with action_bitmap 0 0 0 0 0 
+    with description BC_333
+    with initial BC_334
+    with list_together BC_335
+    with plural BC_336
+    with article BC_337
+;
+
+Object -> I158_flathead_portrait ""
+    class K2_thing
+    with short_name BC_338
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 11
+    with IK2_Link I162_turtle
+    with KD_Count 2
+    with name 'flathead' 'portrait' 'things//p' 
+    with action_bitmap 0 0 0 0 0 
+    with description BC_339
+    with initial BC_340
+    with list_together BC_341
+    with plural BC_342
+    with article BC_343
+;
+
+Object I159_south_gate ""
+    class K1_room
+    with short_name BC_344
+    has proper
+    with vector 0
+    with room_index -1
+    with cap_short_name BC_345
+    has mark_as_room
+    with IK1_Count 23
+    with IK1_Link I160_meadow
+    with KD_Count 1
+    with name 'south' 'gate' 'rooms//p' 
+    with description BC_346
+    with list_together BC_347
+    with plural BC_348
+    with article BC_349
+;
+
+Object I160_meadow ""
+    class K1_room
+    with short_name BC_350
+    has proper
+    with vector 0
+    with room_index -1
+    with cap_short_name BC_351
+    has mark_as_room
+    with IK1_Count 24
+    with IK1_Link I161_beach
+    with KD_Count 1
+    with name 'meadow' 'rooms//p' 
+    with description BC_352
+    with list_together BC_353
+    with plural BC_354
+    with article BC_355
+;
+
+Object I161_beach ""
+    class K1_room
+    with short_name BC_356
+    has proper
+    with vector 0
+    with room_index -1
+    with cap_short_name BC_357
+    has mark_as_room
+    with IK1_Count 25
+    with IK1_Link I163_east_hall
+    with KD_Count 1
+    with name 'beach' 'rooms//p' 
+    with description BC_358
+    with list_together BC_359
+    with plural BC_360
+    with article BC_361
+;
+
+Object -> I162_turtle ""
+    class K2_thing
+    with short_name BC_362
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 12
+    with IK2_Link I168_why_sign
+    with KD_Count 2
+    with name 'turtle' 'things//p' 
+    with action_bitmap 0 0 0 0 0 
+    with description BC_363
+    with initial BC_364
+    with list_together BC_365
+    with plural BC_366
+    with article BC_367
+;
+
+Object I163_east_hall ""
+    class K1_room
+    with short_name BC_368
+    has proper
+    with vector 0
+    with room_index -1
+    with cap_short_name BC_369
+    has mark_as_room
+    with IK1_Count 26
+    with IK1_Link I164_sourth_gate
+    with KD_Count 1
+    with name 'east' 'hall' 'rooms//p' 
+    with description BC_370
+    with list_together BC_371
+    with plural BC_372
+    with article BC_373
+;
+
+Object I164_sourth_gate ""
+    class K1_room
+    with short_name BC_374
+    has proper
+    with vector 0
+    with room_index -1
+    with cap_short_name BC_375
+    has mark_as_room
+    with IK1_Count 27
+    with IK1_Link I165_banquet_hall
+    with KD_Count 1
+    with name 'sourth' 'gate' 'rooms//p' 
+    with description BC_376
+    with list_together BC_377
+    with plural BC_378
+    with article BC_379
+;
+
+Object I165_banquet_hall ""
+    class K1_room
+    with short_name BC_380
+    has proper
+    with vector 0
+    with room_index -1
+    with cap_short_name BC_381
+    has mark_as_room
+    with IK1_Count 28
+    with IK1_Link I166_engine_room
+    with KD_Count 1
+    with name 'banquet' 'hall' 'rooms//p' 
+    with description BC_382
+    with list_together BC_383
+    with plural BC_384
+    with article BC_385
+;
+
+Object I166_engine_room ""
+    class K1_room
+    with short_name BC_386
+    has proper
+    with vector 0
+    with room_index -1
+    with cap_short_name BC_387
+    has mark_as_room
+    with IK1_Count 29
+    with IK1_Link I167_long_road
+    with KD_Count 1
+    with name 'engine' 'room' 'rooms//p' 
+    with description BC_388
+    with list_together BC_389
+    with plural BC_390
+    with article BC_391
+;
+
+Object I167_long_road ""
+    class K1_room
+    with short_name BC_392
+    has proper
+    with vector 0
+    with room_index -1
+    with cap_short_name BC_393
+    has mark_as_room
+    with IK1_Count 30
+    with IK1_Link nothing
+    with KD_Count 1
+    with name 'long' 'road' 'rooms//p' 
+    with description BC_394
+    with list_together BC_395
+    with plural BC_396
+    with article BC_397
+;
+
+Object -> I168_why_sign ""
+    class K2_thing
+    with short_name BC_398
+    with vector 0
+    has mark_as_thing
+    with IK2_Count 13
     with IK2_Link nothing
     with KD_Count 2
     with name 'why' 'sign' 'things//p' 
     with action_bitmap 0 0 0 0 0 
-    with description BC_315
-    with initial BC_316
-    with list_together BC_317
-    with plural BC_318
-    with article BC_319
+    with description BC_399
+    with initial BC_400
+    with list_together BC_401
+    with plural BC_402
+    with article BC_403
 ;
 
 Constant I71_english_language = 1;
@@ -11620,12 +11880,12 @@ Constant I123_masculine_gender = 2;
 Constant I124_feminine_gender = 3;
 Array Global_Vars -->
   (false) ! 7 darkness witnessed
-  (BC_320) ! 25 command prompt
+  (BC_404) ! 25 command prompt
   (I71_english_language) ! 29 language of play
-  (BC_321) ! 32 story author
-  (BC_322) ! 33 story headline
-  (BC_323) ! 34 story genre
-  (BC_324) ! 35 story description
+  (BC_405) ! 32 story author
+  (BC_406) ! 33 story headline
+  (BC_407) ! 34 story genre
+  (BC_408) ! 35 story description
   (1) ! 36 release number
   (0) ! 37 story creation year
   (0) ! 45 locale paragraph count
@@ -11640,14 +11900,14 @@ Array Global_Vars -->
 
 
 Array T0_final_question_options table  tab_0_0 tab_0_1 tab_0_2 tab_0_3 tab_0_4;
-Array tab_0_0 table $0664 0 (BC_325) (BC_326) (BC_327) (BC_328) (BC_329) ;
+Array tab_0_0 table $0664 0 (BC_409) (BC_410) (BC_411) (BC_412) (BC_413) ;
 Array tab_0_1 table $0465 1 (0) (0) (1) (0) (0) ;
 Array tab_0_2 table $2066 2 (Consult_Grammar_93) (Consult_Grammar_94) (Consult_Grammar_95) (Consult_Grammar_96) (Consult_Grammar_97) ;
 Array tab_0_3 table $0067 3 (IMMEDIATELY_RESTART_VM_R) (IMMEDIATELY_RESTORE_SAVED_R) ( TABLE_NOVALUE) (IMMEDIATELY_QUIT_R) (IMMEDIATELY_UNDO_R) ;
 Array tab_0_4 table $0068 4 ( TABLE_NOVALUE) ( TABLE_NOVALUE) (V27_amusing_a_victorious_pla) ( TABLE_NOVALUE) ( TABLE_NOVALUE) ;
 Array T1_locale_priorities table  tab_1_0 tab_1_1;
-Array tab_1_0 table $0869 NULL ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
-Array tab_1_1 table $446a 5 ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_0 table $0869 NULL ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
+Array tab_1_1 table $446a 5 ( TABLE_NOVALUE)  TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE TABLE_NOVALUE;
 Array TB_Blanks -> 
   ! For table T0_final_question_options
   $00  ! Column 0
@@ -11657,7 +11917,7 @@ Array TB_Blanks ->
   $1b  ! Column 4
   
   ! For table T1_locale_priorities
-  $ff $0f  ! Column 1
+  $ff $7f  ! Column 1
   
   ! End of table
   NULL NULL;
@@ -28225,7 +28485,7 @@ Constant SLOW_ROUTE_FINDING;
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
 Constant NUM_DOORS = 0;
-Constant NUM_ROOMS = 20;
+Constant NUM_ROOMS = 31;
 
 Array DoorRoutingViable -> NUM_DOORS+1;
 
@@ -28427,7 +28687,7 @@ Array FWMatrix --> NUM_ROOMS*NUM_ROOMS;
 ! Relations.i6t: Relation Route-Finding
 ! ==== ==== ==== ==== ==== ==== ==== ==== ==== ====
 
-Constant MAX_ROUTE_LENGTH = 43 + 32;
+Constant MAX_ROUTE_LENGTH = 57 + 32;
 
 [ RelationRouteTo relation from to count  handler;
 	if (count) {
@@ -49226,30 +49486,43 @@ Verb 'notify'
 
 
 
-Constant TX_PS_76 = ">";
+Constant TX_PS_101 = ">";
 Constant TX_PS_3 = "An Interactive Fiction";
 Constant TX_PS_32 = "As good-looking as ever.";
+Constant TX_PS_95 = "Banquet hall";
+Constant TX_PS_88 = "Beach";
 Constant TX_PS_72 = "Center";
 Constant TX_PS_70 = "Courtyard";
 Constant TX_PS_47 = "Deserted village";
 Constant TX_PS_43 = "Dusty trail";
-Constant TX_PS_77 = "Fiction";
+Constant TX_PS_91 = "East hall";
+Constant TX_PS_97 = "Engine room";
+Constant TX_PS_102 = "Fiction";
+Constant TX_PS_80 = "Gallery";
 Constant TX_PS_68 = "Inside_gate";
 Constant TX_PS_4 = "Kathryn Panger";
 Constant TX_PS_52 = "Lonely mountain";
-Constant TX_PS_74 = "Long road";
+Constant TX_PS_99 = "Long road";
 Constant TX_PS_45 = "Loop";
+Constant TX_PS_86 = "Meadow";
 Constant TX_PS_50 = "Mountain trail";
 Constant TX_PS_66 = "Outside_gate";
-Constant TX_PS_81 = "QUIT";
-Constant TX_PS_78 = "RESTART";
-Constant TX_PS_79 = "RESTORE a saved game";
+Constant TX_PS_106 = "QUIT";
+Constant TX_PS_103 = "RESTART";
+Constant TX_PS_104 = "RESTORE a saved game";
+Constant TX_PS_93 = "Sourth gate";
+Constant TX_PS_84 = "South gate";
+Constant TX_PS_78 = "South hall";
+Constant TX_PS_76 = "Tower";
 Constant TX_PS_59 = "Trail head";
-Constant TX_PS_82 = "UNDO the last command";
+Constant TX_PS_107 = "UNDO the last command";
+Constant TX_PS_74 = "West hall";
 Constant TX_PS_64 = "Western road";
 Constant TX_PS_33 = "Yourself";
 Constant TX_PS_9 = "animals";
 Constant TX_PS_14 = "backdrops";
+Constant TX_PS_94 = "banquet hall";
+Constant TX_PS_87 = "beach";
 Constant TX_PS_38 = "bread";
 Constant TX_PS_71 = "center";
 Constant TX_PS_11 = "containers";
@@ -49260,11 +49533,16 @@ Constant TX_PS_17 = "directions";
 Constant TX_PS_10 = "doors";
 Constant TX_PS_28 = "down";
 Constant TX_PS_42 = "dusty trail";
+Constant TX_PS_90 = "east hall";
 Constant TX_PS_25 = "east";
 Constant TX_PS_57 = "eastern fork";
 Constant TX_PS_2 = "enchanter";
+Constant TX_PS_96 = "engine room";
+Constant TX_PS_82 = "flathead portrait";
 Constant TX_PS_34 = "fork";
+Constant TX_PS_81 = "frobozz portrait";
 Constant TX_PS_48 = "furry";
+Constant TX_PS_79 = "gallery";
 Constant TX_PS_60 = "house sign";
 Constant TX_PS_53 = "hovel";
 Constant TX_PS_37 = "inside shack";
@@ -49274,8 +49552,9 @@ Constant TX_PS_36 = "insides shack";
 Constant TX_PS_39 = "jug";
 Constant TX_PS_41 = "lantern";
 Constant TX_PS_51 = "lonely mountain";
-Constant TX_PS_73 = "long road";
+Constant TX_PS_98 = "long road";
 Constant TX_PS_44 = "loop";
+Constant TX_PS_85 = "meadow";
 Constant TX_PS_7 = "men";
 Constant TX_PS_49 = "mountain trail";
 Constant TX_PS_55 = "normal trail";
@@ -49289,22 +49568,28 @@ Constant TX_PS_6 = "people";
 Constant TX_PS_13 = "player's holdalls";
 Constant TX_PS_16 = "regions";
 Constant TX_PS_54 = "rezrov_scroll";
-Constant TX_PS_80 = "see some suggestions for AMUSING things to do";
+Constant TX_PS_105 = "see some suggestions for AMUSING things to do";
 Constant TX_PS_61 = "shady brook";
+Constant TX_PS_92 = "sourth gate";
+Constant TX_PS_83 = "south gate";
+Constant TX_PS_77 = "south hall";
 Constant TX_PS_22 = "south";
 Constant TX_PS_23 = "southeast";
 Constant TX_PS_24 = "southwest";
 Constant TX_PS_40 = "stove";
 Constant TX_PS_5 = "supporters";
 Constant TX_PS_19 = "the";
+Constant TX_PS_75 = "tower";
 Constant TX_PS_58 = "trail head";
+Constant TX_PS_89 = "turtle";
 Constant TX_PS_27 = "up";
 Constant TX_PS_12 = "vehicles";
 Constant TX_PS_56 = "village outskirts";
 Constant TX_PS_62 = "water";
+Constant TX_PS_73 = "west hall";
 Constant TX_PS_26 = "west";
 Constant TX_PS_63 = "western road";
-Constant TX_PS_75 = "why sign";
+Constant TX_PS_100 = "why sign";
 Constant TX_PS_8 = "women";
 Constant TX_PS_31 = "yourself";
 Array TX_L_31 --> CONSTANT_PACKED_TEXT_STORAGE TX_PS_31;
@@ -56775,21 +57060,105 @@ Array BC_311 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_312 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_313 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_314 --> PACKED_TEXT_STORAGE TX_PS_75;
-Array BC_315 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_315 --> PACKED_TEXT_STORAGE TX_PS_76;
 Array BC_316 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_317 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_318 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_319 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_320 --> PACKED_TEXT_STORAGE TX_PS_76;
-Array BC_321 --> PACKED_TEXT_STORAGE TX_PS_4;
-Array BC_322 --> PACKED_TEXT_STORAGE TX_PS_3;
-Array BC_323 --> PACKED_TEXT_STORAGE TX_PS_77;
+Array BC_320 --> PACKED_TEXT_STORAGE TX_PS_77;
+Array BC_321 --> PACKED_TEXT_STORAGE TX_PS_78;
+Array BC_322 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_323 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_324 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
-Array BC_325 --> PACKED_TEXT_STORAGE TX_PS_78;
+Array BC_325 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
 Array BC_326 --> PACKED_TEXT_STORAGE TX_PS_79;
 Array BC_327 --> PACKED_TEXT_STORAGE TX_PS_80;
-Array BC_328 --> PACKED_TEXT_STORAGE TX_PS_81;
-Array BC_329 --> PACKED_TEXT_STORAGE TX_PS_82;
+Array BC_328 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_329 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_330 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_331 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_332 --> PACKED_TEXT_STORAGE TX_PS_81;
+Array BC_333 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_334 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_335 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_336 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_337 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_338 --> PACKED_TEXT_STORAGE TX_PS_82;
+Array BC_339 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_340 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_341 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_342 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_343 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_344 --> PACKED_TEXT_STORAGE TX_PS_83;
+Array BC_345 --> PACKED_TEXT_STORAGE TX_PS_84;
+Array BC_346 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_347 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_348 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_349 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_350 --> PACKED_TEXT_STORAGE TX_PS_85;
+Array BC_351 --> PACKED_TEXT_STORAGE TX_PS_86;
+Array BC_352 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_353 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_354 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_355 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_356 --> PACKED_TEXT_STORAGE TX_PS_87;
+Array BC_357 --> PACKED_TEXT_STORAGE TX_PS_88;
+Array BC_358 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_359 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_360 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_361 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_362 --> PACKED_TEXT_STORAGE TX_PS_89;
+Array BC_363 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_364 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_365 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_366 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_367 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_368 --> PACKED_TEXT_STORAGE TX_PS_90;
+Array BC_369 --> PACKED_TEXT_STORAGE TX_PS_91;
+Array BC_370 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_371 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_372 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_373 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_374 --> PACKED_TEXT_STORAGE TX_PS_92;
+Array BC_375 --> PACKED_TEXT_STORAGE TX_PS_93;
+Array BC_376 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_377 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_378 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_379 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_380 --> PACKED_TEXT_STORAGE TX_PS_94;
+Array BC_381 --> PACKED_TEXT_STORAGE TX_PS_95;
+Array BC_382 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_383 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_384 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_385 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_386 --> PACKED_TEXT_STORAGE TX_PS_96;
+Array BC_387 --> PACKED_TEXT_STORAGE TX_PS_97;
+Array BC_388 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_389 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_390 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_391 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_392 --> PACKED_TEXT_STORAGE TX_PS_98;
+Array BC_393 --> PACKED_TEXT_STORAGE TX_PS_99;
+Array BC_394 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_395 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_396 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_397 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_398 --> PACKED_TEXT_STORAGE TX_PS_100;
+Array BC_399 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_400 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_401 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_402 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_403 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_404 --> PACKED_TEXT_STORAGE TX_PS_101;
+Array BC_405 --> PACKED_TEXT_STORAGE TX_PS_4;
+Array BC_406 --> PACKED_TEXT_STORAGE TX_PS_3;
+Array BC_407 --> PACKED_TEXT_STORAGE TX_PS_102;
+Array BC_408 --> PACKED_TEXT_STORAGE EMPTY_TEXT_PACKED;
+Array BC_409 --> PACKED_TEXT_STORAGE TX_PS_103;
+Array BC_410 --> PACKED_TEXT_STORAGE TX_PS_104;
+Array BC_411 --> PACKED_TEXT_STORAGE TX_PS_105;
+Array BC_412 --> PACKED_TEXT_STORAGE TX_PS_106;
+Array BC_413 --> PACKED_TEXT_STORAGE TX_PS_107;
 
 
 
