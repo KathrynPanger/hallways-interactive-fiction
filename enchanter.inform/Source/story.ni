@@ -27,7 +27,7 @@ east of the eastern fork is western road.
 outside_gate is east of western road.
 inside_gate is east of outside_gate.
 courtyard is east of inside_gate.
-center is east of courtyard.
+ e_courtyard is east of courtyard.
 west hall is south of inside_gate.
 tower is south of west hall.
 south hall is east of tower.
@@ -45,3 +45,24 @@ engine room is up from tower.
 
 long road is west of fork.
 the why sign is here.
+
+The pebbled path is north of the inside_gate.
+NW_tower is north of the pebbled path.
+jewel room is up from the NW_tower
+the egg is in the jewel room.
+the scroll is inside the egg.
+[push stuff in normal order to open egg]
+north of the courtyard is the n_couertyard.
+south of the courtyard is the s_courtyard.
+northeast of the s_courtyard is the temple.
+south of e_courtyard is closet.
+
+hall of mirrors one is east of tower2.
+hall of mirrors two is east of hall of mirrors one.
+hall of mirrors three is east of hall of mirrors two.
+hall of mirrors four is east of hall of mirrors three.
+north gate is east of hall of mirrors four.
+guarded door is east of north gate.
+north of north gate is forest.
+
+library is south of north gate.

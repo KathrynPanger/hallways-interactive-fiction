@@ -15,7 +15,7 @@ The pair of glasses is in the Ordinary Room.
 	
 
 	
-instead of looking in the Ordinary Room for the first time, say "You are in a dream; not yours, but someone else's. There is a pair of glasses and a short bookcase here.".
+instead of looking in the Ordinary Room for the first time, say "You are in a dream; not yours, but someone else's. There are a pair of glasses and a short bookcase here.".
 
 
 [White book code starts here]
@@ -44,9 +44,9 @@ to say book_phrase:
 	otherwise if the sleep_number of the player is 5:
 		say "The next page says: [quotation mark]YOU CONTINUE TO READ THIS BOOK.[quotation mark][line break][line break]The more you read, the more tired you feel.";		
 	otherwise if the sleep_number of the player is 6:
-		say "The next page says: [quotation mark]YOU CONTINUE TO READ THIS BOOK.[quotation mark][line break][line break]You feel drained. It's getting harder to understand the words.";
+		say "The next page says: [quotation mark]YOU ARE READING THIS BOOK.[quotation mark][line break][line break]You feel drained. It's getting harder to understand the words.";
 	otherwise if the sleep_number of the player is 7:
-		say "The next page says: [quotation mark]YOU CONTINUE TO READ THIS BOOK.[quotation mark][line break][line break]In fact, its getting harder to think of anything at all.";	
+		say "The next page says: [quotation mark]YOU ARE STILL READING THIS BOOK.[quotation mark][line break][line break]In fact, its getting harder to think of anything at all.";	
 	otherwise if the sleep_number of the player is 8:
 		say "The next page says: [quotation mark]YOU CONTINUE TO READ THIS BOOK.[quotation mark][line break][line break]You're exhausted. You feel as if you might pass out soon.";	
 		
@@ -313,7 +313,7 @@ The Even More Hallway
 	is a room with the printed name "Hallway".
 	The Even More Hallway is north of the More Hallway. 
 	"[if unvisited][hallway_long][otherwise][hallway_short]".
-	The player is in the Even More Hallway.
+	
 	
 
 Cutting it with is an action applying to two things.
