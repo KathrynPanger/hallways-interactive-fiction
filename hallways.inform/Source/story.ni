@@ -1,6 +1,6 @@
 "Hallways"
 
-[When play begins, say: "You are Alice Davenport, magic investigator. You sit in the hut of Natasha Grey, witch of the east wood. By mysterious circumstances, her daughter, Abigale, has been stricken with a curse of homicidal madness. For weeks the witch's spawn has wrecked havok across the land, hexing and cursing all who cross her path. Natasha is convinced that the source of her dauther's madness can be found within her dreams, and so she seeks your services as a magic investigator to travel to the land of nightmares and discover what evil resides within her."]
+
 
 The Ordinary Room is a room.
 	"This is a very plain room about 14 foot square. The walls are white."
