@@ -1,13 +1,11 @@
 "Hallways"
 
-the slick is a thing.
-
 The Ordinary Room is a room.
 	"This is a very plain room about 14 foot square. The walls are white."
 
 The pair of glasses is in the Ordinary Room.
 	The glasses are a wearable thing.
-	The description of the glasses is "It is a pair of half-moon spectacles with red frames. They glow faintly, as if by magic.".
+	The description of the glasses is "It is a pair of half-moon spectacles. They glow faintly, as if by magic.".
 	The short bookcase is in the Ordinary Room. The bookcase is a fixed in place supporter.
 		The description of the bookcase is "[if the white book is on the bookcase]There are many books on the bookcase, but most of them are uninteresting. [otherwise] There are many books on the bookcase, but nothing stands out to you at the moment."
 	The books are a backdrop in the Ordinary room.
@@ -30,7 +28,7 @@ Instead of doing something other than taking off the pair of glasses  while the 
 		say "Everything is blurry except for a single white book on the bookcase.";
 		now the white book is on the bookcase;
 	
-instead of looking in the Ordinary Room for the first time, say "You are in a dream; not yours, but someone else's. There are a pair of glasses and a short bookcase here.".
+instead of looking in the Ordinary Room for the first time, say "You are in a dream; not yours, but someone else's. There is a pair of glasses and a short bookcase here.".
 
 
 [White book code starts here]
