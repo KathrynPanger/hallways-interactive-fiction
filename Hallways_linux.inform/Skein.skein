@@ -1,0 +1,1144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skein rootNode="node-0x180d780" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+  <generator>Inform 7</generator>
+  <activeNode nodeId="node-0x180d780"/>
+  <item nodeId="node-0x180d780">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">
+
+
+Hallways
+An Interactive Fiction
+Release 1 / Serial number 201111 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+You are in a dream; not yours, but someone else&apos;s. There are a pair of glasses and a short bookcase here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x180d900"/>
+      <child nodeId="node-0x180dd80"/>
+      <child nodeId="node-0x1e42d80"/>
+      <child nodeId="node-0x7f77600fcab0"/>
+      <child nodeId="node-0x7f77601f9600"/>
+      <child nodeId="node-0x7f77601f9c00"/>
+      <child nodeId="node-0x7f77601f9d80"/>
+    </children>
+  </item>
+  <item nodeId="node-0x180d900">
+    <command xml:space="preserve">take glasses</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x180da80"/>
+    </children>
+  </item>
+  <item nodeId="node-0x180da80">
+    <command xml:space="preserve">wear glasses</command>
+    <result xml:space="preserve">You put on the pair of glasses.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x180dc00"/>
+    </children>
+  </item>
+  <item nodeId="node-0x180dc00">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Ordinary Room
+This is a very plain room about 14 foot square. The walls are white.
+
+You can see a short bookcase (on which is a white book) here.
+
+You can see no obvious exits.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x180dd80">
+    <command xml:space="preserve">wear glasses</command>
+    <result xml:space="preserve">(first taking the pair of glasses)
+You put on the pair of glasses.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x180df00"/>
+      <child nodeId="node-0x7f77600fcf30"/>
+      <child nodeId="node-0x7f76f01ff1b0"/>
+      <child nodeId="node-0x7f76f022b900"/>
+      <child nodeId="node-0x7f76e446da50"/>
+      <child nodeId="node-0x7f76e8530620"/>
+    </children>
+  </item>
+  <item nodeId="node-0x180df00">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Ordinary Room
+This is a very plain room about 14 foot square. The walls are white.
+
+You can see a short bookcase (on which is a white book) here.
+
+You can see no obvious exits.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x1e42180"/>
+    </children>
+  </item>
+  <item nodeId="node-0x1e42180">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">test
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x1e42300"/>
+    </children>
+  </item>
+  <item nodeId="node-0x1e42300">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">test
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x7f77600fcf30">
+    <command xml:space="preserve">take off glasses</command>
+    <result xml:space="preserve">You take off the pair of glasses.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f77601f9180"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f77601f9180">
+    <command xml:space="preserve">wear glasses</command>
+    <result xml:space="preserve">You put on the pair of glasses.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f77601f9300"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f77601f9300">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">The glasses blur your vision. You must take them off first.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f77601f9480"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f77601f9480">
+    <command xml:space="preserve">look at bookcase</command>
+    <result xml:space="preserve">Everything is blurry, except for a single white book on the bookcase.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x7f76f01ff1b0">
+    <command xml:space="preserve">look at books</command>
+    <result xml:space="preserve">Everything is blurry except for a single white book on the bookcase.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f01ff330"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f01ff330">
+    <command xml:space="preserve">remove glasses</command>
+    <result xml:space="preserve">You take off the pair of glasses.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f01ff4b0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f01ff4b0">
+    <command xml:space="preserve">examine bookcase</command>
+    <result xml:space="preserve">There are many books on the bookcase, but most of them are uninteresting. 
+
+On the short bookcase is a white book.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f01ff630"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f01ff630">
+    <command xml:space="preserve">take white book</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f01ff7b0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f01ff7b0">
+    <command xml:space="preserve">read book</command>
+    <result xml:space="preserve">The first page says: &quot;YOU ARE READING THIS BOOK.&quot;
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f01ff930"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f01ff930">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">The next page says: &quot;YOU ARE STILL READING THIS BOOK.&quot;
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f01ffab0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f01ffab0">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">The next page says: &quot;YOU ARE STILL READING THIS BOOK.&quot;
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f01ffc30"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f01ffc30">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">The next page says: &quot;YOU ARE STILL READING THIS BOOK.&quot;
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f01ffdb0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f01ffdb0">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">The next page says: &quot;YOU ARE STILL READING THIS BOOK.&quot;
+
+All this reading is making you tired.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f01fff30"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f01fff30">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">The next page says: &quot;YOU CONTINUE TO READ THIS BOOK.&quot;
+
+The more you read, the more tired you feel.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f022b180"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f022b180">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">The next page says: &quot;YOU ARE READING THIS BOOK.&quot;
+
+You feel drained. It&apos;s getting harder to understand the words.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f022b300"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f022b300">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">The next page says: &quot;YOU ARE STILL READING THIS BOOK.&quot;
+
+In fact, its getting harder to think of anything at all.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f022b480"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f022b480">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">The next page says: &quot;YOU CONTINUE TO READ THIS BOOK.&quot;
+
+You&apos;re exhausted. You feel as if you might pass out soon.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f022b600"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f022b600">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">The last page says: &quot;YOU HAVE FINISHED...
+
+The book drops from your hand as you fall asleep mid-sentence, sinking into warm darkness. Time passes, and you awake lying face-down on the carpet in an unfamiliar hallway. There is something strange about this place, but you can&apos;t quite explain it. You also sense that something important has changed. You feel a vague but persistent tension growing in the back of your mind. You slowly stand, and after a brief dizzy spell, regain your footing.
+
+
+Hallway
+This is a long hallway that seems to stretch endlessly in either direction.  It is reminiscent of the halls of a fancy hotel; identical doors are spaced regularly along the walls on either side, each of which are outfitted with a black box above the handle designed to accept a key card. The walls are papered with a rich navy and powder-blue damask pattern, and a tightly knitted carpet frames the passage, tracing muted grey and gold stripes down its length. The air feels unnaturally still.
+
+
+You can go north, south, east and west from here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x7f76f022b900">
+    <command xml:space="preserve">examine bookcase</command>
+    <result xml:space="preserve">Everything is blurry except for a single white book on the bookcase.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f022b780"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f022b780">
+    <command xml:space="preserve">take off glasses</command>
+    <result xml:space="preserve">You take off the pair of glasses.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f022ba80"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f022ba80">
+    <command xml:space="preserve">read book</command>
+    <result xml:space="preserve">The first page says: &quot;YOU ARE READING THIS BOOK.&quot;
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f022bc00"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f022bc00">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">The next page says: &quot;YOU ARE READING THIS BOOK.&quot;
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f022bd80"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f022bd80">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">The next page says: &quot;YOU ARE READING THIS BOOK.&quot;
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f022bf00"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f022bf00">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">The next page says: &quot;YOU ARE READING THIS BOOK.&quot;
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76e446d150"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76e446d150">
+    <command xml:space="preserve">west</command>
+    <result xml:space="preserve">The next page says: &quot;YOU ARE READING THIS BOOK.&quot;
+
+All this reading is making you tired.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76e446d2d0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76e446d2d0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">The next page says: &quot;YOU ARE READING THIS BOOK.&quot;
+
+The more you read, the more tired you feel.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76e446d450"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76e446d450">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">The next page says: &quot;YOU ARE READING THIS BOOK.&quot;
+
+You feel drained. It&apos;s getting harder to understand the words.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76e446d5d0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76e446d5d0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">The next page says: &quot;YOU ARE READING THIS BOOK.&quot;
+
+In fact, its getting harder to think of anything at all.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76e446d750"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76e446d750">
+    <command xml:space="preserve">e</command>
+    <result xml:space="preserve">The next page says: &quot;YOU ARE READING THIS BOOK.&quot;
+
+You&apos;re exhausted. You feel as if you might pass out soon.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76e446d8d0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76e446d8d0">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">The last page says: &quot;YOU HAVE FINISHED...
+
+The book drops from your hand as you fall asleep mid-sentence, sinking into warm darkness. Time passes, and you awake lying face-down on the carpet in an unfamiliar hallway. There is something strange about this place, but you can&apos;t quite explain it. You also sense that something important has changed. You feel a vague but persistent tension growing in the back of your mind. You slowly stand, and after a brief dizzy spell, regain your footing.
+
+
+Hallway
+This is a long hallway that seems to stretch endlessly in either direction.  It is reminiscent of the halls of a fancy hotel; identical doors are spaced regularly along the walls on either side, each of which are outfitted with a black box above the handle designed to accept a key card. The walls are papered with a rich navy and powder-blue damask pattern, and a tightly knitted carpet frames the passage, tracing muted grey and gold stripes down its length. The air feels unnaturally still.
+
+
+You can go north, south, east and west from here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x7f76e446da50">
+    <command xml:space="preserve">examine books</command>
+    <result xml:space="preserve">Everything is blurry except for a single white book on the bookcase.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76e446dbd0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76e446dbd0">
+    <command xml:space="preserve">remove glasses</command>
+    <result xml:space="preserve">You take off the pair of glasses.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76e446dd50"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76e446dd50">
+    <command xml:space="preserve">read book</command>
+    <result xml:space="preserve">The first page says: &quot;YOU ARE READING THIS BOOK.&quot;
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76e446ded0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76e446ded0">
+    <command xml:space="preserve">read</command>
+    <result xml:space="preserve">What do you want to read?
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76e85301a0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76e85301a0">
+    <command xml:space="preserve">book</command>
+    <result xml:space="preserve">You&apos;re reading the book right now...
+The next page says: &quot;YOU ARE READING THIS BOOK.&quot;
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76e8530320"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76e8530320">
+    <command xml:space="preserve">read book</command>
+    <result xml:space="preserve">You&apos;re reading the book right now...
+The next page says: &quot;YOU ARE READING THIS BOOK.&quot;
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76e85304a0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76e85304a0">
+    <command xml:space="preserve">w</command>
+    <result xml:space="preserve">You&apos;re reading the book right now...
+The next page says: &quot;YOU ARE READING THIS BOOK.&quot;
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x7f76e8530620">
+    <command xml:space="preserve">look books</command>
+    <result xml:space="preserve">Everything is blurry except for a single white book on the bookcase.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76e85307a0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76e85307a0">
+    <command xml:space="preserve">remove glasses</command>
+    <result xml:space="preserve">You take off the pair of glasses.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76e8530920"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76e8530920">
+    <command xml:space="preserve">read book</command>
+    <result xml:space="preserve">The first page says: &quot;YOU ARE READING THIS BOOK.&quot;
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76e8530aa0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76e8530aa0">
+    <command xml:space="preserve">read</command>
+    <result xml:space="preserve">What do you want to read?
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76e8530c20"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76e8530c20">
+    <command xml:space="preserve">book</command>
+    <result xml:space="preserve">Youreading the book right now...
+The next page says: &quot;YOU ARE READING THIS BOOK.&quot;
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x1e42d80">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Ordinary Room
+This is a very plain room about 14 foot square. The walls are white.
+
+You can see a pair of glasses and a short bookcase here.
+
+You can see no obvious exits.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x1e42f00"/>
+      <child nodeId="node-0x7f77601f9f00"/>
+    </children>
+  </item>
+  <item nodeId="node-0x1e42f00">
+    <command xml:space="preserve">wear glasses</command>
+    <result xml:space="preserve">(first taking the pair of glasses)
+You put on the pair of glasses.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f77600fc1b0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f77600fc1b0">
+    <command xml:space="preserve">take off glasses</command>
+    <result xml:space="preserve">The glasses blur your vision. You must take them off first.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f77600fc330"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f77600fc330">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Ordinary Room
+This is a very plain room about 14 foot square. The walls are white.
+
+You can see a short bookcase here.
+
+You can see no obvious exits.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f77600fc4b0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f77600fc4b0">
+    <command xml:space="preserve">wear glasses</command>
+    <result xml:space="preserve">The glasses blur your vision. You must take them off first.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f77600fc630"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f77600fc630">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">Ordinary Room
+This is a very plain room about 14 foot square. The walls are white.
+
+You can see a short bookcase here.
+
+You can see no obvious exits.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f77600fc7b0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f77600fc7b0">
+    <command xml:space="preserve">ACTIONS</command>
+    <result xml:space="preserve">Actions listing on.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f77600fc930"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f77600fc930">
+    <command xml:space="preserve">take off glasses</command>
+    <result xml:space="preserve">[taking off the pair of glasses]
+The glasses blur your vision. You must take them off first.
+[taking off the pair of glasses - failed]
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x7f77601f9f00">
+    <command xml:space="preserve">take bookcase</command>
+    <result xml:space="preserve">That&apos;s fixed in place.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f77601f9780"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f77601f9780">
+    <command xml:space="preserve">examine bookcase</command>
+    <result xml:space="preserve">  There are many books on the bookcase, but nothing stands out to you at the moment.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f00f7120"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f00f7120">
+    <command xml:space="preserve">examine books</command>
+    <result xml:space="preserve">  There are many books on the bookcase, but nothing stands out to you at the moment.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f00f72a0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f00f72a0">
+    <command xml:space="preserve">wear glasses</command>
+    <result xml:space="preserve">(first taking the pair of glasses)
+You put on the pair of glasses.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f00f7420"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f00f7420">
+    <command xml:space="preserve">look</command>
+    <result xml:space="preserve">The glasses blur your vision.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f00f75a0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f00f75a0">
+    <command xml:space="preserve">look at bookcase</command>
+    <result xml:space="preserve">Everything is blurry except for a single white book on the bookcase.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f00f7720"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f00f7720">
+    <command xml:space="preserve">take book</command>
+    <result xml:space="preserve">The glasses blur your vision.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f00f78a0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f00f78a0">
+    <command xml:space="preserve">remove glasses</command>
+    <result xml:space="preserve">You take off the pair of glasses.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f00f7a20"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f00f7a20">
+    <command xml:space="preserve">examine bookcase</command>
+    <result xml:space="preserve">There are many books on the bookcase, but only the white one interests you. 
+
+On the short bookcase is a white book.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x7f77600fcab0">
+    <command xml:space="preserve">ACTIONS</command>
+    <result xml:space="preserve">Actions listing on.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f77600fcc30"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f77600fcc30">
+    <command xml:space="preserve">wear glasses</command>
+    <result xml:space="preserve">[wearing the pair of glasses]
+(first taking the pair of glasses)
+[(1) taking the pair of glasses - silently]
+[(1) taking the pair of glasses - silently - succeeded]
+
+You put on the pair of glasses.
+[wearing the pair of glasses - succeeded]
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f77600fcdb0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f77600fcdb0">
+    <command xml:space="preserve">take off glasses</command>
+    <result xml:space="preserve">[taking off the pair of glasses]
+The glasses blur your vision. You must take them off first.
+[taking off the pair of glasses - failed]
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x7f77601f9600">
+    <command xml:space="preserve">examine bookcase</command>
+    <result xml:space="preserve"> There are many books on the bookcase, but nothing stands out to you at the moment.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f77601f9a80"/>
+      <child nodeId="node-0x7f76f00f7ea0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f77601f9a80">
+    <command xml:space="preserve">examine books</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x7f76f00f7ea0">
+    <command xml:space="preserve">wear glasses</command>
+    <result xml:space="preserve">(first taking the pair of glasses)
+You put on the pair of glasses.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f00f7d20"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f00f7d20">
+    <command xml:space="preserve">look at bookcase</command>
+    <result xml:space="preserve">Everything is blurry except for a single white book on the bookcase.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f76f00f7ba0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f76f00f7ba0">
+    <command xml:space="preserve">look at books</command>
+    <result xml:space="preserve">The glasses blur your vision.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x7f77601f9c00">
+    <command xml:space="preserve">take books</command>
+    <result xml:space="preserve">None of them stand out to you, so you leave them alone.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x7f77601f9d80">
+    <command xml:space="preserve">examine books</command>
+    <result xml:space="preserve">There are many books on the bookcase, but nothing stands out to you at the moment.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x7f77601f9900"/>
+    </children>
+  </item>
+  <item nodeId="node-0x7f77601f9900">
+    <command xml:space="preserve">take books</command>
+    <result xml:space="preserve">There are many books on the bookcase, but nothing stands out to you at the moment.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+</Skein>
