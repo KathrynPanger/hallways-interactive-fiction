@@ -1,6 +1,7 @@
 "Hallways"
 
 the slick is a thing.
+the slick is fixed in place.
 
 The Ordinary Room is a room.
 	"This is a very plain room about 14 foot square. The walls are white."
