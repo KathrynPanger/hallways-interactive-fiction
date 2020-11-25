@@ -9,6 +9,7 @@ The pair of glasses is in the Ordinary Room.
 	The short bookcase is in the Ordinary Room. The bookcase is a fixed in place supporter.
 		The description of the bookcase is "[if the white book is on the bookcase]There are many books on the bookcase, but most of them are uninteresting. [otherwise] There are many books on the bookcase, but nothing stands out to you at the moment."
 	The books are a backdrop in the Ordinary room.
+
 	
 instead of examining the books:
 	try examining the bookcase;
