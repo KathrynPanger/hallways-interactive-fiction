@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Skein rootNode="node-0x2b684a0" xmlns="http://www.logicalshift.org.uk/IF/Skein">
+  <generator>Inform 7</generator>
+  <activeNode nodeId="node-0x2b684a0"/>
+  <item nodeId="node-0x2b684a0">
+    <command xml:space="preserve">- start -</command>
+    <result xml:space="preserve">
+
+
+The Haunted Sandwich
+An Interactive Fiction by Y&apos;Gael of Atrii
+Release 1 / Serial number 201126 / Inform 7 build 6M62 (I6/v6.33 lib 6/12N) SD
+
+Kitchen
+You can see a mystery jar (empty), a slate, a piece of chalk, A bottle of whiskey and a cup (in which is water) here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2b68620"/>
+      <child nodeId="node-0x2b68aa0"/>
+      <child nodeId="node-0x2b68c20"/>
+      <child nodeId="node-0x2b9dbb0"/>
+      <child nodeId="node-0x2c7e170"/>
+      <child nodeId="node-0x2c7e470"/>
+      <child nodeId="node-0x2cb4190"/>
+      <child nodeId="node-0x2cb4610"/>
+      <child nodeId="node-0x2cb4a90"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2b68620">
+    <command xml:space="preserve">ACTIONS</command>
+    <result xml:space="preserve">Actions listing on.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2b687a0"/>
+      <child nodeId="node-0x2b68920"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2b687a0">
+    <command xml:space="preserve">smell jar</command>
+    <result xml:space="preserve">[smelling the mystery jar]
+You smell nothing unexpected.
+[smelling the mystery jar - succeeded]
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2b68920">
+    <command xml:space="preserve">OPEN MYSTERY JAR</command>
+    <result xml:space="preserve">[opening the mystery jar]
+It isn&apos;t something you can open.
+[opening the mystery jar - failed the can&apos;t open unless openable rule]
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2b68aa0">
+    <command xml:space="preserve">draw jar</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2b68c20">
+    <command xml:space="preserve">drink whiskey</command>
+    <result xml:space="preserve">&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>YES</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2b68da0"/>
+      <child nodeId="node-0x2b68f20"/>
+      <child nodeId="node-0x2c2a410"/>
+      <child nodeId="node-0x2c2ae90"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2b68da0">
+    <command xml:space="preserve">imbibe wiskey</command>
+    <result xml:space="preserve">That&apos;s not a verb I recognise.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2b68f20">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  an empty glass bottle
+  A bottle of whiskey
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2c2a110"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2c2a110">
+    <command xml:space="preserve">take chalk</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2c2a290"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2c2a290">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  a chalk
+  an empty glass bottle
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2c2a410">
+    <command xml:space="preserve">ACTIONS</command>
+    <result xml:space="preserve">Actions listing on.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2c2a590"/>
+      <child nodeId="node-0x2c2a890"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2c2a590">
+    <command xml:space="preserve">smell jar</command>
+    <result xml:space="preserve">[smelling the mystery jar]
+You smell nothing unexpected.
+[smelling the mystery jar - succeeded]
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2c2a710"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2c2a710">
+    <command xml:space="preserve">open mystery jar</command>
+    <result xml:space="preserve">[opening the mystery jar]
+It isn&apos;t something you can open.
+[opening the mystery jar - failed the can&apos;t open unless openable rule]
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2c2a890">
+    <command xml:space="preserve">drink whiskey</command>
+    <result xml:space="preserve">[drinking the whiskey]
+[(1) imbibing the whiskey]
+You down the whiskey in one gulp.
+20[(1) imbibing the whiskey - succeeded]
+
+[drinking the whiskey - failed]
+
+19
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2c2aa10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2c2aa10">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">[taking inventory]
+You are carrying nothing.
+
+[taking inventory - succeeded]
+
+18
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2c2ab90"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2c2ab90">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">[looking]
+Kitchen
+You can see a mystery jar (empty), a slate, a piece of chalk and a cup (empty) here.
+
+[looking - succeeded]
+
+17
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2c2ad10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2c2ad10">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">[taking inventory]
+You are carrying nothing.
+
+[taking inventory - succeeded]
+
+16
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2c2ae90">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.
+
+6
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2b9d130"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2b9d130">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.
+
+5
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2b9d2b0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2b9d2b0">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.
+
+4
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2b9d430"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2b9d430">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.
+
+3
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2b9d5b0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2b9d5b0">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.
+
+2
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2b9d730"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2b9d730">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.
+
+1
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2b9d8b0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2b9d8b0">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.
+
+0
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2b9da30"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2b9da30">
+    <command xml:space="preserve">wait</command>
+    <result xml:space="preserve">Time passes.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2b9dbb0">
+    <command xml:space="preserve">take whiskey</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2b9dd30"/>
+      <child nodeId="node-0x2b9deb0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2b9dd30">
+    <command xml:space="preserve">drink whiskey</command>
+    <result xml:space="preserve">You take a hearty swig of whiskey.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2b9deb0">
+    <command xml:space="preserve">examine whiskey</command>
+    <result xml:space="preserve">You see nothing special about Whiskey.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2c7e170">
+    <command xml:space="preserve">examine whiskey</command>
+    <result xml:space="preserve">You see nothing special about the whiskey.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2c7e2f0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2c7e2f0">
+    <command xml:space="preserve">drink whiskey</command>
+    <result xml:space="preserve">(first taking the whiskey.)
+
+(first taking the whiskey.)
+You already have that.
+
+
+(first taking the whiskey.)
+You already have that.
+
+
+(first taking the whiskey.)
+You already have that.
+
+
+(first taking the whiskey.)
+You already have that.
+
+
+(first taking the whiskey.)
+You already have that.
+
+
+(first taking the whiskey.)
+You already have that.
+
+
+(first taking the whiskey.)
+You already have that.
+
+
+(first taking the whiskey.)
+You already have that.
+
+
+(first taking the whiskey.)
+You already have that.
+
+
+(first taking the whiskey.)
+You already have that.
+
+
+(first taking the whiskey.)
+You already have that.
+
+
+(first taking the whiskey.)
+
+[** Programming error: tried to write to --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/0
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/1
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/2
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/3
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/4
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/2
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/3
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/0
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/1
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to write to --&gt;162 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+*** Run-time problem P46: The memory stack is exhausted.
+
+Mstack backtrace: size 161 words
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+
+[** Programming error: tried to write to --&gt;162 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to write to --&gt;163 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to write to --&gt;164 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to write to --&gt;165 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to write to --&gt;166 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to write to --&gt;167 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Mstack backtrace: size 161 words
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/0
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/1
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/2
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/3
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/4
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/2
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/3
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/0
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/1
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/3
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/0
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/1
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/3
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/0
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/1
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/3
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/0
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/1
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/3
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/0
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/1
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/3
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/0
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/1
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/3
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/0
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/1
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/3
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/0
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/1
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/3
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/0
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/1
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/3
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/0
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/1
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/3
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/0
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/1
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/3
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/0
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/1
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/3
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/0
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/1
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/3
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/0
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/5
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+Variable unavailable for this action, activity or rulebook: internal ID number 11/1
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+
+[** Programming error: tried to read from --&gt;160 in the array &quot;MStack&quot;, which has entries 0 up to 159 **]
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2c7e470">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Living Room
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2c7e5f0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2c7e5f0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Kitchen
+You can see a mystery jar (empty), a slate, a chalk and a glass bottle (in which is a quantity of whiskey) here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2c7e770"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2c7e770">
+    <command xml:space="preserve">n</command>
+    <result xml:space="preserve">
+Living Room
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2c7e8f0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2c7e8f0">
+    <command xml:space="preserve">take whiskey</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2c7ea70"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2c7ea70">
+    <command xml:space="preserve">drink whiskey</command>
+    <result xml:space="preserve">You can&apos;t see any such thing.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2c7ebf0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2c7ebf0">
+    <command xml:space="preserve">s</command>
+    <result xml:space="preserve">
+Kitchen
+You can see a mystery jar (empty), a slate, a chalk and a glass bottle (in which is a quantity of whiskey) here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2c7ed70"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2c7ed70">
+    <command xml:space="preserve">drink whiskey</command>
+    <result xml:space="preserve">(first taking the whiskey.)
+
+You down the whiskey in one gulp.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2c7eef0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2c7eef0">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  a glass bottle
+    a quantity of whiskey
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2cb4190">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying nothing.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2cb4310"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2cb4310">
+    <command xml:space="preserve">drink whiskey</command>
+    <result xml:space="preserve">(first taking the whiskey.)
+
+You down the whiskey in one gulp.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2cb4490"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2cb4490">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  a glass bottle
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2cb4610">
+    <command xml:space="preserve">drink water</command>
+    <result xml:space="preserve">(first taking the water.)
+
+You down the water in one gulp.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2cb4790"/>
+      <child nodeId="node-0x2cb4910"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2cb4790">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Kitchen
+You can see a mystery jar (empty), a slate, a piece of chalk and the glass bottle (in which is a quantity of whiskey) here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2cb4910">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying nothing.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2cb4a90">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Kitchen
+a bottle of whiskey
+
+You can also see a mystery jar (empty), a slate, a piece of chalk and a cup (empty) here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>NO</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2cb4c10"/>
+      <child nodeId="node-0x2cf31a0"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2cb4c10">
+    <command xml:space="preserve">l</command>
+    <result xml:space="preserve">Kitchen
+a bottle of whiskey
+
+You can also see a mystery jar (empty), a slate, a piece of chalk and a cup (empty) here.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2cb4d90"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2cb4d90">
+    <command xml:space="preserve">take whiskey</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2cb4f10"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2cb4f10">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  a whiskey
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+  <item nodeId="node-0x2cf31a0">
+    <command xml:space="preserve">take whiskey</command>
+    <result xml:space="preserve">Taken.
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+    <children>
+      <child nodeId="node-0x2cf3320"/>
+    </children>
+  </item>
+  <item nodeId="node-0x2cf3320">
+    <command xml:space="preserve">i</command>
+    <result xml:space="preserve">You are carrying:
+  a whiskey
+
+&gt;</result>
+    <commentary xml:space="preserve"></commentary>
+    <played>NO</played>
+    <changed>YES</changed>
+    <temporary score="0">YES</temporary>
+    <annotation xml:space="preserve"></annotation>
+  </item>
+</Skein>
