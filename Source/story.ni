@@ -1,22 +1,35 @@
 "Hallways"
 
-the slick is a thing.
-the slick is fixed in place.
-
 The Ordinary Room is a room.
 	"This is a very plain room about 14 foot square. The walls are white."
 
 The pair of glasses is in the Ordinary Room.
 	The glasses are a wearable thing.
-	The description of the glasses is "It is a pair of half-moon spectacles with red frames. They glow faintly, as if by magic.".
+	The description of the glasses is "It is a pair of half-moon spectacles. They glow faintly, as if by magic.".
 	The short bookcase is in the Ordinary Room. The bookcase is a fixed in place supporter.
-	The white book is a thing.
-		The description of the white book is "It is a plain, white, hardcover book. The title is: [quotation mark]You Will Read This Book[quotation mark].".
-	the white book is on the short bookcase.
-	
+		The description of the bookcase is "[if the white book is on the bookcase]There are many books on the bookcase, but most of them are uninteresting. [otherwise] There are many books on the bookcase, but nothing stands out to you at the moment."
+	The books are a backdrop in the Ordinary room.
 
 	
-instead of looking in the Ordinary Room for the first time, say "You are in a dream; not yours, but someone else's. There are a pair of glasses and a short bookcase here.".
+instead of examining the books:
+	try examining the bookcase;
+instead of taking the books:
+	if the white book is on the bookcase:
+		try taking the white book;
+	say "None of them stand out to you, so you leave them alone.";
+	
+	The white book is a thing.
+		The description of the white book is "It is a plain, white, hardcover book. The title is: [quotation mark]You Will Read This Book[quotation mark].".
+	the white book is in limbo.
+	
+Instead of doing something other than taking off the pair of glasses  while the player is wearing the glasses:
+	if the noun is not the bookcase and the noun is not the books:
+		say "The glasses blur your vision.";
+	otherwise:
+		say "Everything is blurry except for a single white book on the bookcase.";
+		now the white book is on the bookcase;
+	
+instead of looking in the Ordinary Room for the first time, say "You are in a dream; not yours, but someone else's. There is a pair of glasses and a short bookcase here.".
 
 
 [White book code starts here]
@@ -39,17 +52,17 @@ to say book_phrase:
 	if the sleep_number of the player is 0:
 		say "The first page says: [quotation mark]YOU ARE READING THIS BOOK.[quotation mark]";
 	otherwise if the sleep_number of the player is less than 4:
-		say "The next page says: [quotation mark]YOU ARE STILL READING THIS BOOK.[quotation mark]";
+		say "The next page says: [quotation mark]YOU ARE READING THIS BOOK.[quotation mark]";
 	otherwise if the sleep_number of the player is 4:
-		say "The next page says: [quotation mark]YOU ARE STILL READING THIS BOOK.[quotation mark][line break][line break]All this reading is making you tired.";
+		say "The next page says: [quotation mark]YOU ARE READING THIS BOOK.[quotation mark][line break][line break]All this reading is making you tired.";
 	otherwise if the sleep_number of the player is 5:
-		say "The next page says: [quotation mark]YOU CONTINUE TO READ THIS BOOK.[quotation mark][line break][line break]The more you read, the more tired you feel.";		
+		say "The next page says: [quotation mark]YOU ARE READING THIS BOOK.[quotation mark][line break][line break]The more you read, the more tired you feel.";		
 	otherwise if the sleep_number of the player is 6:
 		say "The next page says: [quotation mark]YOU ARE READING THIS BOOK.[quotation mark][line break][line break]You feel drained. It's getting harder to understand the words.";
 	otherwise if the sleep_number of the player is 7:
-		say "The next page says: [quotation mark]YOU ARE STILL READING THIS BOOK.[quotation mark][line break][line break]In fact, its getting harder to think of anything at all.";	
+		say "The next page says: [quotation mark]YOU ARE READING THIS BOOK.[quotation mark][line break][line break]In fact, its getting harder to think of anything at all.";	
 	otherwise if the sleep_number of the player is 8:
-		say "The next page says: [quotation mark]YOU CONTINUE TO READ THIS BOOK.[quotation mark][line break][line break]You're exhausted. You feel as if you might pass out soon.";	
+		say "The next page says: [quotation mark]YOU ARE READING THIS BOOK.[quotation mark][line break][line break]You're exhausted. You feel as if you might pass out soon.";	
 		
 The eyes are a backdrop. The eyes are everywhere.
 instead of closing the eyes:
@@ -64,6 +77,7 @@ instead of screaming:
 			
 instead of doing something other than closing the eyes when the book_trance is yes: 
 	if the sleep_number of the player is less than 9:
+		say "You are reading the book right now...";
 		say "[book_phrase]";
 		increase the sleep_number of the player by 1;
 	otherwise:
@@ -989,7 +1003,3 @@ level	phrase
 
 Rule for printing room description details of containers:
 	 stop.	
-	
-
-		
-
